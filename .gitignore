@@ -1,0 +1,65 @@
+# ==========================================
+# 1. KRITA
+# ==========================================
+# Backup- och autosave-filer, aldrig värda att versionera
+*.kra~
+*.krz~
+.*-autosave.kra
+.*-autosave.krz
+
+# ==========================================
+# 2. BLENDER
+# ==========================================
+# Proxy-cache, genereras om från källvideon
+BL_proxy/
+*.blend2
+*.blend3
+
+# ==========================================
+# 3. GODOT
+# ==========================================
+.godot/
+*.uid
+export_presets.cfg
+
+# ==========================================
+# 4. UNITY
+# ==========================================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Ee]xportMesh/
+[Aa]ssets/AssetStoreTools*
+
+# IDE-genererat
+.vs/
+.consulo/
+ExportedObj/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Crash logs
+sysinfo.txt
+crashlytics-build.properties
+
+# ==========================================
+# 5. OS & ALLMÄNT
+# ==========================================
+*.tmp
+.DS_Store
+Thumbs.db
+Desktop.ini
