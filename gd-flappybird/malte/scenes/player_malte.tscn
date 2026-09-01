@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bu5no21jv5uy2"]
+
+[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="1_b6s6m"]
+[ext_resource type="Script" uid="uid://boriuaiinsarh" path="res://malte/scripts/player_malte.gd" id="1_cania"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_106nb"]
+radius = 49.0
+
+[node name="Player_Malte" type="RigidBody2D" unique_id=170109730]
+gravity_scale = 0.0
+script = ExtResource("1_cania")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1845031763]
+position = Vector2(-10, -4)
+shape = SubResource("CircleShape2D_106nb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1934222073]
+texture = ExtResource("1_b6s6m")

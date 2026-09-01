@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://537mvugvjf7q"]
+
+[ext_resource type="Script" uid="uid://bt2vub7iyma8r" path="res://malte/scripts/ground_malte.gd" id="1_a7plw"]
+[ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="2_a7plw"]
+
+[sub_resource type="Animation" id="Animation_kyf5p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 344)]
+}
+
+[sub_resource type="Animation" id="Animation_a7plw"]
+resource_name = "ground_malte"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1920, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kyf5p"]
+_data = {
+&"RESET": SubResource("Animation_kyf5p"),
+&"ground_malte": SubResource("Animation_a7plw")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ynb0l"]
+size = Vector2(72.5, 1919.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7plw"]
+size = Vector2(1921, 10)
+
+[node name="Ground_Malte" type="StaticBody2D" unique_id=1664676909]
+script = ExtResource("1_a7plw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=951101078]
+libraries/ = SubResource("AnimationLibrary_kyf5p")
+autoplay = &"ground_malte"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1006071522]
+position = Vector2(960.25, 1041.75)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_ynb0l")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1933101344]
+texture_repeat = 2
+position = Vector2(0, 344)
+texture = ExtResource("2_a7plw")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 6000, 1920)
+
+[node name="DeathZone" type="Area2D" parent="." unique_id=1097418900]
+position = Vector2(0, 44)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathZone" unique_id=380001031]
+position = Vector2(960.5, 954)
+shape = SubResource("RectangleShape2D_a7plw")
+debug_color = Color(0.9954646, 0, 0.21274754, 0.41960785)
+
+[connection signal="body_entered" from="DeathZone" to="." method="_on_death_zone_body_entered"]

@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://wttmgqmk6eqx"]
+
+[ext_resource type="Script" uid="uid://glocmxu0ryjb" path="res://malte/scripts/obstacle_malte.gd" id="1_bk6gr"]
+[ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="1_g1fh0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rmjru"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aj0ds"]
+size = Vector2(272, 799)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6i15c"]
+size = Vector2(272, 799)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a1p4v"]
+size = Vector2(60, 650)
+
+[node name="Obstacle_Malte" type="CharacterBody2D" unique_id=1944120017 groups=["obstacles"]]
+script = ExtResource("1_bk6gr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1912214724]
+position = Vector2(11, 895)
+shape = SubResource("RectangleShape2D_rmjru")
+disabled = true
+
+[node name="WallTop" type="Area2D" parent="." unique_id=376030216]
+position = Vector2(0, -615)
+
+[node name="Sprite2D" type="Sprite2D" parent="WallTop" unique_id=792909348]
+texture = ExtResource("1_g1fh0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallTop" unique_id=1771001313]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_aj0ds")
+
+[node name="WallBottom" type="Area2D" parent="." unique_id=1520837535]
+position = Vector2(12, 555)
+
+[node name="Sprite2D" type="Sprite2D" parent="WallBottom" unique_id=728398038]
+texture = ExtResource("1_g1fh0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallBottom" unique_id=943208234]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_6i15c")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=976564131]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=399651720]
+position = Vector2(99, 11)
+shape = SubResource("RectangleShape2D_a1p4v")
+debug_color = Color(0.91406727, 9.7031596e-05, 0.7276637, 0.41960785)
+
+[connection signal="body_entered" from="WallTop" to="." method="_on_wall_top_body_entered"]
+[connection signal="body_entered" from="WallBottom" to="." method="_on_wall_bottom_body_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

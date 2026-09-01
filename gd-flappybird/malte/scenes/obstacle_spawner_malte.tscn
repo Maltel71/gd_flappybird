@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dm7sh2vlipg0i"]
+
+[ext_resource type="Script" uid="uid://dgqjxegemuvfy" path="res://malte/scripts/obstacle_spawner_malte.gd" id="1_rdb78"]
+
+[node name="Obstacle_Spawner_Malte" type="Node2D" unique_id=1715271617]
+script = ExtResource("1_rdb78")
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=1303670497]
+wait_time = 2.5
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
