@@ -5,6 +5,7 @@ extends Node2D
 @onready var hud: CanvasLayer = $HUD
 
 var score: int = 0
+var high_score: int = 0
 
 func _ready() -> void:
 	hud.set_score(score)
@@ -18,6 +19,9 @@ func _on_player_malte_died() -> void:
 	obstacle_spawner_malte.stop()
 	ground_malte.animation_player.pause()
 	get_tree().call_group("obstacles", "stop")
+	
+	await get_tree().create_timer(0.5).timeout
+	hud.show_game_over_screen(score, 123)
 
 
 func _on_player_malte_scored() -> void:
