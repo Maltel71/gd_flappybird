@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://bx4n6k7ya7g4y"]
 
 [ext_resource type="Texture2D" uid="uid://dp6kjqg0elbl8" path="res://malte/sprites/malte_bg_01.png" id="1_qg4n5"]
-[ext_resource type="Script" uid="uid://dbmctstnsrqwn" path="res://malte/scenes/malte_level_01.gd" id="1_upghd"]
+[ext_resource type="Script" uid="uid://2xm5c3k4k51" path="res://malte/scenes/malte_level_01.gd" id="1_upghd"]
+[ext_resource type="PackedScene" uid="uid://dcf8at6fty251" path="res://malte/scenes/hud.tscn" id="2_7loe4"]
 [ext_resource type="PackedScene" uid="uid://bu5no21jv5uy2" path="res://malte/scenes/player_malte.tscn" id="2_gjaxg"]
 [ext_resource type="PackedScene" uid="uid://wttmgqmk6eqx" path="res://malte/scenes/obstacle_malte.tscn" id="2_o2mvn"]
 [ext_resource type="PackedScene" uid="uid://dm7sh2vlipg0i" path="res://malte/scenes/obstacle_spawner_malte.tscn" id="3_7nrdj"]
@@ -9,6 +10,8 @@
 
 [node name="Level01" type="Node2D" unique_id=16017561]
 script = ExtResource("1_upghd")
+
+[node name="HUD" parent="." unique_id=1189119507 instance=ExtResource("2_7loe4")]
 
 [node name="MalteBg01" type="Sprite2D" parent="." unique_id=1037171741]
 texture = ExtResource("1_qg4n5")
@@ -25,7 +28,7 @@ position = Vector2(0, -287)
 position = Vector2(1, 17)
 
 [node name="Player_Malte" parent="." unique_id=170109730 instance=ExtResource("2_gjaxg")]
-position = Vector2(551, 563)
+position = Vector2(477, 563)
 
 [connection signal="died" from="Player_Malte" to="." method="_on_player_malte_died"]
 [connection signal="game_started" from="Player_Malte" to="." method="_on_player_malte_game_started"]

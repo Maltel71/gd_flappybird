@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dcf8at6fty251"]
+
+[ext_resource type="Script" uid="uid://c8gucgsc3y22u" path="res://malte/scripts/hud.gd" id="1_i35og"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="2_kaafn"]
+[ext_resource type="Texture2D" uid="uid://ck8lbussjj8n0" path="res://malte/sprites/start_message_sprite_01.png" id="3_kaafn"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1189119507]
+script = ExtResource("1_i35og")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=859590156]
+offset_left = 1569.0
+offset_right = 1679.0
+offset_bottom = 88.0
+theme = ExtResource("2_kaafn")
+text = "999"
+
+[node name="StartMessage" type="TextureRect" parent="." unique_id=596978843]
+offset_left = 245.0
+offset_top = 19.0
+offset_right = 2165.0
+offset_bottom = 1099.0
+texture = ExtResource("3_kaafn")

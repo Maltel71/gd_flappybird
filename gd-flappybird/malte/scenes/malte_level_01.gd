@@ -2,11 +2,16 @@ extends Node2D
 
 @onready var obstacle_spawner_malte: Node2D = $Obstacle_Spawner_Malte
 @onready var ground_malte: StaticBody2D = $Ground_Malte
+@onready var hud: CanvasLayer = $HUD
 
-var score := 0
+var score: int = 0
+
+func _ready() -> void:
+	hud.set_score(score)
 
 func _on_player_malte_game_started() -> void:
 	obstacle_spawner_malte.start()
+	hud.hide_start_message()
 
 
 func _on_player_malte_died() -> void:
@@ -16,4 +21,5 @@ func _on_player_malte_died() -> void:
 
 
 func _on_player_malte_scored() -> void:
-	print("player scored point")
+	score += 1
+	hud.set_score(score)
