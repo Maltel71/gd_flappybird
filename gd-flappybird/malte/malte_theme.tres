@@ -1,6 +1,9 @@
 [gd_resource type="Theme" format=3 uid="uid://c03fg3buohajv"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oyul8"]
+
 [resource]
+Button/styles/normal = SubResource("StyleBoxTexture_oyul8")
 Label/colors/font_color = Color(0.91, 0.91, 0.91, 1)
 Label/colors/font_outline_color = Color(0, 0, 0, 1)
 Label/constants/outline_size = 33
