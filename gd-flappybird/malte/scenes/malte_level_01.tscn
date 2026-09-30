@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bx4n6k7ya7g4y"]
 
 [ext_resource type="Texture2D" uid="uid://dp6kjqg0elbl8" path="res://malte/sprites/malte_bg_01.png" id="1_qg4n5"]
-[ext_resource type="Script" uid="uid://2xm5c3k4k51" path="res://malte/scenes/malte_level_01.gd" id="1_upghd"]
+[ext_resource type="Script" uid="uid://2xm5c3k4k51" path="res://malte/scripts/malte_level_01.gd" id="1_upghd"]
 [ext_resource type="PackedScene" uid="uid://dcf8at6fty251" path="res://malte/scenes/hud.tscn" id="2_7loe4"]
 [ext_resource type="PackedScene" uid="uid://bu5no21jv5uy2" path="res://malte/scenes/player_malte.tscn" id="2_gjaxg"]
 [ext_resource type="PackedScene" uid="uid://wttmgqmk6eqx" path="res://malte/scenes/obstacle_malte.tscn" id="2_o2mvn"]

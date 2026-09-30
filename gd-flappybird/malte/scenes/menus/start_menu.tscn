@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://1tgo7xcytvyx"]
+
+[ext_resource type="Script" uid="uid://cil0n0j1rg0yf" path="res://malte/scripts/start_menu.gd" id="1_bqsbv"]
+
+[node name="StartMenu" type="Control" unique_id=828927188]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_bqsbv")
+
+[node name="Panel" type="Panel" parent="." unique_id=1763572293]
+z_index = 10
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=583602107]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -356.5
+offset_top = 181.0
+offset_right = 356.5
+offset_bottom = 758.0
+grow_horizontal = 2
+
+[node name="Header" type="Label" parent="Panel/VBoxContainer" unique_id=1837371936]
+layout_mode = 2
+text = "MyCarGame"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="Panel/VBoxContainer" unique_id=642998449]
+z_index = 1
+layout_mode = 2
+text = "Play"
+
+[node name="SettingsButton" type="Button" parent="Panel/VBoxContainer" unique_id=59584223]
+z_index = 1
+layout_mode = 2
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="Panel/VBoxContainer" unique_id=552481746]
+z_index = 1
+layout_mode = 2
+text = "Quit"
+
+[node name="Credits" type="Label" parent="Panel/VBoxContainer" unique_id=1831166896]
+layout_mode = 2
+text = "MadeBy-LM"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=304609234]
+volume_db = 1.0
