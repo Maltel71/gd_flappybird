@@ -2,8 +2,23 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oyul8"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7in3y"]
+bg_color = Color(0.9048838, 0.38049233, 0.6843448, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b30a8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_meqm1"]
+bg_color = Color(0.11782735, 3.4269095e-05, 0.43981394, 1)
+border_width_top = 20
+border_width_bottom = 10
+border_color = Color(0.06154459, 0.06367182, 0.049785107, 1)
+
 [resource]
+Button/font_sizes/font_size = 60
 Button/styles/normal = SubResource("StyleBoxTexture_oyul8")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_7in3y")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_b30a8")
+HSlider/styles/slider = SubResource("StyleBoxFlat_meqm1")
 Label/colors/font_color = Color(0.91, 0.91, 0.91, 1)
 Label/colors/font_outline_color = Color(0, 0, 0, 1)
 Label/constants/outline_size = 33

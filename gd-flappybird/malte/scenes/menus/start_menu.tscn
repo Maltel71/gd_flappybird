@@ -1,53 +1,74 @@
 [gd_scene format=3 uid="uid://1tgo7xcytvyx"]
 
 [ext_resource type="Script" uid="uid://cil0n0j1rg0yf" path="res://malte/scripts/start_menu.gd" id="1_bqsbv"]
+[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="2_gu68g"]
+[ext_resource type="Texture2D" uid="uid://c7wh2d8vqjw11" path="res://malte/sprites/malte_header_flappystuff.png" id="3_wlesl"]
+[ext_resource type="Texture2D" uid="uid://cdkxfobcoub5v" path="res://malte/sprites/malte_button_levels.png" id="4_gckm1"]
+[ext_resource type="Texture2D" uid="uid://da4n5ub4e06qv" path="res://malte/sprites/malte_button_settings.png" id="5_4fhrh"]
+[ext_resource type="Texture2D" uid="uid://c0hkrpmvsuyya" path="res://malte/sprites/malte_button_quit.png" id="6_41ras"]
 
 [node name="StartMenu" type="Control" unique_id=828927188]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_bqsbv")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2139010966]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_gu68g")
+
 [node name="Panel" type="Panel" parent="." unique_id=1763572293]
+self_modulate = Color(1, 1, 1, 0)
 z_index = 10
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
+
+[node name="TextureRect2" type="TextureRect" parent="Panel" unique_id=2132473810]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -634.0
+offset_top = -508.0
+offset_right = 635.0
+offset_bottom = -105.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_wlesl")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=583602107]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -356.5
-offset_top = 181.0
-offset_right = 356.5
-offset_bottom = 758.0
+offset_left = -168.0
+offset_top = 481.0
+offset_right = 545.0
+offset_bottom = 1127.0
 grow_horizontal = 2
-
-[node name="Header" type="Label" parent="Panel/VBoxContainer" unique_id=1837371936]
-layout_mode = 2
-text = "MyCarGame"
-horizontal_alignment = 1
+scale = Vector2(0.79878634, 0.79878634)
 
 [node name="PlayButton" type="Button" parent="Panel/VBoxContainer" unique_id=642998449]
 z_index = 1
 layout_mode = 2
-text = "Play"
+icon = ExtResource("4_gckm1")
+flat = true
 
 [node name="SettingsButton" type="Button" parent="Panel/VBoxContainer" unique_id=59584223]
 z_index = 1
 layout_mode = 2
-text = "Settings"
+icon = ExtResource("5_4fhrh")
+flat = true
 
 [node name="QuitButton" type="Button" parent="Panel/VBoxContainer" unique_id=552481746]
 z_index = 1
 layout_mode = 2
-text = "Quit"
-
-[node name="Credits" type="Label" parent="Panel/VBoxContainer" unique_id=1831166896]
-layout_mode = 2
-text = "MadeBy-LM"
-horizontal_alignment = 1
+icon = ExtResource("6_41ras")
+flat = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=304609234]
 volume_db = 1.0
