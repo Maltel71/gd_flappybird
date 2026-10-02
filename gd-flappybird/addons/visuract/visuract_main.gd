@@ -447,15 +447,33 @@ func _selected_names() -> Array:
 	return names
 
 
+## Copies the picked blocks 30px down-right, keeping the cables between them.
 func _duplicate_selected() -> void:
-	var copies := []
-	for gn in _selected_nodes():
-		var copy := _make_graph_node(_type_of(gn), gn.position_offset + Vector2(30, 30), "", _read_params(gn))
-		if copy != null:
-			copies.append(copy)
-			gn.selected = false
-	for copy in copies:
+	var picked := _selected_nodes()
+	if picked.is_empty():
+		return
+
+	_loading = true
+	var index := {}
+	var made := []
+	for gn in picked:
+		var copy := _make_graph_node(_type_of(gn), gn.position_offset + Vector2(30, 30), "", _read_params(gn).duplicate(true))
+		if copy == null:
+			_loading = false
+			return
+		index[String(gn.name)] = made.size()
+		made.append(copy)
+		gn.selected = false
+	for c in _graph.get_connection_list():
+		var from := String(c.get("from_node", c.get("from", "")))
+		var to := String(c.get("to_node", c.get("to", "")))
+		if index.has(from) and index.has(to):
+			_graph.connect_node(made[index[from]].name, c.from_port, made[index[to]].name, c.to_port)
+	for copy in made:
 		copy.selected = true
+	_loading = false
+	_refresh_conditional_params()
+	_autosave()
 
 
 func _copy_selected() -> void:
@@ -472,7 +490,7 @@ func _copy_selected() -> void:
 		var from := String(c.get("from_node", c.get("from", "")))
 		var to := String(c.get("to_node", c.get("to", "")))
 		if index.has(from) and index.has(to):
-			_clipboard_links.append([index[from], index[to]])
+			_clipboard_links.append([index[from], index[to], c.from_port, c.to_port])
 	_set_status(Lang.t("Copied %d blocks - select another node and paste.") % picked.size())
 
 
@@ -495,7 +513,7 @@ func _paste(at: Vector2) -> void:
 		_loading = false
 		return
 	for link in _clipboard_links:
-		_graph.connect_node(made[link[0]].name, 0, made[link[1]].name, 0)
+		_graph.connect_node(made[link[0]].name, link[2], made[link[1]].name, link[3])
 	for gn in made:
 		gn.selected = true
 	_loading = false

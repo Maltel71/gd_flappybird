@@ -1,12 +1,18 @@
 [gd_scene format=3 uid="uid://bxhsnelskqiwg"]
 
 [ext_resource type="Script" uid="uid://br7s5alt18rod" path="res://addons/visuract/visuract_runtime.gd" id="1_8bybk"]
+[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_gs8kn"]
 [ext_resource type="PackedScene" uid="uid://665qbgfaadjr" path="res://malte/scenes/visuract_scenes/malte_ground.tscn" id="1_s3vi4"]
 [ext_resource type="PackedScene" uid="uid://b4v5xl3nw1t5y" path="res://malte/scenes/visuract_scenes/malte_player.tscn" id="2_5p8xj"]
 [ext_resource type="Resource" uid="uid://d3f8qaw8cf687" path="res://visuract/graphs/Spawner.tres" id="2_qdhcp"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="5_qdhcp"]
+[ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_0grcd"]
 
 [node name="Malte_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="MalteMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 464)
+texture = ExtResource("1_gs8kn")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)
@@ -24,9 +30,13 @@ position = Vector2(483, 531)
 
 [node name="Score_Label" type="Label" parent="." unique_id=1687435472]
 z_index = 30
-offset_left = 960.0
-offset_top = 19.0
-offset_right = 1000.0
-offset_bottom = 107.0
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
 theme = ExtResource("5_qdhcp")
 text = "0"
+
+[node name="MalteStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
+position = Vector2(1096, 477)
+texture = ExtResource("7_0grcd")

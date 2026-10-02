@@ -51,7 +51,7 @@ nodes = [{
 }, {
 "id": "VN138",
 "params": {
-"seconds": 2.0
+"seconds": 0.5
 },
 "position": Vector2(1240, 460),
 "type": "Wait"
@@ -181,6 +181,21 @@ nodes = [{
 },
 "position": Vector2(1960, 1300),
 "type": "Remember"
+}, {
+"id": "VN315",
+"params": {
+"listen_for": "start"
+},
+"position": Vector2(540, 1700),
+"type": "On Signal"
+}, {
+"id": "VN316",
+"params": {
+"action": "Hide",
+"target": "MalteStartscreenPanel"
+},
+"position": Vector2(900, 1700),
+"type": "Visibility"
 }]
 connections = [{
 "from": "VN132",
@@ -227,4 +242,7 @@ connections = [{
 }, {
 "from": "VN173",
 "to": "VN175"
+}, {
+"from": "VN315",
+"to": "VN316"
 }]
