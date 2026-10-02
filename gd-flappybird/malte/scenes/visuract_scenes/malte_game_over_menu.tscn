@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dbrbgcpuyugke"]
+
+[ext_resource type="Script" uid="uid://br7s5alt18rod" path="res://addons/visuract/visuract_runtime.gd" id="1_qv0es"]
+[ext_resource type="Resource" uid="uid://bkvvpmtnk0kda" path="res://visuract/graphs/Malte_GameOver_Menu.tres" id="2_einol"]
+[ext_resource type="Resource" uid="uid://c753dvd43lcfm" path="res://visuract/graphs/Restart.tres" id="3_einol"]
+
+[node name="Malte_GameOver_Menu" type="Control" unique_id=1318623505]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qv0es")
+graph = ExtResource("2_einol")
+
+[node name="Header" type="Label" parent="." unique_id=1848836727]
+layout_mode = 0
+offset_left = 924.0
+offset_top = 335.0
+offset_right = 1006.0
+offset_bottom = 358.0
+text = "game over"
+
+[node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
+layout_mode = 0
+offset_left = 924.0
+offset_top = 370.0
+offset_right = 964.0
+offset_bottom = 393.0
+text = "9000"
+
+[node name="Restart" type="Button" parent="." unique_id=1422222847]
+layout_mode = 0
+offset_left = 943.0
+offset_top = 472.0
+offset_right = 951.0
+offset_bottom = 480.0
+text = "Restart"
+script = ExtResource("1_qv0es")
+graph = ExtResource("3_einol")

@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://cd4w1k4n3hedx"]
+
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_jw66e"]
+
+[resource]
+script = ExtResource("1_jw66e")
+nodes = [{
+"id": "VN48",
+"params": {},
+"position": Vector2(240, 120),
+"type": "On Ready"
+}, {
+"id": "VN50",
+"params": {
+"listen_for": "start"
+},
+"position": Vector2(240, 340),
+"type": "On Signal"
+}, {
+"id": "VN49",
+"params": {
+"action": "Pause",
+"animation": "AnimationPlayer / malte_ground_anim"
+},
+"position": Vector2(620, 120),
+"type": "Animation"
+}, {
+"id": "VN52",
+"params": {
+"listen_for": "dead"
+},
+"position": Vector2(240, 540),
+"type": "On Signal"
+}, {
+"id": "VN53",
+"params": {
+"action": "Pause",
+"animation": "AnimationPlayer / malte_ground_anim"
+},
+"position": Vector2(600, 540),
+"type": "Animation"
+}, {
+"id": "VN51",
+"params": {
+"action": "Play",
+"animation": "AnimationPlayer / malte_ground_anim",
+"wait_to_finish": false
+},
+"position": Vector2(600, 340),
+"type": "Animation"
+}]
+connections = [{
+"from": "VN48",
+"to": "VN49"
+}, {
+"from": "VN50",
+"to": "VN51"
+}, {
+"from": "VN52",
+"to": "VN53"
+}]

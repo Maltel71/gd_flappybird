@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://wttmgqmk6eqx"]
 
-[ext_resource type="Script" uid="uid://glocmxu0ryjb" path="res://malte/scripts/obstacle_malte.gd" id="1_bk6gr"]
+[ext_resource type="Script" uid="uid://clwpf8lqwwre3" path="res://malte/scripts/flappybird_scripts/obstacle_malte.gd" id="1_bk6gr"]
 [ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="1_g1fh0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rmjru"]

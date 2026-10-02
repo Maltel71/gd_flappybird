@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://bretj45ov0fpw"]
+
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_dbfxh"]
+
+[resource]
+script = ExtResource("1_dbfxh")
+nodes = [{
+"id": "VN108",
+"params": {
+"kind": "Anything",
+"only_named": "Malte_Player"
+},
+"position": Vector2(180, 280),
+"type": "On Body or Area Entered"
+}, {
+"id": "VN109",
+"params": {
+"scope": "Whole game",
+"test": "is Off",
+"variable_name": "dead"
+},
+"position": Vector2(560, 280),
+"type": "Only If"
+}, {
+"id": "VN110",
+"params": {
+"mode": "Set to",
+"scope": "Whole game",
+"value": "On",
+"variable_name": "dead"
+},
+"position": Vector2(900, 280),
+"type": "Remember"
+}, {
+"id": "VN111",
+"params": {
+"signal_name": "dead"
+},
+"position": Vector2(1240, 280),
+"type": "Send Signal"
+}]
+connections = [{
+"from": "VN108",
+"to": "VN109"
+}, {
+"from": "VN109",
+"to": "VN110"
+}, {
+"from": "VN110",
+"to": "VN111"
+}]

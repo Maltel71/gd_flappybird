@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dr5cdmowrbli4"]
 
-[ext_resource type="Script" uid="uid://lrbs0hl6vfv0" path="res://malte/scripts/level_button.gd" id="1_nndva"]
+[ext_resource type="Script" uid="uid://lrbs0hl6vfv0" path="res://malte/scripts/Misc_scripts/level_button.gd" id="1_nndva"]
 [ext_resource type="Texture2D" uid="uid://cunlt4r75nhrh" path="res://malte/sprites/malte_levelselector_panel.png" id="2_nndva"]
 
 [node name="LevelButton_Control" type="Control" unique_id=588421740]

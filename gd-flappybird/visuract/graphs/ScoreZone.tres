@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://b1big7qokp5sj"]
+
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_dk2n0"]
+
+[resource]
+script = ExtResource("1_dk2n0")
+nodes = [{
+"id": "VN20",
+"params": {
+"kind": "Anything",
+"only_named": "Malte_Player"
+},
+"position": Vector2(920, 800),
+"type": "On Body or Area Entered"
+}, {
+"id": "VN21",
+"params": {
+"mode": "Add",
+"scope": "Whole game",
+"value": "1",
+"variable_name": "score"
+},
+"position": Vector2(1320, 800),
+"type": "Remember"
+}]
+connections = [{
+"from": "VN20",
+"to": "VN21"
+}]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://1tgo7xcytvyx"]
 
-[ext_resource type="Script" uid="uid://cil0n0j1rg0yf" path="res://malte/scripts/start_menu.gd" id="1_bqsbv"]
+[ext_resource type="Script" uid="uid://m7pp0fug33g3" path="res://malte/scripts/Misc_scripts/start_menu.gd" id="1_bqsbv"]
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="2_gu68g"]
 [ext_resource type="Texture2D" uid="uid://c7wh2d8vqjw11" path="res://malte/sprites/malte_header_flappystuff.png" id="3_wlesl"]
 [ext_resource type="Texture2D" uid="uid://cdkxfobcoub5v" path="res://malte/sprites/malte_button_levels.png" id="4_gckm1"]

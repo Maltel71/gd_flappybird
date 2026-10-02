@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://537mvugvjf7q"]
 
-[ext_resource type="Script" uid="uid://bt2vub7iyma8r" path="res://malte/scripts/ground_malte.gd" id="1_a7plw"]
+[ext_resource type="Script" uid="uid://bdv3hdtako26i" path="res://malte/scripts/flappybird_scripts/ground_malte.gd" id="1_a7plw"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="2_a7plw"]
 
 [sub_resource type="Animation" id="Animation_kyf5p"]

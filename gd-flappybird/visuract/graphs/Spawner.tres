@@ -1,0 +1,230 @@
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://d3f8qaw8cf687"]
+
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_w5gvl"]
+
+[resource]
+script = ExtResource("1_w5gvl")
+nodes = [{
+"id": "VN132",
+"params": {},
+"position": Vector2(527.9264, 231.94885),
+"type": "On Ready"
+}, {
+"id": "VN133",
+"params": {
+"mode": "Set to",
+"scope": "Whole game",
+"value": "0",
+"variable_name": "score"
+},
+"position": Vector2(880, 240),
+"type": "Remember"
+}, {
+"id": "VN134",
+"params": {
+"mode": "Set to",
+"scope": "Whole game",
+"value": "Off",
+"variable_name": "started"
+},
+"position": Vector2(1240, 240),
+"type": "Remember"
+}, {
+"id": "VN135",
+"params": {
+"label": "Score_Label",
+"show": "Value",
+"value": "score"
+},
+"position": Vector2(1600, 240),
+"type": "Show Text"
+}, {
+"id": "VN137",
+"params": {
+"mode": "Set to",
+"scope": "Whole game",
+"value": "Off",
+"variable_name": "started"
+},
+"position": Vector2(880, 460),
+"type": "Remember"
+}, {
+"id": "VN138",
+"params": {
+"seconds": 2.0
+},
+"position": Vector2(1240, 460),
+"type": "Wait"
+}, {
+"id": "VN139",
+"params": {
+"scene": "res://malte/scenes/game_over_screen.tscn"
+},
+"position": Vector2(1600, 460),
+"type": "Change Scene"
+}, {
+"id": "VN136",
+"params": {
+"listen_for": "dead"
+},
+"position": Vector2(520, 460),
+"type": "On Signal"
+}, {
+"id": "VN148",
+"params": {},
+"position": Vector2(520, 700),
+"type": "On Ready"
+}, {
+"id": "VN149",
+"params": {
+"mode": "Set to",
+"scope": "Whole game",
+"value": "Off",
+"variable_name": "dead"
+},
+"position": Vector2(880, 700),
+"type": "Remember"
+}, {
+"id": "VN150",
+"params": {},
+"position": Vector2(520, 960),
+"type": "On Ready"
+}, {
+"id": "VN151",
+"params": {
+"mode": "Set to",
+"scope": "Whole game",
+"value": "150",
+"variable_name": "obst_speed"
+},
+"position": Vector2(880, 960),
+"type": "Remember"
+}, {
+"id": "VN152",
+"params": {
+"mode": "Set to",
+"scope": "Whole game",
+"value": "100",
+"variable_name": "rand_y"
+},
+"position": Vector2(1240, 960),
+"type": "Remember"
+}, {
+"id": "VN153",
+"params": {
+"repeat": true,
+"seconds": 3.0
+},
+"position": Vector2(520, 1300),
+"type": "On Timer Timeout"
+}, {
+"id": "VN155",
+"params": {
+"scene": [{
+"offset_x": 0.0,
+"offset_y": 0.0,
+"random_x": 0.0,
+"random_y": 200.0,
+"scene": "res://malte/scenes/visuract_scenes/malte_obstacle.tscn",
+"spawn_point": "",
+"weight": 1.0,
+"where": "On me"
+}]
+},
+"position": Vector2(1240, 1300),
+"type": "Spawn Scene"
+}, {
+"id": "VN154",
+"params": {
+"scope": "Whole game",
+"test": "is On",
+"variable_name": "started"
+},
+"position": Vector2(880, 1300),
+"type": "Only If"
+}, {
+"id": "VN172",
+"params": {
+"scope": "Whole game",
+"test": "is less than",
+"value": "1000",
+"variable_name": "obst_speed"
+},
+"position": Vector2(1600, 1300),
+"type": "Only If"
+}, {
+"id": "VN173",
+"params": {
+"scope": "Whole game",
+"test": "is On",
+"variable_name": "rand_y"
+},
+"position": Vector2(1600, 1540),
+"type": "Only If"
+}, {
+"id": "VN175",
+"params": {
+"mode": "Add",
+"scope": "Whole game",
+"value": "20",
+"variable_name": "rand_y"
+},
+"position": Vector2(1960, 1540),
+"type": "Remember"
+}, {
+"id": "VN174",
+"params": {
+"mode": "Add",
+"scope": "Whole game",
+"value": "10",
+"variable_name": "obst_speed"
+},
+"position": Vector2(1960, 1300),
+"type": "Remember"
+}]
+connections = [{
+"from": "VN132",
+"to": "VN133"
+}, {
+"from": "VN133",
+"to": "VN134"
+}, {
+"from": "VN134",
+"to": "VN135"
+}, {
+"from": "VN136",
+"to": "VN137"
+}, {
+"from": "VN137",
+"to": "VN138"
+}, {
+"from": "VN138",
+"to": "VN139"
+}, {
+"from": "VN148",
+"to": "VN149"
+}, {
+"from": "VN150",
+"to": "VN151"
+}, {
+"from": "VN151",
+"to": "VN152"
+}, {
+"from": "VN153",
+"to": "VN154"
+}, {
+"from": "VN154",
+"to": "VN155"
+}, {
+"from": "VN155",
+"to": "VN172"
+}, {
+"from": "VN155",
+"to": "VN173"
+}, {
+"from": "VN172",
+"to": "VN174"
+}, {
+"from": "VN173",
+"to": "VN175"
+}]

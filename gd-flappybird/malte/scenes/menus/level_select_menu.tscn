@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://c87b5aws6ue7o"]
 
-[ext_resource type="Script" uid="uid://bk7a5yxcb07fn" path="res://malte/scripts/level_select_menu.gd" id="1_rbdel"]
+[ext_resource type="Script" uid="uid://bt4xjrgg58f4r" path="res://malte/scripts/Misc_scripts/level_select_menu.gd" id="1_rbdel"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="2_1dtxf"]
 [ext_resource type="PackedScene" uid="uid://dr5cdmowrbli4" path="res://malte/scenes/menus/level_button_control.tscn" id="2_x4bk0"]
 [ext_resource type="Texture2D" uid="uid://ck8lbussjj8n0" path="res://malte/sprites/start_message_sprite_01.png" id="2_y4ie2"]
-[ext_resource type="Texture2D" uid="uid://dktbb0r0rn5oq" path="res://icon.svg" id="3_x4bk0"]
+[ext_resource type="Texture2D" uid="uid://dktbb0r0rn5oq" path="res://malte/sprites/icon.svg" id="3_x4bk0"]
 [ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="4_tfai8"]
 [ext_resource type="Texture2D" uid="uid://c0hkrpmvsuyya" path="res://malte/sprites/malte_button_quit.png" id="6_tfai8"]
 

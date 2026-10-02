@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://74oqodcalm3q"]
+
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_gn5je"]
+
+[resource]
+script = ExtResource("1_gn5je")
+nodes = [{
+"id": "VN10",
+"params": {},
+"position": Vector2(637.7553, 256.8511),
+"type": "On Ready"
+}, {
+"id": "VN12",
+"params": {
+"listen_for": "dead"
+},
+"position": Vector2(640, 460),
+"type": "On Signal"
+}, {
+"id": "VN14",
+"params": {
+"repeat": true,
+"seconds": 16.0
+},
+"position": Vector2(640, 700),
+"type": "On Timer Timeout"
+}, {
+"id": "VN16",
+"params": {
+"kind": "Anything",
+"only_named": "Malte_Player"
+},
+"position": Vector2(640, 880),
+"type": "On Body or Area Entered"
+}, {
+"id": "VN18",
+"params": {
+"mode": "Set to",
+"scope": "Whole game",
+"value": "On",
+"variable_name": "dead"
+},
+"position": Vector2(1380, 880),
+"type": "Remember"
+}, {
+"id": "VN19",
+"params": {
+"signal_name": "dead"
+},
+"position": Vector2(1740, 880),
+"type": "Send Signal"
+}, {
+"id": "VN17",
+"params": {
+"scope": "Whole game",
+"test": "is Off",
+"variable_name": "dead"
+},
+"position": Vector2(1020, 880),
+"type": "Only If"
+}, {
+"id": "VN15",
+"params": {
+"target": "."
+},
+"position": Vector2(980, 700),
+"type": "Destroy"
+}, {
+"id": "VN13",
+"params": {
+"direction": "Left",
+"flip_to_face": false,
+"speed": 0.0
+},
+"position": Vector2(980, 460),
+"type": "Launch"
+}, {
+"id": "VN11",
+"params": {
+"direction": "Left",
+"flip_to_face": false,
+"speed": 400.0
+},
+"position": Vector2(980, 260),
+"type": "Launch"
+}]
+connections = [{
+"from": "VN10",
+"to": "VN11"
+}, {
+"from": "VN12",
+"to": "VN13"
+}, {
+"from": "VN14",
+"to": "VN15"
+}, {
+"from": "VN16",
+"to": "VN17"
+}, {
+"from": "VN17",
+"to": "VN18"
+}, {
+"from": "VN18",
+"to": "VN19"
+}]

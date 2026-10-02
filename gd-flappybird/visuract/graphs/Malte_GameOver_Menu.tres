@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://bkvvpmtnk0kda"]
+
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_brg0b"]
+
+[resource]
+script = ExtResource("1_brg0b")
+nodes = [{
+"id": "VN176",
+"params": {},
+"position": Vector2(1187.6688, 1233.4016),
+"type": "On Ready"
+}, {
+"id": "VN177",
+"params": {
+"label": "Highscore_Label",
+"show": "Value",
+"value": "score"
+},
+"position": Vector2(1540, 1220),
+"type": "Show Text"
+}]
+connections = [{
+"from": "VN176",
+"to": "VN177"
+}]

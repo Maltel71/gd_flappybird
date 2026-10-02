@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://665qbgfaadjr"]
+
+[ext_resource type="Script" uid="uid://br7s5alt18rod" path="res://addons/visuract/visuract_runtime.gd" id="1_hk7lk"]
+[ext_resource type="Resource" uid="uid://cd4w1k4n3hedx" path="res://visuract/graphs/Ground.tres" id="2_mr2u6"]
+[ext_resource type="Resource" uid="uid://bretj45ov0fpw" path="res://visuract/graphs/DeathArea.tres" id="3_d61ah"]
+[ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_mr2u6"]
+
+[sub_resource type="Animation" id="Animation_d61ah"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(927, 543)]
+}
+
+[sub_resource type="Animation" id="Animation_jco1m"]
+resource_name = "malte_ground_anim"
+length = 3.0000000000000004
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(734.995, 543), Vector2(-1185, 543)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cuoyp"]
+_data = {
+&"RESET": SubResource("Animation_d61ah"),
+&"malte_ground_anim": SubResource("Animation_jco1m")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
+size = Vector2(1939, 122)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0s0vq"]
+size = Vector2(1938, 54)
+
+[node name="Malte_Ground" type="Node2D" unique_id=291150015]
+script = ExtResource("1_hk7lk")
+graph = ExtResource("2_mr2u6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1337736137]
+libraries/ = SubResource("AnimationLibrary_cuoyp")
+autoplay = &"RESET"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=505108508]
+position = Vector2(927, 543)
+texture = ExtResource("3_mr2u6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=2092239384]
+position = Vector2(1920, 0)
+texture = ExtResource("3_mr2u6")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D" unique_id=948471714]
+position = Vector2(3840, 0)
+texture = ExtResource("3_mr2u6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1707946921]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1913789068]
+position = Vector2(959.5, 1055)
+shape = SubResource("RectangleShape2D_mlerw")
+
+[node name="DeathArea" type="Area2D" parent="." unique_id=357927583]
+script = ExtResource("1_hk7lk")
+graph = ExtResource("3_d61ah")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathArea" unique_id=1160390822]
+position = Vector2(959, 1014)
+shape = SubResource("RectangleShape2D_0s0vq")
+debug_color = Color(0.99999994, 0.0077669555, 0.072929256, 0.41960785)

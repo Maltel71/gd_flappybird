@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://c753dvd43lcfm"]
+
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_7pnjt"]
+
+[resource]
+script = ExtResource("1_7pnjt")
+nodes = [{
+"id": "VN200",
+"params": {
+"change_colors": false,
+"click_grow": -10.0,
+"click_tilt": 0.0,
+"click_wiggle": true,
+"hover_grow": 8.0,
+"hover_tilt": 3.0,
+"hover_wiggle": false,
+"run_blocks": "When released"
+},
+"position": Vector2(1040, 1220),
+"type": "Juicy Button"
+}, {
+"id": "VN201",
+"params": {
+"scene": "res://malte/scenes/visuract_scenes/malte_level_01.tscn"
+},
+"position": Vector2(1460, 1220),
+"type": "Change Scene"
+}]
+connections = [{
+"from": "VN200",
+"to": "VN201"
+}]
