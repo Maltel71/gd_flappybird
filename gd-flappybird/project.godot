@@ -37,7 +37,11 @@ enabled=PackedStringArray("res://addons/visuract/plugin.cfg")
 
 folder_colors={
 "res://malte/scenes/": "red",
-"res://malte/scripts/": "pink"
+"res://malte/scripts/": "pink",
+"res://onsdag/": "green",
+"res://onsdag/anthelope/": "red",
+"res://onsdag/bison/": "orange",
+"res://onsdag/cheetah/": "yellow"
 }
 
 [input]
