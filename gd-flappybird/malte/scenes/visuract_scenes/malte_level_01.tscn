@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bxhsnelskqiwg"]
 
-[ext_resource type="Script" uid="uid://br7s5alt18rod" path="res://addons/visuract/visuract_runtime.gd" id="1_8bybk"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_8bybk"]
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_gs8kn"]
 [ext_resource type="PackedScene" uid="uid://665qbgfaadjr" path="res://malte/scenes/visuract_scenes/malte_ground.tscn" id="1_s3vi4"]
 [ext_resource type="PackedScene" uid="uid://b4v5xl3nw1t5y" path="res://malte/scenes/visuract_scenes/malte_player.tscn" id="2_5p8xj"]
