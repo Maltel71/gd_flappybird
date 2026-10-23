@@ -29,8 +29,11 @@ func refresh() -> void:
 		text = Lang.t("(this node)")
 		tooltip_text = Lang.t("The node this script is on")
 	else:
-		text = value.get_file()
-		tooltip_text = value
+		var path := value
+		if path.begins_with("uid://"):
+			path = ResourceUID.get_id_path(ResourceUID.text_to_id(path)) if ResourceUID.has_id(ResourceUID.text_to_id(path)) else Lang.t("(missing file)")
+		text = path.get_file()
+		tooltip_text = path
 
 
 func _open_menu() -> void:
@@ -46,6 +49,9 @@ func _on_menu_pressed(id: int) -> void:
 	if id < 0:
 		return
 	value = String(options[id])
+	## Files are kept by UID, so renaming or moving them never breaks the block.
+	if kind == "file" and ResourceLoader.exists(value):
+		value = ResourceUID.id_to_text(ResourceLoader.get_resource_uid(value))
 	refresh()
 	value_changed.emit()
 

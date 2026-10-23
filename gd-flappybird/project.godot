@@ -36,6 +36,7 @@ enabled=PackedStringArray("res://addons/visuract/plugin.cfg")
 [file_customization]
 
 folder_colors={
+"res://grupper/iguana/axel/": "yellow",
 "res://malte/scenes/": "red",
 "res://malte/scripts/": "pink",
 "res://onsdag/": "green",

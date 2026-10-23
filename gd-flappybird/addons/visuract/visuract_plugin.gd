@@ -13,6 +13,7 @@ func _enter_tree() -> void:
 	_main_panel.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	EditorInterface.get_editor_main_screen().add_child(_main_panel)
 	_make_visible(false)
+	scene_changed.connect(_main_panel.own_scene_graphs)
 
 
 func _exit_tree() -> void:

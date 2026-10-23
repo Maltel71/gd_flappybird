@@ -189,8 +189,8 @@ func _on_selection_changed() -> void:
 	_target = node
 	var existing = node.get("graph") if node.get_script() == RUNTIME else null
 	if existing is VisuractGraph:
-		_graph_res = existing
-		_graph_path = existing.resource_path
+		_graph_res = _own_graph(node, existing)
+		_graph_path = _graph_res.resource_path
 		_load_into_canvas()
 		_set_status(Lang.t("Showing: %s  (%d blocks)") % [node.name, _graph_res.nodes.size()])
 		if _is_instance(node) and _source_graph(node) != existing:
@@ -1819,6 +1819,7 @@ func _on_attach_pressed() -> void:
 	else:
 		_graph_path = _unique_graph_path(_target.name)
 		_graph_res = VisuractGraph.new()
+		_graph_res.scene_uid = _scene_uid()
 		_graph_res.take_over_path(_graph_path)
 		ResourceSaver.save(_graph_res, _graph_path)
 
@@ -1832,6 +1833,75 @@ func _on_attach_pressed() -> void:
 
 func _is_instance(node: Node) -> bool:
 	return node.scene_file_path != "" and node != EditorInterface.get_edited_scene_root()
+
+
+func _scene_uid() -> String:
+	var root := EditorInterface.get_edited_scene_root()
+	if root == null or root.scene_file_path == "":
+		return ""
+	return ResourceUID.id_to_text(ResourceLoader.get_resource_uid(root.scene_file_path))
+
+
+## Runs when a scene is opened, so a duplicated scene unlinks its graphs at once.
+func own_scene_graphs(root: Node) -> void:
+	if root == null:
+		return
+	for node in [root] + root.find_children("*", "", true, false):
+		if node.get_script() == RUNTIME and node.get("graph") is VisuractGraph:
+			_own_graph(node, node.get("graph"))
+
+
+## A graph still owned by another scene (e.g. after duplicating the .tscn)
+## is copied, so editing one scene never changes the other.
+func _own_graph(node: Node, graph: VisuractGraph) -> VisuractGraph:
+	var root := EditorInterface.get_edited_scene_root()
+	var uid := _scene_uid()
+	if uid == "" or _is_instance(node) or (node != root and node.owner != root) or graph.scene_uid == uid:
+		return graph
+	if graph.scene_uid == "":
+		graph.scene_uid = uid
+		graph.nodes = _localize_files(graph.nodes, root.scene_file_path.get_base_dir())
+		ResourceSaver.save(graph, graph.resource_path)
+		return graph
+	var copy: VisuractGraph = graph.duplicate(true)
+	copy.scene_uid = uid
+	copy.nodes = _localize_files(copy.nodes, root.scene_file_path.get_base_dir())
+	var path := _unique_graph_path("%s_%s" % [root.scene_file_path.get_file().get_basename(), node.name])
+	copy.take_over_path(path)
+	ResourceSaver.save(copy, path)
+	node.set("graph", copy)
+	_save_scene_soon()
+	return copy
+
+
+## Points file params at the same-named file in this scene's folder when one
+## exists (a duplicated folder uses its own scenes), and stores them as UIDs.
+func _localize_files(value: Variant, dir: String) -> Variant:
+	if value is Array:
+		return value.map(func(v): return _localize_files(v, dir))
+	if value is Dictionary:
+		var out := {}
+		for key in value:
+			out[key] = _localize_files(value[key], dir)
+		return out
+	if not (value is String and value.begins_with("res://") and ResourceLoader.exists(value)):
+		return value
+	var local := dir.path_join(value.get_file())
+	if not ResourceLoader.exists(local):
+		local = _renamed_match(dir, value.get_file())
+	var path: String = local if local != "" else value
+	return ResourceUID.id_to_text(ResourceLoader.get_resource_uid(path))
+
+
+## "malte_player.tscn" matches a renamed "aaritro_player.tscn" (same part after
+## the first "_"), if exactly one file in the folder fits.
+func _renamed_match(dir: String, file: String) -> String:
+	var cut := file.find("_")
+	if cut == -1:
+		return ""
+	var tail := file.substr(cut)
+	var hits := Array(DirAccess.get_files_at(dir)).filter(func(f): return f.ends_with(tail))
+	return dir.path_join(hits[0]) if hits.size() == 1 else ""
 
 
 ## The graph the instanced scene's own root uses.

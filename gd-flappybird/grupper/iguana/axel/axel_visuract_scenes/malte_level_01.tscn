@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dnexirjks6x0v"]
+
+[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_8mn80"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_5wmsc"]
+[ext_resource type="Resource" uid="uid://d3f8qaw8cf687" path="res://visuract/graphs/Spawner.tres" id="3_kqk8o"]
+[ext_resource type="PackedScene" uid="uid://bduqsotv22cun" path="res://grupper/iguana/axel/axel_visuract_scenes/malte_ground.tscn" id="4_02d5s"]
+[ext_resource type="PackedScene" uid="uid://d3swg0s4ia47a" path="res://grupper/iguana/axel/axel_visuract_scenes/axel_player.tscn" id="5_hltw5"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_pfqu5"]
+[ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_dmbdk"]
+
+[node name="Malte_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="MalteMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 464)
+texture = ExtResource("1_8mn80")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
+position = Vector2(960, 540)
+metadata/_edit_lock_ = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
+position = Vector2(2119, 459)
+script = ExtResource("2_5wmsc")
+graph = ExtResource("3_kqk8o")
+
+[node name="Malte_Ground" parent="." unique_id=291150015 instance=ExtResource("4_02d5s")]
+
+[node name="Malte_Player" parent="." unique_id=1006372336 instance=ExtResource("5_hltw5")]
+position = Vector2(483, 531)
+
+[node name="Score_Label" type="Label" parent="." unique_id=1687435472]
+z_index = 30
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
+theme = ExtResource("6_pfqu5")
+text = "0"
+
+[node name="MalteStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
+position = Vector2(1096, 477)
+texture = ExtResource("7_dmbdk")
