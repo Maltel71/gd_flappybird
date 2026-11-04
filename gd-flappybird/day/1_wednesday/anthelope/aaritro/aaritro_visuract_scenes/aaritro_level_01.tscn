@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://dt6yuv20od7vd"]
+[gd_scene format=3 uid="uid://c48f1jgg475bl"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_qt6ab"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_jljli"]
-[ext_resource type="Resource" uid="uid://bubbwfmgou5j3" path="res://day/1_wednesday/anthelope/aaritro/aaritro_visuract_scenes/visuract_graphs/aaritro_level_01_Spawner.tres" id="3_qt6ab"]
-[ext_resource type="PackedScene" uid="uid://b5s4wk7tc06pg" path="res://day/1_wednesday/anthelope/aaritro/aaritro_visuract_scenes/aaritro_ground.tscn" id="4_g7ugm"]
-[ext_resource type="PackedScene" uid="uid://dijnv58o1voyx" path="res://day/1_wednesday/anthelope/aaritro/aaritro_visuract_scenes/aaritro_player.tscn" id="5_atdf0"]
+[ext_resource type="Resource" uid="uid://diqst74g5nw0d" path="res://day/1_wednesday/anthelope/aaritro/aaritro_visuract_scenes/visuract_graphs/aaritro_level_01_Spawner.tres" id="3_t4xpx"]
+[ext_resource type="PackedScene" uid="uid://cvt0bfj7q8ht4" path="res://day/1_wednesday/anthelope/aaritro/aaritro_visuract_scenes/aaritro_ground.tscn" id="4_g7ugm"]
+[ext_resource type="PackedScene" uid="uid://b4imcjh1xh40q" path="res://day/1_wednesday/anthelope/aaritro/aaritro_visuract_scenes/aaritro_player.tscn" id="5_atdf0"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_ody0t"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_ya8vl"]
 
@@ -21,7 +21,7 @@ metadata/_edit_lock_ = true
 [node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
 position = Vector2(2119, 459)
 script = ExtResource("2_jljli")
-graph = ExtResource("3_qt6ab")
+graph = ExtResource("3_t4xpx")
 
 [node name="Aaritro_Ground" parent="." unique_id=291150015 instance=ExtResource("4_g7ugm")]
 

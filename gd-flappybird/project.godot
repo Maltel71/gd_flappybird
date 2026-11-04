@@ -19,6 +19,10 @@ config/icon="uid://cteae61065f6t"
 
 buses/default_bus_layout="uid://c7ifycv4x0vso"
 
+[autoload]
+
+MusicManager="*uid://c7wefahc53qx5"
+
 [display]
 
 window/size/viewport_width=1920
@@ -33,6 +37,11 @@ enabled=PackedStringArray("res://addons/visuract/plugin.cfg")
 
 folder_colors={
 "res://day/1_wednesday/anthelope/": "green",
+"res://day/1_wednesday/anthelope/aaritro/": "green",
+"res://day/1_wednesday/anthelope/nicolas/": "green",
+"res://day/1_wednesday/anthelope/theo/": "green",
+"res://day/1_wednesday/anthelope/william_dion/": "green",
+"res://day/1_wednesday/anthelope/yasmina/": "green",
 "res://malte/scenes/": "red",
 "res://malte/scripts/": "pink",
 "res://onsdag/": "green",

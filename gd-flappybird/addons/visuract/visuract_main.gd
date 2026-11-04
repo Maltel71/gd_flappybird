@@ -14,6 +14,8 @@ const DialogueEditor := preload("res://addons/visuract/dialogue_editor.gd")
 const GRAPH_DIR := "res://visuract/graphs"
 ## Graphs live in this folder beside the scene that owns them.
 const GRAPH_FOLDER := "visuract_graphs"
+## Set false once the graph-loss bug is understood.
+const DEBUG := false
 const LIBRARY_WIDTH := 260
 const HIGHLIGHT := Color(0.75, 0.45, 1.0)
 const REMOVE_TINT := Color("a05c5c")
@@ -1859,9 +1861,23 @@ func _scene_uid() -> String:
 
 
 ## Runs when a scene is opened, so a duplicated scene unlinks its graphs at once.
+func _log(message: String) -> void:
+	if DEBUG:
+		print("[Visuract] " + message)
+
+
+## Deferred, because scene_changed fires before the editor finishes switching.
 func own_scene_graphs(root: Node) -> void:
-	if root == null:
+	if root == null or root.scene_file_path == "":
 		return
+	_own_scene_graphs.call_deferred(root)
+
+
+func _own_scene_graphs(root: Node) -> void:
+	if EditorInterface.get_edited_scene_root() != root:
+		_log("scene_changed: tab moved on before the fork, skipped %s" % root.scene_file_path)
+		return
+	_log("scene opened: %s  (graphs go to %s)" % [root.scene_file_path, _graph_dir()])
 	for node in [root] + root.find_children("*", "", true, false):
 		if node.get_script() == RUNTIME and node.get("graph") is VisuractGraph:
 			_own_graph(node, node.get("graph"))
@@ -1877,6 +1893,7 @@ func _own_graph(node: Node, graph: VisuractGraph) -> VisuractGraph:
 
 	var dir := _graph_dir()
 	var here := graph.resource_path.get_base_dir() == dir
+	_log("check %s -> %s  blocks=%d  scene_uid=%s  this_scene=%s  in_folder=%s" % [node.name, graph.resource_path, graph.nodes.size(), graph.scene_uid, uid, here])
 	if graph.scene_uid == uid and here:
 		return graph
 
@@ -1888,7 +1905,8 @@ func _own_graph(node: Node, graph: VisuractGraph) -> VisuractGraph:
 	## reuse its file instead of leaving it behind unused.
 	var path: String = graph.resource_path if here else _unique_graph_path("%s_%s" % [root.scene_file_path.get_file().get_basename(), node.name])
 	owned.take_over_path(path)
-	ResourceSaver.save(owned, path)
+	var error := ResourceSaver.save(owned, path)
+	_log("fork %s -> %s  blocks=%d  copied=%s  save=%d" % [node.name, path, owned.nodes.size(), owned != graph, error])
 	node.set("graph", owned)
 	_save_scene_soon()
 	return owned
@@ -1981,16 +1999,28 @@ func _detach() -> void:
 func _save_scene_soon() -> void:
 	var root := EditorInterface.get_edited_scene_root()
 	if root != null and root.scene_file_path != "":
-		_do_save_scene.call_deferred()
+		_do_save_scene(root)
 
 
-func _do_save_scene() -> void:
-	EditorInterface.save_scene()
+## Awaited, not deferred - save_scene() during a message-queue flush upsets
+## the editor's progress dialog.
+func _do_save_scene(root: Node) -> void:
+	await get_tree().process_frame
+	if EditorInterface.get_edited_scene_root() == root:
+		EditorInterface.save_scene()
 
 
 func _on_save_pressed() -> void:
 	if _graph_res == null:
 		_set_status(Lang.t("Attach to a node first."))
+		return
+
+	## An empty canvas over a graph that still has blocks means loading failed,
+	## not that the user deleted everything. Never write that out.
+	var on_canvas := _graph.get_children().filter(func(c): return c is GraphNode)
+	_log("save %s  canvas=%d  stored=%d" % [_graph_path, on_canvas.size(), _graph_res.nodes.size()])
+	if on_canvas.is_empty() and not _graph_res.nodes.is_empty():
+		_set_status(Lang.t("Canvas is empty - kept the %d saved blocks in %s") % [_graph_res.nodes.size(), _graph_path])
 		return
 
 	_graph_res.nodes.clear()
@@ -2027,8 +2057,10 @@ func _load_into_canvas(frame := true) -> void:
 	_graph_path = path
 
 	_loading = true
+	_log("load %s  blocks=%d" % [_graph_path, _graph_res.nodes.size()])
 	for n in _graph_res.nodes:
-		_make_graph_node(n.type, n.position, n.id, n.get("params", {}))
+		if _make_graph_node(n.type, n.position, n.id, n.get("params", {})) == null:
+			_log("  block '%s' (type '%s') failed to build" % [n.get("id", "?"), n.get("type", "?")])
 	for c in _graph_res.connections:
 		_graph.connect_node(c.from, 0, c.to, 0)
 	_refresh_conditional_params()

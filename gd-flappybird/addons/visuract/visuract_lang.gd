@@ -222,7 +222,6 @@ const SV := {
 	"Normal Color": "Normal färg",
 	"Only Named": "Endast namngiven",
 	"At Node": "Mot nod",
-	"Offset": "Förskjutning",
 	"Power": "Kraft",
 	"Pressed Color": "Nedtryckt färg",
 	"Property": "Egenskap",

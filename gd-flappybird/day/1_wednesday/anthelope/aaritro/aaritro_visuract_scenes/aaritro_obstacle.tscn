@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://1vun2prj0f1t"]
+[gd_scene format=3 uid="uid://bmqjksp0duisd"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_pnysi"]
 [ext_resource type="Resource" uid="uid://74oqodcalm3q" path="res://day/1_wednesday/anthelope/aaritro/aaritro_visuract_scenes/visuract_graphs/Obstacle.tres" id="2_gvv54"]

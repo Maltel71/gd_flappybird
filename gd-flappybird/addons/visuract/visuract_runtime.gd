@@ -932,7 +932,7 @@ func _point_at(delta: float, params: Dictionary) -> void:
 		if not other is Node2D or other == turner:
 			return
 		spot = other.global_position
-	var wanted := (spot - turner.global_position).angle() + deg_to_rad(params.get("offset", 0.0))
+	var wanted: float = (spot - turner.global_position).angle() + deg_to_rad(params.get("offset", 0.0))
 	var turn: float = params.get("turn_speed", 50.0)
 	var weight := 1.0 if turn >= 100.0 else 1.0 - exp(-turn / 5.0 * delta)
 	turner.global_rotation = lerp_angle(turner.global_rotation, wanted, weight)
