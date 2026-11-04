@@ -449,6 +449,8 @@ func _execute(node: Dictionary, delta: float) -> bool:
 			target.set("rotation_degrees", target.get("rotation_degrees") + params.get("speed", 90.0) * delta)
 		"Point Where Moving":
 			_point_where_moving(delta, params)
+		"Point At":
+			_point_at(delta, params)
 		"Visibility":
 			var seen := _resolve(params)
 			match String(params.get("action", "Hide")):
@@ -913,6 +915,27 @@ func _point_where_moving(delta: float, params: Dictionary) -> void:
 		elif velocity.length() > 1.0:
 			target = (velocity * side).angle()
 		child.rotation = lerp_angle(child.rotation, target, weight)
+
+
+## Turns a node toward the mouse or another node. Turn Speed 100 snaps,
+## lower values ease around slowly. Offset fixes art that is not drawn
+## facing right.
+func _point_at(delta: float, params: Dictionary) -> void:
+	var turner := _resolve(params)
+	if not turner is Node2D:
+		return
+	var spot: Vector2
+	if String(params.get("point_at", "Mouse cursor")) == "Mouse cursor":
+		spot = turner.get_global_mouse_position()
+	else:
+		var other := _resolve({"target": params.get("at_node", "")})
+		if not other is Node2D or other == turner:
+			return
+		spot = other.global_position
+	var wanted := (spot - turner.global_position).angle() + deg_to_rad(params.get("offset", 0.0))
+	var turn: float = params.get("turn_speed", 50.0)
+	var weight := 1.0 if turn >= 100.0 else 1.0 - exp(-turn / 5.0 * delta)
+	turner.global_rotation = lerp_angle(turner.global_rotation, wanted, weight)
 
 
 ## Mirrors the art by flipping each visual child's X scale. Not the body

@@ -52,6 +52,9 @@ size = Vector2(1938, 54)
 [node name="Malte_Ground" type="Node2D" unique_id=291150015]
 script = ExtResource("1_hk7lk")
 graph = ExtResource("2_mr2u6")
+speed = null
+jump_force = null
+gravity = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1337736137]
 libraries/ = SubResource("AnimationLibrary_cuoyp")
@@ -78,6 +81,8 @@ shape = SubResource("RectangleShape2D_mlerw")
 [node name="DeathArea" type="Area2D" parent="." unique_id=357927583]
 script = ExtResource("1_hk7lk")
 graph = ExtResource("4_d61ah")
+speed = null
+jump_force = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeathArea" unique_id=1160390822]
 position = Vector2(959, 1014)
