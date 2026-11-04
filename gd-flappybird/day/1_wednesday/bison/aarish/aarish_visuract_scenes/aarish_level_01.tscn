@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bb4rtkc6e8mhs"]
+
+[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_5xi0d"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_r31gt"]
+[ext_resource type="Resource" uid="uid://dwo20ptep4iq2" path="res://day/1_wednesday/bison/aarish/aarish_visuract_scenes/visuract_graphs/aarish_level_01_Spawner.tres" id="3_on1wf"]
+[ext_resource type="PackedScene" uid="uid://8xqeyalgrgxf" path="res://day/1_wednesday/bison/aarish/aarish_visuract_scenes/aarish_ground.tscn" id="4_uk34d"]
+[ext_resource type="PackedScene" uid="uid://buq4sfeou664q" path="res://day/1_wednesday/bison/aarish/aarish_visuract_scenes/aarish_player.tscn" id="5_wxcrb"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_33eqn"]
+[ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_mvhyi"]
+
+[node name="Aarish_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="AarishMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 464)
+texture = ExtResource("1_5xi0d")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
+position = Vector2(960, 540)
+metadata/_edit_lock_ = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
+position = Vector2(2119, 459)
+script = ExtResource("2_r31gt")
+graph = ExtResource("3_on1wf")
+
+[node name="Aarish_Ground" parent="." unique_id=291150015 instance=ExtResource("4_uk34d")]
+
+[node name="Aarish_Player" parent="." unique_id=1006372336 instance=ExtResource("5_wxcrb")]
+position = Vector2(483, 531)
+
+[node name="Score_Label" type="Label" parent="." unique_id=1687435472]
+z_index = 30
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
+theme = ExtResource("6_33eqn")
+text = "0"
+
+[node name="AarishStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
+position = Vector2(1096, 477)
+texture = ExtResource("7_mvhyi")

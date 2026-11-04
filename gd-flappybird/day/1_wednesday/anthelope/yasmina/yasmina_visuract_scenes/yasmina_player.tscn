@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dvhou2d4ym2as"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_ssy43"]
+[ext_resource type="Resource" uid="uid://b5gkhca5ccxnl" path="res://day/1_wednesday/anthelope/yasmina/yasmina_visuract_scenes/visuract_graphs/yasmina_player_Yasmina_Player.tres" id="2_jb5dr"]
+[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_yugog"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Yasmina_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_ssy43")
+graph = ExtResource("2_jb5dr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+texture = ExtResource("3_yugog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")
