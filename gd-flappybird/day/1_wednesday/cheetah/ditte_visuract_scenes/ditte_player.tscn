@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cud7exy8iiirx"]
+
+[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_15xrm"]
+[ext_resource type="Resource" uid="uid://dupji3ykdba8n" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/visuract_graphs/ditte_player_Ditte_Player.tres" id="2_ilyo6"]
+[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_ph6ya"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Ditte_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_15xrm")
+graph = ExtResource("2_ilyo6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+texture = ExtResource("3_ph6ya")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")

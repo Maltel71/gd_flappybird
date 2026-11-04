@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://7113dj7upgjc"]
+
+[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_mejbc"]
+[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_ujlow"]
+[ext_resource type="Resource" uid="uid://hpo7yrh53wl4" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_level_01_Spawner.tres" id="3_ph4ei"]
+[ext_resource type="PackedScene" uid="uid://dyy1jbsw2ihde" path="res://day/1_wednesday/bison/otto_visuract_scenes/otto_ground.tscn" id="4_ngwvb"]
+[ext_resource type="PackedScene" uid="uid://cc52ehhpcr7l0" path="res://day/1_wednesday/bison/otto_visuract_scenes/otto_player.tscn" id="5_77a6s"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_4pndh"]
+[ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_r60i4"]
+
+[node name="Otto_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="OttoMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 464)
+texture = ExtResource("1_mejbc")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
+position = Vector2(960, 540)
+metadata/_edit_lock_ = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
+position = Vector2(2119, 459)
+script = ExtResource("2_ujlow")
+graph = ExtResource("3_ph4ei")
+
+[node name="Otto_Ground" parent="." unique_id=291150015 instance=ExtResource("4_ngwvb")]
+
+[node name="Otto_Player" parent="." unique_id=1006372336 instance=ExtResource("5_77a6s")]
+position = Vector2(483, 531)
+
+[node name="Score_Label" type="Label" parent="." unique_id=1687435472]
+z_index = 30
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
+theme = ExtResource("6_4pndh")
+text = "0"
+
+[node name="OttoStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
+position = Vector2(1096, 477)
+texture = ExtResource("7_r60i4")

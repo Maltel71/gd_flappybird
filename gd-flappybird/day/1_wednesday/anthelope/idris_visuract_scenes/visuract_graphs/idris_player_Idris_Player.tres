@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://hc6fa7v7hhs2"]
+
+[ext_resource type="Script" uid="uid://d1pjsc7pjptsp" path="res://addons/visuract/visuract_graph.gd" id="1_k5tie"]
+
+[resource]
+script = ExtResource("1_k5tie")
+nodes = [{
+"id": "VN2",
+"params": {},
+"position": Vector2(200, 440),
+"type": "On Ready"
+}, {
+"id": "VN3",
+"params": {
+"action": "Turn off"
+},
+"position": Vector2(560, 440),
+"type": "Gravity"
+}, {
+"id": "VN4",
+"params": {
+"button": "Space",
+"mode": "When pressed"
+},
+"position": Vector2(200, 660),
+"type": "On Button Pressed"
+}, {
+"id": "VN5",
+"params": {
+"scope": "Whole game",
+"test": "is Off",
+"variable_name": "dead"
+},
+"position": Vector2(560, 660),
+"type": "Only If"
+}, {
+"id": "VN6",
+"params": {
+"action": "Turn on",
+"strength": 100.0
+},
+"position": Vector2(940, 660),
+"type": "Gravity"
+}, {
+"id": "VN8",
+"params": {
+"mode": "Set to",
+"scope": "Whole game",
+"value": "On",
+"variable_name": "started"
+},
+"position": Vector2(1740, 660),
+"type": "Remember"
+}, {
+"id": "VN7",
+"params": {
+"direction": "Up",
+"flip_to_face": true,
+"speed": 350.0
+},
+"position": Vector2(1380, 660),
+"type": "Launch"
+}, {
+"id": "VN9",
+"params": {
+"signal_name": "start"
+},
+"position": Vector2(2100, 660),
+"type": "Send Signal"
+}, {
+"id": "VN10",
+"params": {
+"offset": 0.0,
+"point_at": "Mouse cursor",
+"target": "Sprite2D",
+"turn_speed": 10.0
+},
+"position": Vector2(600, -40),
+"type": "Point At"
+}, {
+"id": "VN0",
+"params": {},
+"position": Vector2(200, -20),
+"type": "On Every Frame"
+}]
+connections = [{
+"from": "VN2",
+"to": "VN3"
+}, {
+"from": "VN4",
+"to": "VN5"
+}, {
+"from": "VN5",
+"to": "VN6"
+}, {
+"from": "VN6",
+"to": "VN7"
+}, {
+"from": "VN7",
+"to": "VN8"
+}, {
+"from": "VN8",
+"to": "VN9"
+}]
+scene_uid = "uid://vyumhhefcjoo"

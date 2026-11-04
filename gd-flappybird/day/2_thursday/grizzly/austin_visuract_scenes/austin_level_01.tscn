@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cal0g16qgog0"]
+
+[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_jcvjg"]
+[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_cdyro"]
+[ext_resource type="Resource" uid="uid://d2yq5lhdi26lh" path="res://day/2_thursday/grizzly/austin_visuract_scenes/visuract_graphs/austin_level_01_Spawner.tres" id="3_7kmp3"]
+[ext_resource type="PackedScene" uid="uid://c5dnocr233smw" path="res://day/2_thursday/grizzly/austin_visuract_scenes/austin_ground.tscn" id="4_xu2es"]
+[ext_resource type="PackedScene" uid="uid://c61lvt2k63886" path="res://day/2_thursday/grizzly/austin_visuract_scenes/austin_player.tscn" id="5_0eih8"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_1ia4h"]
+[ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_vabeu"]
+
+[node name="Austin_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="AustinMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 464)
+texture = ExtResource("1_jcvjg")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
+position = Vector2(960, 540)
+metadata/_edit_lock_ = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
+position = Vector2(2119, 459)
+script = ExtResource("2_cdyro")
+graph = ExtResource("3_7kmp3")
+
+[node name="Austin_Ground" parent="." unique_id=291150015 instance=ExtResource("4_xu2es")]
+
+[node name="Austin_Player" parent="." unique_id=1006372336 instance=ExtResource("5_0eih8")]
+position = Vector2(483, 531)
+
+[node name="Score_Label" type="Label" parent="." unique_id=1687435472]
+z_index = 30
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
+theme = ExtResource("6_1ia4h")
+text = "0"
+
+[node name="AustinStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
+position = Vector2(1096, 477)
+texture = ExtResource("7_vabeu")

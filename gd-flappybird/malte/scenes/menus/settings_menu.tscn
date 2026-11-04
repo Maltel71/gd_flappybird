@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dk8h5n3o2ip86"]
 
-[ext_resource type="Script" uid="uid://gjblqqds6kkw" path="res://malte/scripts/settings_menu.gd" id="1_b40i3"]
+[ext_resource type="Script" uid="uid://dqinipki676u1" path="res://malte/scripts/Misc_scripts/settings_menu.gd" id="1_b40i3"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="2_j6ncs"]
 
 [node name="SettingsMenu" type="Control" unique_id=657721080]

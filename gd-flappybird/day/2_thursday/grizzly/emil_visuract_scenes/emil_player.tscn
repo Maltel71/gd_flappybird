@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://vsgpl7q0tkjd"]
+
+[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_t42yq"]
+[ext_resource type="Resource" uid="uid://tknqdl8ff5ll" path="res://day/2_thursday/grizzly/emil_visuract_scenes/visuract_graphs/emil_player_Emil_Player.tres" id="2_ayega"]
+[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_srjyo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Emil_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_t42yq")
+graph = ExtResource("2_ayega")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+texture = ExtResource("3_srjyo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")

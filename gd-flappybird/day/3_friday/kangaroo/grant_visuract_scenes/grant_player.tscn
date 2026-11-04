@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://behxcngmoh5ab"]
+
+[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_1cmpr"]
+[ext_resource type="Resource" uid="uid://n7jgxo70kjdn" path="res://day/3_friday/kangaroo/grant_visuract_scenes/visuract_graphs/grant_player_Grant_Player.tres" id="2_f7to8"]
+[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_uv8nb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Grant_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_1cmpr")
+graph = ExtResource("2_f7to8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+texture = ExtResource("3_uv8nb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")
