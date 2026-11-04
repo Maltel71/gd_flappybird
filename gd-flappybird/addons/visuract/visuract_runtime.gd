@@ -405,6 +405,8 @@ func _resolve(params: Dictionary) -> Node:
 				found = scene
 			else:
 				found = scene.find_child(path.get_file(), true, false)
+	if found == null:
+		push_warning("Visuract on '%s': Target '%s' not found, using self." % [name, path])
 	return found if found else self
 
 

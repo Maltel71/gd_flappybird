@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://665qbgfaadjr"]
 
-[ext_resource type="Script" uid="uid://br7s5alt18rod" path="res://addons/visuract/visuract_runtime.gd" id="1_hk7lk"]
-[ext_resource type="Resource" uid="uid://cd4w1k4n3hedx" path="res://visuract/graphs/Ground.tres" id="2_mr2u6"]
-[ext_resource type="Resource" uid="uid://bretj45ov0fpw" path="res://visuract/graphs/DeathArea.tres" id="3_d61ah"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_hk7lk"]
+[ext_resource type="Resource" uid="uid://c3ryiryey75lr" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_ground_Malte_Ground.tres" id="2_mr2u6"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_mr2u6"]
+[ext_resource type="Resource" uid="uid://t1xin4bbrimw" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_ground_DeathArea.tres" id="4_d61ah"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001
@@ -77,7 +77,7 @@ shape = SubResource("RectangleShape2D_mlerw")
 
 [node name="DeathArea" type="Area2D" parent="." unique_id=357927583]
 script = ExtResource("1_hk7lk")
-graph = ExtResource("3_d61ah")
+graph = ExtResource("4_d61ah")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeathArea" unique_id=1160390822]
 position = Vector2(959, 1014)

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://cd4w1k4n3hedx"]
 
-[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_jw66e"]
+[ext_resource type="Script" uid="uid://djffehnfvvvq8" path="res://addons/visuract/visuract_graph.gd" id="1_jw66e"]
 
 [resource]
 script = ExtResource("1_jw66e")
@@ -20,7 +20,7 @@ nodes = [{
 "id": "VN49",
 "params": {
 "action": "Pause",
-"animation": "AnimationPlayer / malte_ground_anim"
+"animation": "(none)"
 },
 "position": Vector2(620, 120),
 "type": "Animation"
@@ -35,7 +35,7 @@ nodes = [{
 "id": "VN53",
 "params": {
 "action": "Pause",
-"animation": "AnimationPlayer / malte_ground_anim"
+"animation": "(none)"
 },
 "position": Vector2(600, 540),
 "type": "Animation"
@@ -43,7 +43,7 @@ nodes = [{
 "id": "VN51",
 "params": {
 "action": "Play",
-"animation": "AnimationPlayer / malte_ground_anim",
+"animation": "(none)",
 "wait_to_finish": false
 },
 "position": Vector2(600, 340),
