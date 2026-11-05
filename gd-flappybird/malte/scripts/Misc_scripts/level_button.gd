@@ -2,17 +2,6 @@
 @tool
 extends Control
 
-## One level entry in the level select.
-##
-## Attach this to the root of your panel scene:
-##   LevelButton_Control        (Control, this script)
-##   ├── BG_Panel_TextureRect   (TextureRect, your panel art)
-##   └── Thumbnail_TextureRect  (TextureRect, per-level thumbnail)
-##
-## A title Label and an invisible, focusable Button are created in code,
-## so you don't have to add them by hand. They are not saved into the scene.
-## @tool means the editor preview updates when you change values here.
-
 signal pressed
 signal hovered
 

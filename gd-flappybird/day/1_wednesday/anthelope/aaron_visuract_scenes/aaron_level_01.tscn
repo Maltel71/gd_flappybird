@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bovrbn0cmdylf"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_csbc3"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_ph32n"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_ph32n"]
 [ext_resource type="Resource" uid="uid://c06ojjox614e4" path="res://day/1_wednesday/anthelope/aaron_visuract_scenes/visuract_graphs/aaron_level_01_Spawner.tres" id="3_eie5m"]
 [ext_resource type="PackedScene" uid="uid://buikcxql2bq53" path="res://day/1_wednesday/anthelope/aaron_visuract_scenes/aaron_ground.tscn" id="4_k3ot6"]
 [ext_resource type="PackedScene" uid="uid://dbdospo1w8y6c" path="res://day/1_wednesday/anthelope/aaron_visuract_scenes/aaron_player.tscn" id="5_l1lah"]
