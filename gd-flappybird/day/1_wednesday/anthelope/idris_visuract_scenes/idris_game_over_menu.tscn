@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://v0vmurd1a5ov"]
+[gd_scene format=3 uid="uid://bdnsxyqkhtqc8"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_kq501"]
-[ext_resource type="Resource" uid="uid://lodx8or6mbfk" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/visuract_graphs/idris_game_over_menu_Idris_GameOver_Menu.tres" id="2_2tot8"]
-[ext_resource type="Resource" uid="uid://chbb5t8n7sfdq" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/visuract_graphs/idris_game_over_menu_Restart.tres" id="3_e7goc"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_kq501"]
+[ext_resource type="Resource" uid="uid://by03ss7sy35t" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/visuract_graphs/idris_game_over_menu_Idris_GameOver_Menu.tres" id="2_2tot8"]
+[ext_resource type="Resource" uid="uid://dq4nixek0n6f4" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/visuract_graphs/idris_game_over_menu_Restart.tres" id="3_e7goc"]
 
 [node name="Idris_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://dpo68hxwuw4cp"]
+[gd_scene format=3 uid="uid://divxaqbboayp3"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_dvj1m"]
-[ext_resource type="Resource" uid="uid://gmyk4wna0m1e" path="res://day/1_wednesday/bison/august_visuract_scenes/visuract_graphs/august_ground_August_Ground.tres" id="2_pkpkl"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_dvj1m"]
+[ext_resource type="Resource" uid="uid://cdt8ilth8orri" path="res://day/1_wednesday/bison/august_visuract_scenes/visuract_graphs/august_ground_August_Ground.tres" id="2_pkpkl"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_adj7b"]
-[ext_resource type="Resource" uid="uid://cpvbp88hy3vee" path="res://day/1_wednesday/bison/august_visuract_scenes/visuract_graphs/august_ground_DeathArea.tres" id="4_gqc7y"]
+[ext_resource type="Resource" uid="uid://d4d247vmtfv4l" path="res://day/1_wednesday/bison/august_visuract_scenes/visuract_graphs/august_ground_DeathArea.tres" id="4_gqc7y"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

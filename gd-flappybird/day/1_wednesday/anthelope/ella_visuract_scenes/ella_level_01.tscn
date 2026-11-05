@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://bc02dw6a1hxwb"]
+[gd_scene format=3 uid="uid://pmqn8k8tq2tv"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_x26ad"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_sshkx"]
-[ext_resource type="Resource" uid="uid://einn5tr576s5" path="res://day/1_wednesday/anthelope/ella_visuract_scenes/visuract_graphs/ella_level_01_Spawner.tres" id="3_2ld41"]
-[ext_resource type="PackedScene" uid="uid://bq5vm85wce1ml" path="res://day/1_wednesday/anthelope/ella_visuract_scenes/ella_ground.tscn" id="4_txrmc"]
-[ext_resource type="PackedScene" uid="uid://dl5ms3fjwl3e" path="res://day/1_wednesday/anthelope/ella_visuract_scenes/ella_player.tscn" id="5_y0l6d"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_sshkx"]
+[ext_resource type="Resource" uid="uid://ghvubc51h3iw" path="res://day/1_wednesday/anthelope/ella_visuract_scenes/visuract_graphs/ella_level_01_Spawner.tres" id="3_2ld41"]
+[ext_resource type="PackedScene" uid="uid://d1e5q1jkloliw" path="res://day/1_wednesday/anthelope/ella_visuract_scenes/ella_ground.tscn" id="4_txrmc"]
+[ext_resource type="PackedScene" uid="uid://s8konkw4srfr" path="res://day/1_wednesday/anthelope/ella_visuract_scenes/ella_player.tscn" id="5_y0l6d"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_1088k"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_47yqh"]
 

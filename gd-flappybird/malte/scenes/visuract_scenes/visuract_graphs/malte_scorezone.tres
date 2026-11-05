@@ -8,7 +8,7 @@ nodes = [{
 "id": "VN20",
 "params": {
 "kind": "Anything",
-"only_named": "Malte_Player"
+"only_named": ""
 },
 "position": Vector2(920, 800),
 "type": "On Body or Area Entered"
@@ -27,3 +27,4 @@ connections = [{
 "from": "VN20",
 "to": "VN21"
 }]
+scene_uid = "uid://c0enni5rf4yln"

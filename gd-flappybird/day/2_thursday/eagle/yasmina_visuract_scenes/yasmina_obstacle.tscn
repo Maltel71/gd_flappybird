@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://b08vo8wltcc6h"]
+[gd_scene format=3 uid="uid://cbvtmi7k8r54m"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_0cnni"]
-[ext_resource type="Resource" uid="uid://74oqodcalm3q" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_obstacle.tres" id="2_lc66s"]
+[ext_resource type="Resource" uid="uid://cglyw5gncqef2" path="res://day/2_thursday/eagle/yasmina_visuract_scenes/visuract_graphs/yasmina_obstacle.tres" id="2_lc66s"]
 [ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_hph24"]
-[ext_resource type="Resource" uid="uid://b1big7qokp5sj" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_scorezone.tres" id="4_nb7rd"]
+[ext_resource type="Resource" uid="uid://cmp4jewc7dc0l" path="res://day/2_thursday/eagle/yasmina_visuract_scenes/visuract_graphs/yasmina_scorezone.tres" id="4_nb7rd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
 size = Vector2(259, 780)

@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://m3hfu6tjng4e"]
+[gd_scene format=3 uid="uid://ded1fbfnrvv8u"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_gmvm5"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_xrg3m"]
-[ext_resource type="Resource" uid="uid://dlkura5ltpuwt" path="res://day/3_friday/jaguar/sebastian_visuract_scenes/visuract_graphs/sebastian_level_01_Spawner.tres" id="3_3ltrs"]
-[ext_resource type="PackedScene" uid="uid://ldqw76eahot5" path="res://day/3_friday/jaguar/sebastian_visuract_scenes/sebastian_ground.tscn" id="4_sjras"]
-[ext_resource type="PackedScene" uid="uid://c6h0c1xo4nead" path="res://day/3_friday/jaguar/sebastian_visuract_scenes/sebastian_player.tscn" id="5_fvwy8"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_xrg3m"]
+[ext_resource type="Resource" uid="uid://dp5yan8ts8hyf" path="res://day/3_friday/jaguar/sebastian_visuract_scenes/visuract_graphs/sebastian_level_01_Spawner.tres" id="3_3ltrs"]
+[ext_resource type="PackedScene" uid="uid://d1i5p2lai35k5" path="res://day/3_friday/jaguar/sebastian_visuract_scenes/sebastian_ground.tscn" id="4_sjras"]
+[ext_resource type="PackedScene" uid="uid://c2axf5nk3df6x" path="res://day/3_friday/jaguar/sebastian_visuract_scenes/sebastian_player.tscn" id="5_fvwy8"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_swteb"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_tacds"]
 

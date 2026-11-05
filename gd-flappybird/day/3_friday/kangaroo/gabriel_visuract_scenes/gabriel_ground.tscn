@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://cc2he02vwp7cy"]
+[gd_scene format=3 uid="uid://mi22xxmno6hr"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_81e80"]
-[ext_resource type="Resource" uid="uid://bxtxm05mqxtvr" path="res://day/3_friday/kangaroo/gabriel_visuract_scenes/visuract_graphs/gabriel_ground_Gabriel_Ground.tres" id="2_2elf2"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_81e80"]
+[ext_resource type="Resource" uid="uid://dxihg3p6182ih" path="res://day/3_friday/kangaroo/gabriel_visuract_scenes/visuract_graphs/gabriel_ground_Gabriel_Ground.tres" id="2_2elf2"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_ajhdk"]
-[ext_resource type="Resource" uid="uid://d22dpl23rcpkc" path="res://day/3_friday/kangaroo/gabriel_visuract_scenes/visuract_graphs/gabriel_ground_DeathArea.tres" id="4_mljxq"]
+[ext_resource type="Resource" uid="uid://ddh4gs1ojf5fx" path="res://day/3_friday/kangaroo/gabriel_visuract_scenes/visuract_graphs/gabriel_ground_DeathArea.tres" id="4_mljxq"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://8dj2je8ebkxr"]
+[gd_scene format=3 uid="uid://d3e76iesiikx8"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_wmjls"]
-[ext_resource type="Resource" uid="uid://ueyusdvkru6q" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/visuract_graphs/ditte_ground_Ditte_Ground.tres" id="2_iily3"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_wmjls"]
+[ext_resource type="Resource" uid="uid://cbvlf7j5jscag" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/visuract_graphs/ditte_ground_Ditte_Ground.tres" id="2_iily3"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_570rf"]
-[ext_resource type="Resource" uid="uid://0cobfhgi2yms" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/visuract_graphs/ditte_ground_DeathArea.tres" id="4_vcc1k"]
+[ext_resource type="Resource" uid="uid://drfpxnd43v2w1" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/visuract_graphs/ditte_ground_DeathArea.tres" id="4_vcc1k"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

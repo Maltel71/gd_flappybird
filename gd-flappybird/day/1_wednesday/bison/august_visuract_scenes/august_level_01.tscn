@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://b618wi742ct23"]
+[gd_scene format=3 uid="uid://gst5tx1oow1k"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_t5q2g"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_4f8mq"]
-[ext_resource type="Resource" uid="uid://dhsk3e6qcngpr" path="res://day/1_wednesday/bison/august_visuract_scenes/visuract_graphs/august_level_01_Spawner.tres" id="3_o2fnd"]
-[ext_resource type="PackedScene" uid="uid://dpo68hxwuw4cp" path="res://day/1_wednesday/bison/august_visuract_scenes/august_ground.tscn" id="4_qat3f"]
-[ext_resource type="PackedScene" uid="uid://7rbq81nqqqnf" path="res://day/1_wednesday/bison/august_visuract_scenes/august_player.tscn" id="5_ugl6k"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_4f8mq"]
+[ext_resource type="Resource" uid="uid://bdjgf1imscsqr" path="res://day/1_wednesday/bison/august_visuract_scenes/visuract_graphs/august_level_01_Spawner.tres" id="3_o2fnd"]
+[ext_resource type="PackedScene" uid="uid://divxaqbboayp3" path="res://day/1_wednesday/bison/august_visuract_scenes/august_ground.tscn" id="4_qat3f"]
+[ext_resource type="PackedScene" uid="uid://bjbmwu82bxdbp" path="res://day/1_wednesday/bison/august_visuract_scenes/august_player.tscn" id="5_ugl6k"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_boubk"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_2gu58"]
 

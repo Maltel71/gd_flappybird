@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://dupji3ykdba8n"]
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://dyt6pc2nlhbxt"]
 
-[ext_resource type="Script" uid="uid://d1pjsc7pjptsp" path="res://addons/visuract/visuract_graph.gd" id="1_k33jt"]
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_k33jt"]
 
 [resource]
 script = ExtResource("1_k33jt")
@@ -105,4 +105,4 @@ connections = [{
 "from": "VN0",
 "to": "VN62"
 }]
-scene_uid = "uid://cud7exy8iiirx"
+scene_uid = "uid://b4v5xl3nw1t5y"

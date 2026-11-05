@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://mq77kajywjmy"]
+[gd_scene format=3 uid="uid://0l0qekh5a1ec"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_l8d23"]
-[ext_resource type="Resource" uid="uid://cexntglxufqpa" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_game_over_menu_Eduard_GameOver_Menu.tres" id="2_21nfb"]
-[ext_resource type="Resource" uid="uid://ppqmp1w5lx2n" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_game_over_menu_Restart.tres" id="3_8sn72"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_l8d23"]
+[ext_resource type="Resource" uid="uid://471pxtm47usb" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_game_over_menu_Eduard_GameOver_Menu.tres" id="2_21nfb"]
+[ext_resource type="Resource" uid="uid://ddlardifym0ub" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_game_over_menu_Restart.tres" id="3_8sn72"]
 
 [node name="Eduard_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://7113dj7upgjc"]
+[gd_scene format=3 uid="uid://cbcw4dl5146o4"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_mejbc"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_ujlow"]
-[ext_resource type="Resource" uid="uid://hpo7yrh53wl4" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_level_01_Spawner.tres" id="3_ph4ei"]
-[ext_resource type="PackedScene" uid="uid://dyy1jbsw2ihde" path="res://day/1_wednesday/bison/otto_visuract_scenes/otto_ground.tscn" id="4_ngwvb"]
-[ext_resource type="PackedScene" uid="uid://cc52ehhpcr7l0" path="res://day/1_wednesday/bison/otto_visuract_scenes/otto_player.tscn" id="5_77a6s"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_ujlow"]
+[ext_resource type="Resource" uid="uid://cskha0oomj3w3" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_level_01_Spawner.tres" id="3_ph4ei"]
+[ext_resource type="PackedScene" uid="uid://1rehidtavjfi" path="res://day/1_wednesday/bison/otto_visuract_scenes/otto_ground.tscn" id="4_ngwvb"]
+[ext_resource type="PackedScene" uid="uid://1o605i4mk5ma" path="res://day/1_wednesday/bison/otto_visuract_scenes/otto_player.tscn" id="5_77a6s"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_4pndh"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_r60i4"]
 

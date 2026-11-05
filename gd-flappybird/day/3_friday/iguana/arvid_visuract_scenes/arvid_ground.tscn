@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://bbm0j0fhoijrp"]
+[gd_scene format=3 uid="uid://onx6g3dt34v"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_xpvj1"]
-[ext_resource type="Resource" uid="uid://ceapa17hidv1b" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_ground_Arvid_Ground.tres" id="2_ujial"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_xpvj1"]
+[ext_resource type="Resource" uid="uid://d38at8k0yg4cp" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_ground_Arvid_Ground.tres" id="2_ujial"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_1omgj"]
-[ext_resource type="Resource" uid="uid://br10od7bh84xc" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_ground_DeathArea.tres" id="4_s5do3"]
+[ext_resource type="Resource" uid="uid://b0vei8wtyfmbg" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_ground_DeathArea.tres" id="4_s5do3"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

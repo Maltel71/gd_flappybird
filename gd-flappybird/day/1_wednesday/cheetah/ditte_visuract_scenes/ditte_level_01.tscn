@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://b1fuw6fsyxhj"]
+[gd_scene format=3 uid="uid://dh7knarg85glq"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_e2x2h"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_sh146"]
-[ext_resource type="Resource" uid="uid://cw3eth7f6gybm" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/visuract_graphs/ditte_level_01_Spawner.tres" id="3_pp60q"]
-[ext_resource type="PackedScene" uid="uid://8dj2je8ebkxr" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/ditte_ground.tscn" id="4_3vrp4"]
-[ext_resource type="PackedScene" uid="uid://cud7exy8iiirx" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/ditte_player.tscn" id="5_6floo"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_sh146"]
+[ext_resource type="Resource" uid="uid://byetn73i0jt1d" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/visuract_graphs/ditte_level_01_Spawner.tres" id="3_pp60q"]
+[ext_resource type="PackedScene" uid="uid://d3e76iesiikx8" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/ditte_ground.tscn" id="4_3vrp4"]
+[ext_resource type="PackedScene" uid="uid://quvj01adw1kd" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/ditte_player.tscn" id="5_6floo"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_s7qb4"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_esjod"]
 

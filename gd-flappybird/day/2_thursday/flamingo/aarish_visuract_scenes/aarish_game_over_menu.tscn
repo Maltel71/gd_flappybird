@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://bmrlle54b12w4"]
+[gd_scene format=3 uid="uid://d2l7upv5pnfxv"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_wpkcf"]
-[ext_resource type="Resource" uid="uid://cfa6slfmhs3uv" path="res://day/2_thursday/flamingo/aarish_visuract_scenes/visuract_graphs/aarish_game_over_menu_Aarish_GameOver_Menu.tres" id="2_ha821"]
-[ext_resource type="Resource" uid="uid://b3x54nyvt60ka" path="res://day/2_thursday/flamingo/aarish_visuract_scenes/visuract_graphs/aarish_game_over_menu_Restart.tres" id="3_hypt7"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_bbufi"]
+[ext_resource type="Resource" uid="uid://c3u8rytbxixox" path="res://day/2_thursday/flamingo/aarish_visuract_scenes/visuract_graphs/aarish_game_over_menu_Aarish_GameOver_Menu.tres" id="2_n8inu"]
+[ext_resource type="Resource" uid="uid://bmvjjf4pm7mk5" path="res://day/2_thursday/flamingo/aarish_visuract_scenes/visuract_graphs/aarish_game_over_menu_Restart.tres" id="3_glj17"]
 
 [node name="Aarish_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
@@ -11,8 +11,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_wpkcf")
-graph = ExtResource("2_ha821")
+script = ExtResource("1_bbufi")
+graph = ExtResource("2_n8inu")
 
 [node name="Header" type="Label" parent="." unique_id=1848836727]
 layout_mode = 0
@@ -37,5 +37,5 @@ offset_top = 472.0
 offset_right = 951.0
 offset_bottom = 480.0
 text = "Restart"
-script = ExtResource("1_wpkcf")
-graph = ExtResource("3_hypt7")
+script = ExtResource("1_bbufi")
+graph = ExtResource("3_glj17")

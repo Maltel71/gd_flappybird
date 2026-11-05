@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://daqhvwmqbnsff"]
+[gd_scene format=3 uid="uid://dppi8qyhsnlbp"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_hab1u"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_pmmoo"]
-[ext_resource type="Resource" uid="uid://b5r40r8wk21cq" path="res://day/1_wednesday/anthelope/jiyu_visuract_scenes/visuract_graphs/jiyu_level_01_Spawner.tres" id="3_rx0we"]
-[ext_resource type="PackedScene" uid="uid://ciar50mymvbsb" path="res://day/1_wednesday/anthelope/jiyu_visuract_scenes/jiyu_ground.tscn" id="4_asyfn"]
-[ext_resource type="PackedScene" uid="uid://c2u7edttiyyiu" path="res://day/1_wednesday/anthelope/jiyu_visuract_scenes/jiyu_player.tscn" id="5_64tf7"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_pmmoo"]
+[ext_resource type="Resource" uid="uid://be5vtd1s30boa" path="res://day/1_wednesday/anthelope/jiyu_visuract_scenes/visuract_graphs/jiyu_level_01_Spawner.tres" id="3_rx0we"]
+[ext_resource type="PackedScene" uid="uid://1rhq38e8nee2" path="res://day/1_wednesday/anthelope/jiyu_visuract_scenes/jiyu_ground.tscn" id="4_asyfn"]
+[ext_resource type="PackedScene" uid="uid://buu5qjc3ma1gt" path="res://day/1_wednesday/anthelope/jiyu_visuract_scenes/jiyu_player.tscn" id="5_64tf7"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_kw8m7"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_bydcs"]
 

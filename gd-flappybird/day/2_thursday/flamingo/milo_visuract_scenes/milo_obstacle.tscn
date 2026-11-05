@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://brmo277cdaec4"]
+[gd_scene format=3 uid="uid://dw28rv4ni73ny"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_pkwrl"]
-[ext_resource type="Resource" uid="uid://74oqodcalm3q" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_obstacle.tres" id="2_8mgtk"]
+[ext_resource type="Resource" uid="uid://drg0lnk2jsfx7" path="res://day/2_thursday/flamingo/milo_visuract_scenes/visuract_graphs/milo_obstacle.tres" id="2_8mgtk"]
 [ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_fqgd6"]
-[ext_resource type="Resource" uid="uid://b1big7qokp5sj" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_scorezone.tres" id="4_gsei5"]
+[ext_resource type="Resource" uid="uid://bxwhwejst3ex7" path="res://day/2_thursday/flamingo/milo_visuract_scenes/visuract_graphs/milo_scorezone.tres" id="4_gsei5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
 size = Vector2(259, 780)

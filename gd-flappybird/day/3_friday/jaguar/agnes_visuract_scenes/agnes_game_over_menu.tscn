@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://dwph4qeka0vr"]
+[gd_scene format=3 uid="uid://p7kfuqt86cfq"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_w6ij4"]
-[ext_resource type="Resource" uid="uid://b87libfwdr53u" path="res://day/3_friday/jaguar/agnes_visuract_scenes/visuract_graphs/agnes_game_over_menu_Agnes_GameOver_Menu.tres" id="2_c8g5w"]
-[ext_resource type="Resource" uid="uid://dlub57cdvrwft" path="res://day/3_friday/jaguar/agnes_visuract_scenes/visuract_graphs/agnes_game_over_menu_Restart.tres" id="3_816yi"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_w6ij4"]
+[ext_resource type="Resource" uid="uid://o8fsenge7ngn" path="res://day/3_friday/jaguar/agnes_visuract_scenes/visuract_graphs/agnes_game_over_menu_Agnes_GameOver_Menu.tres" id="2_c8g5w"]
+[ext_resource type="Resource" uid="uid://coy2yiosbrhpd" path="res://day/3_friday/jaguar/agnes_visuract_scenes/visuract_graphs/agnes_game_over_menu_Restart.tres" id="3_816yi"]
 
 [node name="Agnes_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

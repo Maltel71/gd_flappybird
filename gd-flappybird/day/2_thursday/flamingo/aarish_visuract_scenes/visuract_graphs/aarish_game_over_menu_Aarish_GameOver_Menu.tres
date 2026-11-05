@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://cfa6slfmhs3uv"]
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://c3u8rytbxixox"]
 
-[ext_resource type="Script" uid="uid://d1pjsc7pjptsp" path="res://addons/visuract/visuract_graph.gd" id="1_fx6en"]
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_4jagy"]
 
 [resource]
-script = ExtResource("1_fx6en")
+script = ExtResource("1_4jagy")
 nodes = [{
 "id": "VN176",
 "params": {},

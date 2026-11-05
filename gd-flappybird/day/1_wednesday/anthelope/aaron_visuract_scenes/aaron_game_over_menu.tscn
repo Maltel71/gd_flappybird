@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://dvqncx3tb2f30"]
+[gd_scene format=3 uid="uid://ni6q2ogj3ry3"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_3cbfh"]
-[ext_resource type="Resource" uid="uid://71tp41smcy5w" path="res://day/1_wednesday/anthelope/aaron_visuract_scenes/visuract_graphs/aaron_game_over_menu_Aaron_GameOver_Menu.tres" id="2_hlctl"]
-[ext_resource type="Resource" uid="uid://3v0uah6e00kg" path="res://day/1_wednesday/anthelope/aaron_visuract_scenes/visuract_graphs/aaron_game_over_menu_Restart.tres" id="3_ig242"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_3cbfh"]
+[ext_resource type="Resource" uid="uid://cfkexxbk2peul" path="res://day/1_wednesday/anthelope/aaron_visuract_scenes/visuract_graphs/aaron_game_over_menu_Aaron_GameOver_Menu.tres" id="2_hlctl"]
+[ext_resource type="Resource" uid="uid://c2yr4fp3qux6a" path="res://day/1_wednesday/anthelope/aaron_visuract_scenes/visuract_graphs/aaron_game_over_menu_Restart.tres" id="3_ig242"]
 
 [node name="Aaron_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

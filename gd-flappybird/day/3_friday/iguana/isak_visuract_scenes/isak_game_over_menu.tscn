@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://dbwfvuhayvsp7"]
+[gd_scene format=3 uid="uid://dbc8snx67vx73"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_cule3"]
-[ext_resource type="Resource" uid="uid://drqwfx0famlsl" path="res://day/3_friday/iguana/isak_visuract_scenes/visuract_graphs/isak_game_over_menu_Isak_GameOver_Menu.tres" id="2_6kr3n"]
-[ext_resource type="Resource" uid="uid://dmhv7qtv0g2pf" path="res://day/3_friday/iguana/isak_visuract_scenes/visuract_graphs/isak_game_over_menu_Restart.tres" id="3_og8y6"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_cule3"]
+[ext_resource type="Resource" uid="uid://drrlp6684wjt1" path="res://day/3_friday/iguana/isak_visuract_scenes/visuract_graphs/isak_game_over_menu_Isak_GameOver_Menu.tres" id="2_6kr3n"]
+[ext_resource type="Resource" uid="uid://cmame174pg60b" path="res://day/3_friday/iguana/isak_visuract_scenes/visuract_graphs/isak_game_over_menu_Restart.tres" id="3_og8y6"]
 
 [node name="Isak_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

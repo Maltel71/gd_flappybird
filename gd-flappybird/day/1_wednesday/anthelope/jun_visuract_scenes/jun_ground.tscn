@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://doeuosfv0fsfv"]
+[gd_scene format=3 uid="uid://drysc2on8ij3y"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_x0p05"]
-[ext_resource type="Resource" uid="uid://pr37evblkr76" path="res://day/1_wednesday/anthelope/jun_visuract_scenes/visuract_graphs/jun_ground_Jun_Ground.tres" id="2_ea6rm"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_x0p05"]
+[ext_resource type="Resource" uid="uid://d1bj36ooopwqd" path="res://day/1_wednesday/anthelope/jun_visuract_scenes/visuract_graphs/jun_ground_Jun_Ground.tres" id="2_ea6rm"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_23d0b"]
-[ext_resource type="Resource" uid="uid://ocx0gbadn1q3" path="res://day/1_wednesday/anthelope/jun_visuract_scenes/visuract_graphs/jun_ground_DeathArea.tres" id="4_n3jjt"]
+[ext_resource type="Resource" uid="uid://dyokbnrhs62m3" path="res://day/1_wednesday/anthelope/jun_visuract_scenes/visuract_graphs/jun_ground_DeathArea.tres" id="4_n3jjt"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

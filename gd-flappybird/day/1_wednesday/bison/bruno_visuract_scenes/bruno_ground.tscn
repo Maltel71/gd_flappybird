@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://04si3iw8rpr8"]
+[gd_scene format=3 uid="uid://dtrl622vqhdu1"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_qyq7c"]
-[ext_resource type="Resource" uid="uid://dg3g7fa51d5qv" path="res://day/1_wednesday/bison/bruno_visuract_scenes/visuract_graphs/bruno_ground_Bruno_Ground.tres" id="2_5qq3p"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_qyq7c"]
+[ext_resource type="Resource" uid="uid://b0ff7v3frcs4" path="res://day/1_wednesday/bison/bruno_visuract_scenes/visuract_graphs/bruno_ground_Bruno_Ground.tres" id="2_5qq3p"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_va8iy"]
-[ext_resource type="Resource" uid="uid://mjju8ewlqfec" path="res://day/1_wednesday/bison/bruno_visuract_scenes/visuract_graphs/bruno_ground_DeathArea.tres" id="4_yeu6p"]
+[ext_resource type="Resource" uid="uid://d2wh0525s1bf6" path="res://day/1_wednesday/bison/bruno_visuract_scenes/visuract_graphs/bruno_ground_DeathArea.tres" id="4_yeu6p"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

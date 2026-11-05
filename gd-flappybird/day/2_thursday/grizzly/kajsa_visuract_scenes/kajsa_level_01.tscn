@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://gv7n6krv2yyg"]
+[gd_scene format=3 uid="uid://c6ebq47vk5npd"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_1i1p1"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_jp2sj"]
-[ext_resource type="Resource" uid="uid://bn6u4rjmb632r" path="res://day/2_thursday/grizzly/kajsa_visuract_scenes/visuract_graphs/kajsa_level_01_Spawner.tres" id="3_spd8x"]
-[ext_resource type="PackedScene" uid="uid://c17ojeotrkxke" path="res://day/2_thursday/grizzly/kajsa_visuract_scenes/kajsa_ground.tscn" id="4_652xh"]
-[ext_resource type="PackedScene" uid="uid://bx7sf412620qm" path="res://day/2_thursday/grizzly/kajsa_visuract_scenes/kajsa_player.tscn" id="5_h1vk0"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_jp2sj"]
+[ext_resource type="Resource" uid="uid://d2qtglugpkojm" path="res://day/2_thursday/grizzly/kajsa_visuract_scenes/visuract_graphs/kajsa_level_01_Spawner.tres" id="3_spd8x"]
+[ext_resource type="PackedScene" uid="uid://dxuvwpda3c5q5" path="res://day/2_thursday/grizzly/kajsa_visuract_scenes/kajsa_ground.tscn" id="4_652xh"]
+[ext_resource type="PackedScene" uid="uid://djx2f5wnx673n" path="res://day/2_thursday/grizzly/kajsa_visuract_scenes/kajsa_player.tscn" id="5_h1vk0"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_dafyd"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_41ejj"]
 

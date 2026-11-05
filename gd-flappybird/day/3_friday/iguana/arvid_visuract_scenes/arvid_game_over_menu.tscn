@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://dii4bslhia83u"]
+[gd_scene format=3 uid="uid://t2jiordnfdty"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_e66xp"]
-[ext_resource type="Resource" uid="uid://b4wbdlbf8rdik" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_game_over_menu_Arvid_GameOver_Menu.tres" id="2_iw5gp"]
-[ext_resource type="Resource" uid="uid://r44u3ty86mdp" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_game_over_menu_Restart.tres" id="3_jnm5p"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_e66xp"]
+[ext_resource type="Resource" uid="uid://xg813poxiorp" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_game_over_menu_Arvid_GameOver_Menu.tres" id="2_iw5gp"]
+[ext_resource type="Resource" uid="uid://3t6wr08w71ue" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_game_over_menu_Restart.tres" id="3_jnm5p"]
 
 [node name="Arvid_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

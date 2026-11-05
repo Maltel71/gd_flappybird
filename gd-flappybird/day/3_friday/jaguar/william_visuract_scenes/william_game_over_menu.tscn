@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://3hm3eqvfi3t4"]
+[gd_scene format=3 uid="uid://dfwwne587c6q4"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_j0avw"]
-[ext_resource type="Resource" uid="uid://7tt6massjdux" path="res://day/3_friday/jaguar/william_visuract_scenes/visuract_graphs/william_game_over_menu_William_GameOver_Menu.tres" id="2_bemv3"]
-[ext_resource type="Resource" uid="uid://cd3ytd3vlo5q7" path="res://day/3_friday/jaguar/william_visuract_scenes/visuract_graphs/william_game_over_menu_Restart.tres" id="3_5qyal"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_j0avw"]
+[ext_resource type="Resource" uid="uid://d3h2dxn2cv0so" path="res://day/3_friday/jaguar/william_visuract_scenes/visuract_graphs/william_game_over_menu_William_GameOver_Menu.tres" id="2_bemv3"]
+[ext_resource type="Resource" uid="uid://bxoqt2us6xcs5" path="res://day/3_friday/jaguar/william_visuract_scenes/visuract_graphs/william_game_over_menu_Restart.tres" id="3_5qyal"]
 
 [node name="William_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

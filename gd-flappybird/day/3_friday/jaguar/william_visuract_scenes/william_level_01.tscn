@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://cxybeddmbix25"]
+[gd_scene format=3 uid="uid://wdgmsdbj51yc"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_kmocc"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_nt7qv"]
-[ext_resource type="Resource" uid="uid://b2iv3pnpksvkj" path="res://day/3_friday/jaguar/william_visuract_scenes/visuract_graphs/william_level_01_Spawner.tres" id="3_ynrjv"]
-[ext_resource type="PackedScene" uid="uid://delherqv1phnb" path="res://day/3_friday/jaguar/william_visuract_scenes/william_ground.tscn" id="4_d8eo5"]
-[ext_resource type="PackedScene" uid="uid://bn4g8a2ygitjt" path="res://day/3_friday/jaguar/william_visuract_scenes/william_player.tscn" id="5_pothw"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_nt7qv"]
+[ext_resource type="Resource" uid="uid://bhktr8oicu6ou" path="res://day/3_friday/jaguar/william_visuract_scenes/visuract_graphs/william_level_01_Spawner.tres" id="3_ynrjv"]
+[ext_resource type="PackedScene" uid="uid://frwu3km8bwa1" path="res://day/3_friday/jaguar/william_visuract_scenes/william_ground.tscn" id="4_d8eo5"]
+[ext_resource type="PackedScene" uid="uid://upyqlthvcjxo" path="res://day/3_friday/jaguar/william_visuract_scenes/william_player.tscn" id="5_pothw"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_pe4sg"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_dgaju"]
 

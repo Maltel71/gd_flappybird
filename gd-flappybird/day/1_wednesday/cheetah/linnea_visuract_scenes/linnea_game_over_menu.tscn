@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://b57u3u7u6amop"]
+[gd_scene format=3 uid="uid://dtawjacesos0l"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_fu6p6"]
-[ext_resource type="Resource" uid="uid://cp1f52fnroon6" path="res://day/1_wednesday/cheetah/linnea_visuract_scenes/visuract_graphs/linnea_game_over_menu_Linnea_GameOver_Menu.tres" id="2_rjltn"]
-[ext_resource type="Resource" uid="uid://dsg4cvlmi14b1" path="res://day/1_wednesday/cheetah/linnea_visuract_scenes/visuract_graphs/linnea_game_over_menu_Restart.tres" id="3_4vcw7"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_fu6p6"]
+[ext_resource type="Resource" uid="uid://b64qhg1y4ybne" path="res://day/1_wednesday/cheetah/linnea_visuract_scenes/visuract_graphs/linnea_game_over_menu_Linnea_GameOver_Menu.tres" id="2_rjltn"]
+[ext_resource type="Resource" uid="uid://dvhya0xbl5hby" path="res://day/1_wednesday/cheetah/linnea_visuract_scenes/visuract_graphs/linnea_game_over_menu_Restart.tres" id="3_4vcw7"]
 
 [node name="Linnea_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

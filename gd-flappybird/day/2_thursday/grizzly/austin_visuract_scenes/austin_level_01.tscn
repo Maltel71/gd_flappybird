@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://cal0g16qgog0"]
+[gd_scene format=3 uid="uid://ccmhwypentlj5"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_jcvjg"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_cdyro"]
-[ext_resource type="Resource" uid="uid://d2yq5lhdi26lh" path="res://day/2_thursday/grizzly/austin_visuract_scenes/visuract_graphs/austin_level_01_Spawner.tres" id="3_7kmp3"]
-[ext_resource type="PackedScene" uid="uid://c5dnocr233smw" path="res://day/2_thursday/grizzly/austin_visuract_scenes/austin_ground.tscn" id="4_xu2es"]
-[ext_resource type="PackedScene" uid="uid://c61lvt2k63886" path="res://day/2_thursday/grizzly/austin_visuract_scenes/austin_player.tscn" id="5_0eih8"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_cdyro"]
+[ext_resource type="Resource" uid="uid://450cpxqrw76r" path="res://day/2_thursday/grizzly/austin_visuract_scenes/visuract_graphs/austin_level_01_Spawner.tres" id="3_7kmp3"]
+[ext_resource type="PackedScene" uid="uid://bmsrcr4nsmf1" path="res://day/2_thursday/grizzly/austin_visuract_scenes/austin_ground.tscn" id="4_xu2es"]
+[ext_resource type="PackedScene" uid="uid://k1fdmrgrpl2c" path="res://day/2_thursday/grizzly/austin_visuract_scenes/austin_player.tscn" id="5_0eih8"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_1ia4h"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_vabeu"]
 

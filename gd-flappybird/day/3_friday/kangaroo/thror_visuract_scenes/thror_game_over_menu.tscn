@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://dfiiejmp6c561"]
+[gd_scene format=3 uid="uid://bd3cww2667mfl"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_qucjm"]
-[ext_resource type="Resource" uid="uid://cbgl0t7gik623" path="res://day/3_friday/kangaroo/thror_visuract_scenes/visuract_graphs/thror_game_over_menu_Thror_GameOver_Menu.tres" id="2_bqh06"]
-[ext_resource type="Resource" uid="uid://cutih5uohk4pd" path="res://day/3_friday/kangaroo/thror_visuract_scenes/visuract_graphs/thror_game_over_menu_Restart.tres" id="3_flpk7"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_qucjm"]
+[ext_resource type="Resource" uid="uid://dtl1kddaytmoq" path="res://day/3_friday/kangaroo/thror_visuract_scenes/visuract_graphs/thror_game_over_menu_Thror_GameOver_Menu.tres" id="2_bqh06"]
+[ext_resource type="Resource" uid="uid://ctjasi65wsvkx" path="res://day/3_friday/kangaroo/thror_visuract_scenes/visuract_graphs/thror_game_over_menu_Restart.tres" id="3_flpk7"]
 
 [node name="Thror_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

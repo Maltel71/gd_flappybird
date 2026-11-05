@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://bnon6lrix1vo7"]
+[gd_scene format=3 uid="uid://doj0id6hkhjtp"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_l52q8"]
-[ext_resource type="Resource" uid="uid://bprfwe71dc418" path="res://day/2_thursday/grizzly/kajsa_visuract_scenes/visuract_graphs/kajsa_game_over_menu_Kajsa_GameOver_Menu.tres" id="2_4rc6w"]
-[ext_resource type="Resource" uid="uid://ccc57lnvmtjx4" path="res://day/2_thursday/grizzly/kajsa_visuract_scenes/visuract_graphs/kajsa_game_over_menu_Restart.tres" id="3_nd524"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_l52q8"]
+[ext_resource type="Resource" uid="uid://bluktfd7j3qxs" path="res://day/2_thursday/grizzly/kajsa_visuract_scenes/visuract_graphs/kajsa_game_over_menu_Kajsa_GameOver_Menu.tres" id="2_4rc6w"]
+[ext_resource type="Resource" uid="uid://dcv2d1dtd6gye" path="res://day/2_thursday/grizzly/kajsa_visuract_scenes/visuract_graphs/kajsa_game_over_menu_Restart.tres" id="3_nd524"]
 
 [node name="Kajsa_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

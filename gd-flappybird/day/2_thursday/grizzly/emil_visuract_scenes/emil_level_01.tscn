@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://mtega3drgddo"]
+[gd_scene format=3 uid="uid://bhuffkburadwm"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_mrm8w"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_vlce4"]
-[ext_resource type="Resource" uid="uid://bb3058ckiu5no" path="res://day/2_thursday/grizzly/emil_visuract_scenes/visuract_graphs/emil_level_01_Spawner.tres" id="3_qgim0"]
-[ext_resource type="PackedScene" uid="uid://b5jkxcd5u2v5l" path="res://day/2_thursday/grizzly/emil_visuract_scenes/emil_ground.tscn" id="4_3ikwg"]
-[ext_resource type="PackedScene" uid="uid://vsgpl7q0tkjd" path="res://day/2_thursday/grizzly/emil_visuract_scenes/emil_player.tscn" id="5_4bicy"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_vlce4"]
+[ext_resource type="Resource" uid="uid://b1ms1a0kimrty" path="res://day/2_thursday/grizzly/emil_visuract_scenes/visuract_graphs/emil_level_01_Spawner.tres" id="3_qgim0"]
+[ext_resource type="PackedScene" uid="uid://xscx1osvnsct" path="res://day/2_thursday/grizzly/emil_visuract_scenes/emil_ground.tscn" id="4_3ikwg"]
+[ext_resource type="PackedScene" uid="uid://c67hhgps3r7l5" path="res://day/2_thursday/grizzly/emil_visuract_scenes/emil_player.tscn" id="5_4bicy"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_5rufw"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_3lukp"]
 

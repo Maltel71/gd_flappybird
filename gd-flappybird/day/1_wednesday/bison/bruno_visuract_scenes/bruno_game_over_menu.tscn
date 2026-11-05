@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://giaa58hmq6pa"]
+[gd_scene format=3 uid="uid://duao1is687lcv"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_hnlrx"]
-[ext_resource type="Resource" uid="uid://dg2mw07md81y0" path="res://day/1_wednesday/bison/bruno_visuract_scenes/visuract_graphs/bruno_game_over_menu_Bruno_GameOver_Menu.tres" id="2_ttkhx"]
-[ext_resource type="Resource" uid="uid://demrh4thhb5ce" path="res://day/1_wednesday/bison/bruno_visuract_scenes/visuract_graphs/bruno_game_over_menu_Restart.tres" id="3_sqxfc"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_hnlrx"]
+[ext_resource type="Resource" uid="uid://bcqo1xk2x3aco" path="res://day/1_wednesday/bison/bruno_visuract_scenes/visuract_graphs/bruno_game_over_menu_Bruno_GameOver_Menu.tres" id="2_ttkhx"]
+[ext_resource type="Resource" uid="uid://dqlye2l1e2b6j" path="res://day/1_wednesday/bison/bruno_visuract_scenes/visuract_graphs/bruno_game_over_menu_Restart.tres" id="3_sqxfc"]
 
 [node name="Bruno_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

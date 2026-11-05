@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://c85mhveuin5ve"]
+[gd_scene format=3 uid="uid://ch7clpcgcviiq"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_5ayn6"]
-[ext_resource type="Resource" uid="uid://damb3606ka27v" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_game_over_menu_Otto_GameOver_Menu.tres" id="2_vvu51"]
-[ext_resource type="Resource" uid="uid://dypy0ksexltrk" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_game_over_menu_Restart.tres" id="3_kdswj"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_5ayn6"]
+[ext_resource type="Resource" uid="uid://d0n2ugvl6me3a" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_game_over_menu_Otto_GameOver_Menu.tres" id="2_vvu51"]
+[ext_resource type="Resource" uid="uid://cl4xmm4d1qk5v" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_game_over_menu_Restart.tres" id="3_kdswj"]
 
 [node name="Otto_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

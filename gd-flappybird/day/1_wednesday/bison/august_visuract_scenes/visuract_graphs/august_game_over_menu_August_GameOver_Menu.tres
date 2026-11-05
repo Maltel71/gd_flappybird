@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://b8s8u0i2yrqlo"]
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://chkuip87t67dq"]
 
-[ext_resource type="Script" uid="uid://d1pjsc7pjptsp" path="res://addons/visuract/visuract_graph.gd" id="1_d6sod"]
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_d6sod"]
 
 [resource]
 script = ExtResource("1_d6sod")

@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://cedx213knepgl"]
+[gd_scene format=3 uid="uid://d0qvo6ud43nuc"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_5pbku"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_ow3lp"]
-[ext_resource type="Resource" uid="uid://b8mfxxabf03i5" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_level_01_Spawner.tres" id="3_rq0ke"]
-[ext_resource type="PackedScene" uid="uid://lpjs5btgotn3" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/eduard_ground.tscn" id="4_lswgi"]
-[ext_resource type="PackedScene" uid="uid://byi3roc8dp76x" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/eduard_player.tscn" id="5_n0k5t"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_ow3lp"]
+[ext_resource type="Resource" uid="uid://dudqfrnocwulp" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_level_01_Spawner.tres" id="3_rq0ke"]
+[ext_resource type="PackedScene" uid="uid://cayochqep83hv" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/eduard_ground.tscn" id="4_lswgi"]
+[ext_resource type="PackedScene" uid="uid://c0sjnfpqls3n8" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/eduard_player.tscn" id="5_n0k5t"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_tm38h"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_fq0b3"]
 

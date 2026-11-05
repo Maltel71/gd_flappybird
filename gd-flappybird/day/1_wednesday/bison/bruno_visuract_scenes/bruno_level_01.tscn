@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://bkvwnj6iisd5j"]
+[gd_scene format=3 uid="uid://iexfavffptwm"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_6e7ah"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_geqt4"]
-[ext_resource type="Resource" uid="uid://b1q8atikr28n1" path="res://day/1_wednesday/bison/bruno_visuract_scenes/visuract_graphs/bruno_level_01_Spawner.tres" id="3_u877b"]
-[ext_resource type="PackedScene" uid="uid://04si3iw8rpr8" path="res://day/1_wednesday/bison/bruno_visuract_scenes/bruno_ground.tscn" id="4_r8f8r"]
-[ext_resource type="PackedScene" uid="uid://cra8mbj81nlas" path="res://day/1_wednesday/bison/bruno_visuract_scenes/bruno_player.tscn" id="5_hsbd6"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_geqt4"]
+[ext_resource type="Resource" uid="uid://ddbd61tuc52n" path="res://day/1_wednesday/bison/bruno_visuract_scenes/visuract_graphs/bruno_level_01_Spawner.tres" id="3_u877b"]
+[ext_resource type="PackedScene" uid="uid://dtrl622vqhdu1" path="res://day/1_wednesday/bison/bruno_visuract_scenes/bruno_ground.tscn" id="4_r8f8r"]
+[ext_resource type="PackedScene" uid="uid://ckouacsqxhsio" path="res://day/1_wednesday/bison/bruno_visuract_scenes/bruno_player.tscn" id="5_hsbd6"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_nsvrx"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_bhb0r"]
 

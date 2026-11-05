@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://dyy1jbsw2ihde"]
+[gd_scene format=3 uid="uid://1rehidtavjfi"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_67gms"]
-[ext_resource type="Resource" uid="uid://vhci0xnbfg0r" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_ground_Otto_Ground.tres" id="2_ejrhg"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_67gms"]
+[ext_resource type="Resource" uid="uid://b4mpdefr8tnpd" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_ground_Otto_Ground.tres" id="2_ejrhg"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_j8ud2"]
-[ext_resource type="Resource" uid="uid://36jwklcmvmd6" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_ground_DeathArea.tres" id="4_dhxoh"]
+[ext_resource type="Resource" uid="uid://bbrnpfb3y07y" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_ground_DeathArea.tres" id="4_dhxoh"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

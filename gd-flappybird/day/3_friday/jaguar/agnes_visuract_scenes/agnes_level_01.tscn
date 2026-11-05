@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://bvf1efq17yx2p"]
+[gd_scene format=3 uid="uid://sfws22kohpbu"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_4dwni"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_bmftc"]
-[ext_resource type="Resource" uid="uid://bgoyocbrmuhqc" path="res://day/3_friday/jaguar/agnes_visuract_scenes/visuract_graphs/agnes_level_01_Spawner.tres" id="3_1qilf"]
-[ext_resource type="PackedScene" uid="uid://cymsbb44b3v4u" path="res://day/3_friday/jaguar/agnes_visuract_scenes/agnes_ground.tscn" id="4_hahy2"]
-[ext_resource type="PackedScene" uid="uid://knkrupda1sej" path="res://day/3_friday/jaguar/agnes_visuract_scenes/agnes_player.tscn" id="5_nwahk"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_bmftc"]
+[ext_resource type="Resource" uid="uid://wcoxbnqxukfh" path="res://day/3_friday/jaguar/agnes_visuract_scenes/visuract_graphs/agnes_level_01_Spawner.tres" id="3_1qilf"]
+[ext_resource type="PackedScene" uid="uid://p8257mdx17ty" path="res://day/3_friday/jaguar/agnes_visuract_scenes/agnes_ground.tscn" id="4_hahy2"]
+[ext_resource type="PackedScene" uid="uid://c5rgggsra6ux6" path="res://day/3_friday/jaguar/agnes_visuract_scenes/agnes_player.tscn" id="5_nwahk"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_hun05"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_b5eps"]
 

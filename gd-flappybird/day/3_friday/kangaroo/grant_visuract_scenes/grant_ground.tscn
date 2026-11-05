@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://d1gvxjxulv7g6"]
+[gd_scene format=3 uid="uid://2rawdmasrnmi"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_3ds5r"]
-[ext_resource type="Resource" uid="uid://dvkj3mvogemyq" path="res://day/3_friday/kangaroo/grant_visuract_scenes/visuract_graphs/grant_ground_Grant_Ground.tres" id="2_mwdc7"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_3ds5r"]
+[ext_resource type="Resource" uid="uid://bot8bcq85hqjh" path="res://day/3_friday/kangaroo/grant_visuract_scenes/visuract_graphs/grant_ground_Grant_Ground.tres" id="2_mwdc7"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_nqgm3"]
-[ext_resource type="Resource" uid="uid://bwwco6oqms34s" path="res://day/3_friday/kangaroo/grant_visuract_scenes/visuract_graphs/grant_ground_DeathArea.tres" id="4_731f1"]
+[ext_resource type="Resource" uid="uid://dvcoc2yblip1a" path="res://day/3_friday/kangaroo/grant_visuract_scenes/visuract_graphs/grant_ground_DeathArea.tres" id="4_731f1"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

@@ -27,7 +27,7 @@ nodes = [{
 }, {
 "id": "VN16",
 "params": {
-"kind": "Anything",
+"kind": "Bodies only",
 "only_named": "Malte_Player"
 },
 "position": Vector2(640, 880),
@@ -103,3 +103,4 @@ connections = [{
 "from": "VN18",
 "to": "VN19"
 }]
+scene_uid = "uid://c0enni5rf4yln"

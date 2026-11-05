@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://btfirab42mwj3"]
+[gd_scene format=3 uid="uid://cqreiqvodb06e"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_urhxa"]
-[ext_resource type="Resource" uid="uid://onda5pdw5t6g" path="res://day/1_wednesday/bison/barin_visuract_scenes/visuract_graphs/barin_game_over_menu_Barin_GameOver_Menu.tres" id="2_ypyl0"]
-[ext_resource type="Resource" uid="uid://cggekfad345qm" path="res://day/1_wednesday/bison/barin_visuract_scenes/visuract_graphs/barin_game_over_menu_Restart.tres" id="3_vn05c"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_urhxa"]
+[ext_resource type="Resource" uid="uid://cpifh1m5axpyy" path="res://day/1_wednesday/bison/barin_visuract_scenes/visuract_graphs/barin_game_over_menu_Barin_GameOver_Menu.tres" id="2_ypyl0"]
+[ext_resource type="Resource" uid="uid://v0b01j3q0ihv" path="res://day/1_wednesday/bison/barin_visuract_scenes/visuract_graphs/barin_game_over_menu_Restart.tres" id="3_vn05c"]
 
 [node name="Barin_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

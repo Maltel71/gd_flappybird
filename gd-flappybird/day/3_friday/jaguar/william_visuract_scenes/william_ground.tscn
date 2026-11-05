@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://delherqv1phnb"]
+[gd_scene format=3 uid="uid://frwu3km8bwa1"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_88agi"]
-[ext_resource type="Resource" uid="uid://bf76uujexmjb5" path="res://day/3_friday/jaguar/william_visuract_scenes/visuract_graphs/william_ground_William_Ground.tres" id="2_5auhd"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_88agi"]
+[ext_resource type="Resource" uid="uid://viouk3xoedjo" path="res://day/3_friday/jaguar/william_visuract_scenes/visuract_graphs/william_ground_William_Ground.tres" id="2_5auhd"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_o66i1"]
-[ext_resource type="Resource" uid="uid://c4plk6wx7axl3" path="res://day/3_friday/jaguar/william_visuract_scenes/visuract_graphs/william_ground_DeathArea.tres" id="4_2td3x"]
+[ext_resource type="Resource" uid="uid://4ai3oo6woqj3" path="res://day/3_friday/jaguar/william_visuract_scenes/visuract_graphs/william_ground_DeathArea.tres" id="4_2td3x"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

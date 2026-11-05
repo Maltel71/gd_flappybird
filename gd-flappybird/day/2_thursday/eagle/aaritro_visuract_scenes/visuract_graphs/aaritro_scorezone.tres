@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://fvk52fox0o1f"]
+
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_0e86m"]
+
+[resource]
+script = ExtResource("1_0e86m")
+nodes = [{
+"id": "VN20",
+"params": {
+"kind": "Anything",
+"only_named": ""
+},
+"position": Vector2(920, 800),
+"type": "On Body or Area Entered"
+}, {
+"id": "VN21",
+"params": {
+"mode": "Add",
+"scope": "Whole game",
+"value": "1",
+"variable_name": "score"
+},
+"position": Vector2(1320, 800),
+"type": "Remember"
+}]
+connections = [{
+"from": "VN20",
+"to": "VN21"
+}]
+scene_uid = "uid://c0enni5rf4yln"

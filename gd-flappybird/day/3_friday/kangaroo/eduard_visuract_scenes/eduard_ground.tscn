@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://lpjs5btgotn3"]
+[gd_scene format=3 uid="uid://cayochqep83hv"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_5xu3p"]
-[ext_resource type="Resource" uid="uid://cytmb6uadsumb" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_ground_Eduard_Ground.tres" id="2_av8qg"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_5xu3p"]
+[ext_resource type="Resource" uid="uid://dqmjv1v5o2woi" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_ground_Eduard_Ground.tres" id="2_av8qg"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_s3bdp"]
-[ext_resource type="Resource" uid="uid://df8jkk185dg5j" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_ground_DeathArea.tres" id="4_84ro8"]
+[ext_resource type="Resource" uid="uid://cth5wkwg74fy8" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_ground_DeathArea.tres" id="4_84ro8"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

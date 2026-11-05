@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://cmvb6ensvn5ki"]
+[gd_scene format=3 uid="uid://bil3piuxakgg6"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_psnpe"]
-[ext_resource type="Resource" uid="uid://74oqodcalm3q" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_obstacle.tres" id="2_6rsal"]
+[ext_resource type="Resource" uid="uid://o872aphcohk0" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_obstacle.tres" id="2_6rsal"]
 [ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_wovjx"]
-[ext_resource type="Resource" uid="uid://b1big7qokp5sj" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_scorezone.tres" id="4_e5kgi"]
+[ext_resource type="Resource" uid="uid://c40wg77h2oa0j" path="res://day/1_wednesday/bison/otto_visuract_scenes/visuract_graphs/otto_scorezone.tres" id="4_e5kgi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
 size = Vector2(259, 780)

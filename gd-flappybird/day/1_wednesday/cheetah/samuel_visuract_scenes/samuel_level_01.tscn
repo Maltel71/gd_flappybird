@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://deqqj10lg1g2w"]
+[gd_scene format=3 uid="uid://beb1oj7woh6v0"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_01t7t"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_hk1nx"]
-[ext_resource type="Resource" uid="uid://ddct03jsis1oi" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/visuract_graphs/samuel_level_01_Spawner.tres" id="3_3dfm8"]
-[ext_resource type="PackedScene" uid="uid://7yn4opybayba" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/samuel_ground.tscn" id="4_kjgxc"]
-[ext_resource type="PackedScene" uid="uid://bfcitcot3lls5" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/samuel_player.tscn" id="5_5j7k4"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_hk1nx"]
+[ext_resource type="Resource" uid="uid://cqjhte2vmxjbd" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/visuract_graphs/samuel_level_01_Spawner.tres" id="3_3dfm8"]
+[ext_resource type="PackedScene" uid="uid://bjxoam7nam5pl" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/samuel_ground.tscn" id="4_kjgxc"]
+[ext_resource type="PackedScene" uid="uid://bju0pcvogcoiv" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/samuel_player.tscn" id="5_5j7k4"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_en81n"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_5fbte"]
 

@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://bne55a0ehsua2"]
+[gd_scene format=3 uid="uid://bp76410csh4ad"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_64bg6"]
-[ext_resource type="Resource" uid="uid://b3s0ampmmqa1i" path="res://day/1_wednesday/cheetah/dhanistha_visuract_scenes/visuract_graphs/dhanistha_ground_Dhanistha_Ground.tres" id="2_ukoc3"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_64bg6"]
+[ext_resource type="Resource" uid="uid://clps6qwvnsoxh" path="res://day/1_wednesday/cheetah/dhanistha_visuract_scenes/visuract_graphs/dhanistha_ground_Dhanistha_Ground.tres" id="2_ukoc3"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_62n4y"]
-[ext_resource type="Resource" uid="uid://cap77w4m0t2" path="res://day/1_wednesday/cheetah/dhanistha_visuract_scenes/visuract_graphs/dhanistha_ground_DeathArea.tres" id="4_806hn"]
+[ext_resource type="Resource" uid="uid://eawlmb7pdhng" path="res://day/1_wednesday/cheetah/dhanistha_visuract_scenes/visuract_graphs/dhanistha_ground_DeathArea.tres" id="4_806hn"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://dl0dyxpx3j515"]
+[gd_scene format=3 uid="uid://crk4udm4l10hy"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_qt6ab"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_jljli"]
-[ext_resource type="Resource" uid="uid://bubbwfmgou5j3" path="res://day/2_thursday/eagle/aaritro_visuract_scenes/visuract_graphs/aaritro_level_01_Spawner.tres" id="3_t4xpx"]
-[ext_resource type="PackedScene" uid="uid://c0uvxw0a7qk00" path="res://day/2_thursday/eagle/aaritro_visuract_scenes/aaritro_ground.tscn" id="4_g7ugm"]
-[ext_resource type="PackedScene" uid="uid://btmupiq64qhxo" path="res://day/2_thursday/eagle/aaritro_visuract_scenes/aaritro_player.tscn" id="5_atdf0"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_jljli"]
+[ext_resource type="Resource" uid="uid://cffu1fcyygtx3" path="res://day/2_thursday/eagle/aaritro_visuract_scenes/visuract_graphs/aaritro_level_01_Spawner.tres" id="3_t4xpx"]
+[ext_resource type="PackedScene" uid="uid://bvb38j0cmcn52" path="res://day/2_thursday/eagle/aaritro_visuract_scenes/aaritro_ground.tscn" id="4_g7ugm"]
+[ext_resource type="PackedScene" uid="uid://bleqeu64duxb6" path="res://day/2_thursday/eagle/aaritro_visuract_scenes/aaritro_player.tscn" id="5_atdf0"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_ody0t"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_ya8vl"]
 

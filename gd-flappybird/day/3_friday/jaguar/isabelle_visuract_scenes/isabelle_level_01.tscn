@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://cysb0w05semod"]
+[gd_scene format=3 uid="uid://q7yobo3357xh"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_sm14n"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_0r41r"]
-[ext_resource type="Resource" uid="uid://toiesh8u4nls" path="res://day/3_friday/jaguar/isabelle_visuract_scenes/visuract_graphs/isabelle_level_01_Spawner.tres" id="3_1kusa"]
-[ext_resource type="PackedScene" uid="uid://bgprniqx76ic3" path="res://day/3_friday/jaguar/isabelle_visuract_scenes/isabelle_ground.tscn" id="4_ob6ow"]
-[ext_resource type="PackedScene" uid="uid://c3atifjax0h7m" path="res://day/3_friday/jaguar/isabelle_visuract_scenes/isabelle_player.tscn" id="5_pgbxn"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_0r41r"]
+[ext_resource type="Resource" uid="uid://b84upmj2t6fu6" path="res://day/3_friday/jaguar/isabelle_visuract_scenes/visuract_graphs/isabelle_level_01_Spawner.tres" id="3_1kusa"]
+[ext_resource type="PackedScene" uid="uid://dxfb1svudyu3p" path="res://day/3_friday/jaguar/isabelle_visuract_scenes/isabelle_ground.tscn" id="4_ob6ow"]
+[ext_resource type="PackedScene" uid="uid://cmxhtlbfst1v1" path="res://day/3_friday/jaguar/isabelle_visuract_scenes/isabelle_player.tscn" id="5_pgbxn"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_1mnio"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_w4gfg"]
 

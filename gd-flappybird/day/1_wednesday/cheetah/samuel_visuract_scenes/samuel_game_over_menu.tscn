@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://cogo7ib0cmes"]
+[gd_scene format=3 uid="uid://ypwm8kbmgfd7"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_hjttd"]
-[ext_resource type="Resource" uid="uid://byptyaybpv064" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/visuract_graphs/samuel_game_over_menu_Samuel_GameOver_Menu.tres" id="2_3ijbs"]
-[ext_resource type="Resource" uid="uid://bp7hl81ocolld" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/visuract_graphs/samuel_game_over_menu_Restart.tres" id="3_xnvtt"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_hjttd"]
+[ext_resource type="Resource" uid="uid://chi6xevtrejp3" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/visuract_graphs/samuel_game_over_menu_Samuel_GameOver_Menu.tres" id="2_3ijbs"]
+[ext_resource type="Resource" uid="uid://br5yc764gfx0u" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/visuract_graphs/samuel_game_over_menu_Restart.tres" id="3_xnvtt"]
 
 [node name="Samuel_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

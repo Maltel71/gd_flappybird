@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://bxvwb7buj1tav"]
+[gd_scene format=3 uid="uid://bj6iutesd6h40"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_8mn80"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_5wmsc"]
-[ext_resource type="Resource" uid="uid://cffrpyt8g63qr" path="res://day/3_friday/iguana/axel_visuract_scenes/visuract_graphs/axel_level_01_Spawner.tres" id="3_kqk8o"]
-[ext_resource type="PackedScene" uid="uid://b61fbfi708m37" path="res://day/3_friday/iguana/axel_visuract_scenes/axel_ground.tscn" id="4_02d5s"]
-[ext_resource type="PackedScene" uid="uid://cw82nlht0vi1k" path="res://day/3_friday/iguana/axel_visuract_scenes/axel_player.tscn" id="5_hltw5"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_5wmsc"]
+[ext_resource type="Resource" uid="uid://b0c0averodyi0" path="res://day/3_friday/iguana/axel_visuract_scenes/visuract_graphs/axel_level_01_Spawner.tres" id="3_kqk8o"]
+[ext_resource type="PackedScene" uid="uid://tx473vn50bk8" path="res://day/3_friday/iguana/axel_visuract_scenes/axel_ground.tscn" id="4_02d5s"]
+[ext_resource type="PackedScene" uid="uid://chpn63ut7jhll" path="res://day/3_friday/iguana/axel_visuract_scenes/axel_player.tscn" id="5_hltw5"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_pfqu5"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_dmbdk"]
 

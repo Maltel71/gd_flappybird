@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://dvhou2d4ym2as"]
+[gd_scene format=3 uid="uid://c11thuycih7yk"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_ssy43"]
-[ext_resource type="Resource" uid="uid://b5gkhca5ccxnl" path="res://day/2_thursday/eagle/yasmina_visuract_scenes/visuract_graphs/yasmina_player_Yasmina_Player.tres" id="2_jb5dr"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_ssy43"]
+[ext_resource type="Resource" uid="uid://dej3wd7xo4aod" path="res://day/2_thursday/eagle/yasmina_visuract_scenes/visuract_graphs/yasmina_player_Yasmina_Player.tres" id="2_jb5dr"]
 [ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_yugog"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]

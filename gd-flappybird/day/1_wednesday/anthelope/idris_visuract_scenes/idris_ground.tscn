@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://c0r3fad71544i"]
+[gd_scene format=3 uid="uid://1l20w5wl36sm"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_nukps"]
-[ext_resource type="Resource" uid="uid://d0l3qhk7yjwon" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/visuract_graphs/idris_ground_Idris_Ground.tres" id="2_lfcw8"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_nukps"]
+[ext_resource type="Resource" uid="uid://bsq7bj8jkbj2q" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/visuract_graphs/idris_ground_Idris_Ground.tres" id="2_lfcw8"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_dqp5v"]
-[ext_resource type="Resource" uid="uid://qvi704e80she" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/visuract_graphs/idris_ground_DeathArea.tres" id="4_o3ox6"]
+[ext_resource type="Resource" uid="uid://2lgyk628tq67" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/visuract_graphs/idris_ground_DeathArea.tres" id="4_o3ox6"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

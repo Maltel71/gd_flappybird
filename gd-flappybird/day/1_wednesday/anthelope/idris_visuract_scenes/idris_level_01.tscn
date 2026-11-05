@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://bsrgxiwi6l0hf"]
+[gd_scene format=3 uid="uid://dcclu5coetccq"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_mm8aq"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_qo85l"]
-[ext_resource type="Resource" uid="uid://d4dhkv7eoxqg5" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/visuract_graphs/idris_level_01_Spawner.tres" id="3_k1r30"]
-[ext_resource type="PackedScene" uid="uid://c0r3fad71544i" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/idris_ground.tscn" id="4_ms3ft"]
-[ext_resource type="PackedScene" uid="uid://vyumhhefcjoo" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/idris_player.tscn" id="5_jd0yv"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_qo85l"]
+[ext_resource type="Resource" uid="uid://b13hjopleobux" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/visuract_graphs/idris_level_01_Spawner.tres" id="3_k1r30"]
+[ext_resource type="PackedScene" uid="uid://1l20w5wl36sm" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/idris_ground.tscn" id="4_ms3ft"]
+[ext_resource type="PackedScene" uid="uid://b65m7d3imtw7" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/idris_player.tscn" id="5_jd0yv"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_w0kor"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_lbirw"]
 

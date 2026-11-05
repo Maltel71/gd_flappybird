@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://dnqfy0krm31ga"]
+[gd_scene format=3 uid="uid://18iudh1nmuop"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_2wj8p"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_s146n"]
-[ext_resource type="Resource" uid="uid://wbg5ebojsxfk" path="res://day/3_friday/kangaroo/oscar_visuract_scenes/visuract_graphs/oscar_level_01_Spawner.tres" id="3_kkmjt"]
-[ext_resource type="PackedScene" uid="uid://b8wm2e3dddu7n" path="res://day/3_friday/kangaroo/oscar_visuract_scenes/oscar_ground.tscn" id="4_6l1rh"]
-[ext_resource type="PackedScene" uid="uid://c3veir33l45r6" path="res://day/3_friday/kangaroo/oscar_visuract_scenes/oscar_player.tscn" id="5_p727r"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_s146n"]
+[ext_resource type="Resource" uid="uid://b1p3el76kjh0" path="res://day/3_friday/kangaroo/oscar_visuract_scenes/visuract_graphs/oscar_level_01_Spawner.tres" id="3_kkmjt"]
+[ext_resource type="PackedScene" uid="uid://cv6biwgprmu7b" path="res://day/3_friday/kangaroo/oscar_visuract_scenes/oscar_ground.tscn" id="4_6l1rh"]
+[ext_resource type="PackedScene" uid="uid://bb8wg8fga1yts" path="res://day/3_friday/kangaroo/oscar_visuract_scenes/oscar_player.tscn" id="5_p727r"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_rfmsb"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_j0n3f"]
 

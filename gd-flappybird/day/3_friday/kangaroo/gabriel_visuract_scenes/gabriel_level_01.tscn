@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://lx7h4vjn6hso"]
+[gd_scene format=3 uid="uid://b1b6dfbuihp25"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_lwhmx"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_gp60q"]
-[ext_resource type="Resource" uid="uid://cxc4jhtwjxj5s" path="res://day/3_friday/kangaroo/gabriel_visuract_scenes/visuract_graphs/gabriel_level_01_Spawner.tres" id="3_6ob5r"]
-[ext_resource type="PackedScene" uid="uid://cc2he02vwp7cy" path="res://day/3_friday/kangaroo/gabriel_visuract_scenes/gabriel_ground.tscn" id="4_3li2t"]
-[ext_resource type="PackedScene" uid="uid://bwalc4hvqlvn7" path="res://day/3_friday/kangaroo/gabriel_visuract_scenes/gabriel_player.tscn" id="5_u575c"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_gp60q"]
+[ext_resource type="Resource" uid="uid://b867x782u4dgv" path="res://day/3_friday/kangaroo/gabriel_visuract_scenes/visuract_graphs/gabriel_level_01_Spawner.tres" id="3_6ob5r"]
+[ext_resource type="PackedScene" uid="uid://mi22xxmno6hr" path="res://day/3_friday/kangaroo/gabriel_visuract_scenes/gabriel_ground.tscn" id="4_3li2t"]
+[ext_resource type="PackedScene" uid="uid://bsmldumdfxaws" path="res://day/3_friday/kangaroo/gabriel_visuract_scenes/gabriel_player.tscn" id="5_u575c"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_0h75q"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_smfm6"]
 

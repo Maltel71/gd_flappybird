@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://bpda7uxxmd8wh"]
+[gd_scene format=3 uid="uid://ccshr8e8lbp6k"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_8qbfe"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_c1m66"]
-[ext_resource type="Resource" uid="uid://clqiwta4gfi03" path="res://day/2_thursday/eagle/yasmina_visuract_scenes/visuract_graphs/yasmina_level_01_Spawner.tres" id="3_xr2br"]
-[ext_resource type="PackedScene" uid="uid://88obyggnj6rg" path="res://day/2_thursday/eagle/yasmina_visuract_scenes/yasmina_ground.tscn" id="4_w6dl4"]
-[ext_resource type="PackedScene" uid="uid://dvhou2d4ym2as" path="res://day/2_thursday/eagle/yasmina_visuract_scenes/yasmina_player.tscn" id="5_uyvq5"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_c1m66"]
+[ext_resource type="Resource" uid="uid://b6l1r78hw6b1b" path="res://day/2_thursday/eagle/yasmina_visuract_scenes/visuract_graphs/yasmina_level_01_Spawner.tres" id="3_xr2br"]
+[ext_resource type="PackedScene" uid="uid://c7ot76wx81xp1" path="res://day/2_thursday/eagle/yasmina_visuract_scenes/yasmina_ground.tscn" id="4_w6dl4"]
+[ext_resource type="PackedScene" uid="uid://c11thuycih7yk" path="res://day/2_thursday/eagle/yasmina_visuract_scenes/yasmina_player.tscn" id="5_uyvq5"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_4uvm3"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_m0jkn"]
 

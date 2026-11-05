@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://cwouokdebgelj"]
+[gd_scene format=3 uid="uid://c31unyabca3ig"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_gyggw"]
-[ext_resource type="Resource" uid="uid://dafguq3a0u54h" path="res://day/3_friday/kangaroo/oscar_visuract_scenes/visuract_graphs/oscar_game_over_menu_Oscar_GameOver_Menu.tres" id="2_lwaui"]
-[ext_resource type="Resource" uid="uid://d4a7eoihmwwrb" path="res://day/3_friday/kangaroo/oscar_visuract_scenes/visuract_graphs/oscar_game_over_menu_Restart.tres" id="3_foobq"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_gyggw"]
+[ext_resource type="Resource" uid="uid://dls7cf1fbktow" path="res://day/3_friday/kangaroo/oscar_visuract_scenes/visuract_graphs/oscar_game_over_menu_Oscar_GameOver_Menu.tres" id="2_lwaui"]
+[ext_resource type="Resource" uid="uid://dcblajmyhyimk" path="res://day/3_friday/kangaroo/oscar_visuract_scenes/visuract_graphs/oscar_game_over_menu_Restart.tres" id="3_foobq"]
 
 [node name="Oscar_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

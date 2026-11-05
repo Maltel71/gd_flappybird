@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://drmriwdmji2aa"]
+[gd_scene format=3 uid="uid://c2u1xxlfnx3xy"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_s1hmh"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_6ycoi"]
-[ext_resource type="Resource" uid="uid://ddwo7mq0jywaj" path="res://day/1_wednesday/cheetah/dhanistha_visuract_scenes/visuract_graphs/dhanistha_level_01_Spawner.tres" id="3_kl0ij"]
-[ext_resource type="PackedScene" uid="uid://bne55a0ehsua2" path="res://day/1_wednesday/cheetah/dhanistha_visuract_scenes/dhanistha_ground.tscn" id="4_l54ar"]
-[ext_resource type="PackedScene" uid="uid://l6tv5nd8tube" path="res://day/1_wednesday/cheetah/dhanistha_visuract_scenes/dhanistha_player.tscn" id="5_6qc22"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_6ycoi"]
+[ext_resource type="Resource" uid="uid://v758m26lcn7m" path="res://day/1_wednesday/cheetah/dhanistha_visuract_scenes/visuract_graphs/dhanistha_level_01_Spawner.tres" id="3_kl0ij"]
+[ext_resource type="PackedScene" uid="uid://bp76410csh4ad" path="res://day/1_wednesday/cheetah/dhanistha_visuract_scenes/dhanistha_ground.tscn" id="4_l54ar"]
+[ext_resource type="PackedScene" uid="uid://do5nsuy7a34wx" path="res://day/1_wednesday/cheetah/dhanistha_visuract_scenes/dhanistha_player.tscn" id="5_6qc22"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_2v12m"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_ehu0g"]
 

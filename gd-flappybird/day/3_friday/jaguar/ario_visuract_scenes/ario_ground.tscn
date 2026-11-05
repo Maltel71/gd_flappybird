@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://bo34tkqthqkmj"]
+[gd_scene format=3 uid="uid://dvekcbfufun2e"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_4digr"]
-[ext_resource type="Resource" uid="uid://d1llmwoig6vgo" path="res://day/3_friday/jaguar/ario_visuract_scenes/visuract_graphs/ario_ground_Ario_Ground.tres" id="2_g8i85"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_4digr"]
+[ext_resource type="Resource" uid="uid://dhcoidlkme73o" path="res://day/3_friday/jaguar/ario_visuract_scenes/visuract_graphs/ario_ground_Ario_Ground.tres" id="2_g8i85"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_c8qnx"]
-[ext_resource type="Resource" uid="uid://4xx8w3erqk7j" path="res://day/3_friday/jaguar/ario_visuract_scenes/visuract_graphs/ario_ground_DeathArea.tres" id="4_in85f"]
+[ext_resource type="Resource" uid="uid://dmt6iepjx737j" path="res://day/3_friday/jaguar/ario_visuract_scenes/visuract_graphs/ario_ground_DeathArea.tres" id="4_in85f"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

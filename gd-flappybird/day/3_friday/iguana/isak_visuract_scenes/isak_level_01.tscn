@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://cjnvyhfm2udaw"]
+[gd_scene format=3 uid="uid://bjswrpnsu71pq"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_1puda"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_altld"]
-[ext_resource type="Resource" uid="uid://b0mfowmvb5n6c" path="res://day/3_friday/iguana/isak_visuract_scenes/visuract_graphs/isak_level_01_Spawner.tres" id="3_rjy2f"]
-[ext_resource type="PackedScene" uid="uid://c6ox2n7bdlc3r" path="res://day/3_friday/iguana/isak_visuract_scenes/isak_ground.tscn" id="4_axt45"]
-[ext_resource type="PackedScene" uid="uid://sgng4e0bh6ai" path="res://day/3_friday/iguana/isak_visuract_scenes/isak_player.tscn" id="5_alwu6"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_altld"]
+[ext_resource type="Resource" uid="uid://dnu3petakhvkc" path="res://day/3_friday/iguana/isak_visuract_scenes/visuract_graphs/isak_level_01_Spawner.tres" id="3_rjy2f"]
+[ext_resource type="PackedScene" uid="uid://cgs3iw2brx03m" path="res://day/3_friday/iguana/isak_visuract_scenes/isak_ground.tscn" id="4_axt45"]
+[ext_resource type="PackedScene" uid="uid://h64wo2bstdcx" path="res://day/3_friday/iguana/isak_visuract_scenes/isak_player.tscn" id="5_alwu6"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_8djk8"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_26crc"]
 

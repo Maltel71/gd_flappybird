@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://dv6wiyr77mt58"]
+[gd_scene format=3 uid="uid://dp1624125ktp7"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_nsody"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_ubsas"]
-[ext_resource type="Resource" uid="uid://gg2sfvswljwd" path="res://day/2_thursday/flamingo/milo_visuract_scenes/visuract_graphs/milo_level_01_Spawner.tres" id="3_4h71b"]
-[ext_resource type="PackedScene" uid="uid://ba632gp0674r3" path="res://day/2_thursday/flamingo/milo_visuract_scenes/milo_ground.tscn" id="4_g4twy"]
-[ext_resource type="PackedScene" uid="uid://drl40xrw74dhy" path="res://day/2_thursday/flamingo/milo_visuract_scenes/milo_player.tscn" id="5_ivqcp"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_ubsas"]
+[ext_resource type="Resource" uid="uid://bcthsuxqli0sm" path="res://day/2_thursday/flamingo/milo_visuract_scenes/visuract_graphs/milo_level_01_Spawner.tres" id="3_4h71b"]
+[ext_resource type="PackedScene" uid="uid://br4grqwuoyilj" path="res://day/2_thursday/flamingo/milo_visuract_scenes/milo_ground.tscn" id="4_g4twy"]
+[ext_resource type="PackedScene" uid="uid://5ne434em8dik" path="res://day/2_thursday/flamingo/milo_visuract_scenes/milo_player.tscn" id="5_ivqcp"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_j3qi1"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_l237l"]
 

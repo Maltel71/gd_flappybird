@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://ve6d313wub1b"]
+[gd_scene format=3 uid="uid://c3admltrgvda2"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_d0una"]
-[ext_resource type="Resource" uid="uid://d2mjqsh0nn1ib" path="res://day/2_thursday/flamingo/oliver_visuract_scenes/visuract_graphs/oliver_game_over_menu_Oliver_GameOver_Menu.tres" id="2_gkww8"]
-[ext_resource type="Resource" uid="uid://dky2i5uqs0fg4" path="res://day/2_thursday/flamingo/oliver_visuract_scenes/visuract_graphs/oliver_game_over_menu_Restart.tres" id="3_pfl0d"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_d0una"]
+[ext_resource type="Resource" uid="uid://dmx17puny1pxi" path="res://day/2_thursday/flamingo/oliver_visuract_scenes/visuract_graphs/oliver_game_over_menu_Oliver_GameOver_Menu.tres" id="2_gkww8"]
+[ext_resource type="Resource" uid="uid://bbdxte111yyjm" path="res://day/2_thursday/flamingo/oliver_visuract_scenes/visuract_graphs/oliver_game_over_menu_Restart.tres" id="3_pfl0d"]
 
 [node name="Oliver_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

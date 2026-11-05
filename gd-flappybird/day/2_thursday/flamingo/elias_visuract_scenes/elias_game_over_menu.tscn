@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://bpatqdbiubdwx"]
+[gd_scene format=3 uid="uid://cgjjisn0mwljy"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_5ogkv"]
-[ext_resource type="Resource" uid="uid://q6fmjsqi4qm1" path="res://day/2_thursday/flamingo/elias_visuract_scenes/visuract_graphs/elias_game_over_menu_Elias_GameOver_Menu.tres" id="2_kc8qd"]
-[ext_resource type="Resource" uid="uid://br137irgjkybv" path="res://day/2_thursday/flamingo/elias_visuract_scenes/visuract_graphs/elias_game_over_menu_Restart.tres" id="3_in7da"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_5ogkv"]
+[ext_resource type="Resource" uid="uid://dufnquos7pjl8" path="res://day/2_thursday/flamingo/elias_visuract_scenes/visuract_graphs/elias_game_over_menu_Elias_GameOver_Menu.tres" id="2_kc8qd"]
+[ext_resource type="Resource" uid="uid://dxdvuvnlp5pjr" path="res://day/2_thursday/flamingo/elias_visuract_scenes/visuract_graphs/elias_game_over_menu_Restart.tres" id="3_in7da"]
 
 [node name="Elias_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3

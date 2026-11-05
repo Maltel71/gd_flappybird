@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://c6ox2n7bdlc3r"]
+[gd_scene format=3 uid="uid://cgs3iw2brx03m"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_ur82u"]
-[ext_resource type="Resource" uid="uid://877sgfhhlyu6" path="res://day/3_friday/iguana/isak_visuract_scenes/visuract_graphs/isak_ground_Isak_Ground.tres" id="2_ohe5d"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_ur82u"]
+[ext_resource type="Resource" uid="uid://fp1v0mlxuxgu" path="res://day/3_friday/iguana/isak_visuract_scenes/visuract_graphs/isak_ground_Isak_Ground.tres" id="2_ohe5d"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_1evo6"]
-[ext_resource type="Resource" uid="uid://db3neikfcvbxe" path="res://day/3_friday/iguana/isak_visuract_scenes/visuract_graphs/isak_ground_DeathArea.tres" id="4_t6yag"]
+[ext_resource type="Resource" uid="uid://cv2ykhr7v86y4" path="res://day/3_friday/iguana/isak_visuract_scenes/visuract_graphs/isak_ground_DeathArea.tres" id="4_t6yag"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

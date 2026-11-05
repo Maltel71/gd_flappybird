@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://5fmndurrt354"]
+[gd_scene format=3 uid="uid://g78i2oy3jo5k"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_407ek"]
-[ext_resource type="Resource" uid="uid://cx1a2hiyws78i" path="res://day/2_thursday/flamingo/elias_visuract_scenes/visuract_graphs/elias_ground_Elias_Ground.tres" id="2_uedwo"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_407ek"]
+[ext_resource type="Resource" uid="uid://cf68lyv8i0uri" path="res://day/2_thursday/flamingo/elias_visuract_scenes/visuract_graphs/elias_ground_Elias_Ground.tres" id="2_uedwo"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_ogxdr"]
-[ext_resource type="Resource" uid="uid://mj0krlqi0as3" path="res://day/2_thursday/flamingo/elias_visuract_scenes/visuract_graphs/elias_ground_DeathArea.tres" id="4_t6x8i"]
+[ext_resource type="Resource" uid="uid://cabttclgilqa8" path="res://day/2_thursday/flamingo/elias_visuract_scenes/visuract_graphs/elias_ground_DeathArea.tres" id="4_t6x8i"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

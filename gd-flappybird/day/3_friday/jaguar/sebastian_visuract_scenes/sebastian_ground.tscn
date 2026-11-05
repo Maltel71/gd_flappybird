@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://ldqw76eahot5"]
+[gd_scene format=3 uid="uid://d1i5p2lai35k5"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_lx8ke"]
-[ext_resource type="Resource" uid="uid://cytgmggcofdxs" path="res://day/3_friday/jaguar/sebastian_visuract_scenes/visuract_graphs/sebastian_ground_Sebastian_Ground.tres" id="2_8sepf"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_lx8ke"]
+[ext_resource type="Resource" uid="uid://mvl18xd6086b" path="res://day/3_friday/jaguar/sebastian_visuract_scenes/visuract_graphs/sebastian_ground_Sebastian_Ground.tres" id="2_8sepf"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_wjw8d"]
-[ext_resource type="Resource" uid="uid://dgmro7sx5igxe" path="res://day/3_friday/jaguar/sebastian_visuract_scenes/visuract_graphs/sebastian_ground_DeathArea.tres" id="4_hj42t"]
+[ext_resource type="Resource" uid="uid://datvsoq2gnke7" path="res://day/3_friday/jaguar/sebastian_visuract_scenes/visuract_graphs/sebastian_ground_DeathArea.tres" id="4_hj42t"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

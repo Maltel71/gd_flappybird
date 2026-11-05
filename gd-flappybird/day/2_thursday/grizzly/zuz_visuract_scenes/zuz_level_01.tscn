@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://cuxnu1sdgrl0h"]
+[gd_scene format=3 uid="uid://dp0qolwale5pf"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_8xidw"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_jw13f"]
-[ext_resource type="Resource" uid="uid://b324bttxhcmnu" path="res://day/2_thursday/grizzly/zuz_visuract_scenes/visuract_graphs/zuz_level_01_Spawner.tres" id="3_qlaer"]
-[ext_resource type="PackedScene" uid="uid://bxyuw0bridpfn" path="res://day/2_thursday/grizzly/zuz_visuract_scenes/zuz_ground.tscn" id="4_6o04k"]
-[ext_resource type="PackedScene" uid="uid://bkk8g6224hl2y" path="res://day/2_thursday/grizzly/zuz_visuract_scenes/zuz_player.tscn" id="5_ajg0s"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_jw13f"]
+[ext_resource type="Resource" uid="uid://dd3v6ftd8lx" path="res://day/2_thursday/grizzly/zuz_visuract_scenes/visuract_graphs/zuz_level_01_Spawner.tres" id="3_qlaer"]
+[ext_resource type="PackedScene" uid="uid://b4oo1xjhkq82l" path="res://day/2_thursday/grizzly/zuz_visuract_scenes/zuz_ground.tscn" id="4_6o04k"]
+[ext_resource type="PackedScene" uid="uid://fc4d71l4xtf3" path="res://day/2_thursday/grizzly/zuz_visuract_scenes/zuz_player.tscn" id="5_ajg0s"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_pbrfm"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_tanyn"]
 

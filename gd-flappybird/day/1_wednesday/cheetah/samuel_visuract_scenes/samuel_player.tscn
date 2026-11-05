@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://bfcitcot3lls5"]
+[gd_scene format=3 uid="uid://bju0pcvogcoiv"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_vcif8"]
-[ext_resource type="Resource" uid="uid://bf12qqxq7r6op" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/visuract_graphs/samuel_player_Samuel_Player.tres" id="2_c6yl2"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_vcif8"]
+[ext_resource type="Resource" uid="uid://2yt44t0hf3cw" path="res://day/1_wednesday/cheetah/samuel_visuract_scenes/visuract_graphs/samuel_player_Samuel_Player.tres" id="2_c6yl2"]
 [ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_22gf2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]

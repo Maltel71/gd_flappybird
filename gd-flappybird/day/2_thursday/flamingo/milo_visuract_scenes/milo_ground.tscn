@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://ba632gp0674r3"]
+[gd_scene format=3 uid="uid://br4grqwuoyilj"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_o1coe"]
-[ext_resource type="Resource" uid="uid://d3ixk5dnkod63" path="res://day/2_thursday/flamingo/milo_visuract_scenes/visuract_graphs/milo_ground_Milo_Ground.tres" id="2_dscts"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_o1coe"]
+[ext_resource type="Resource" uid="uid://3etwqw1x0ui3" path="res://day/2_thursday/flamingo/milo_visuract_scenes/visuract_graphs/milo_ground_Milo_Ground.tres" id="2_dscts"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_awm3q"]
-[ext_resource type="Resource" uid="uid://d2nvoxcenwmey" path="res://day/2_thursday/flamingo/milo_visuract_scenes/visuract_graphs/milo_ground_DeathArea.tres" id="4_v6kmo"]
+[ext_resource type="Resource" uid="uid://b1jgqlf6snfkc" path="res://day/2_thursday/flamingo/milo_visuract_scenes/visuract_graphs/milo_ground_DeathArea.tres" id="4_v6kmo"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001

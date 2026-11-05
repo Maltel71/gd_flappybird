@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://cunitm16d552u"]
+[gd_scene format=3 uid="uid://ddpqtn664s41e"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_3ymrj"]
-[ext_resource type="Resource" uid="uid://74oqodcalm3q" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_obstacle.tres" id="2_8kyp0"]
+[ext_resource type="Resource" uid="uid://c1w1nns44dg03" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_obstacle.tres" id="2_8kyp0"]
 [ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_wu7tt"]
-[ext_resource type="Resource" uid="uid://b1big7qokp5sj" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_scorezone.tres" id="4_a7jst"]
+[ext_resource type="Resource" uid="uid://b73tto481geth" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_scorezone.tres" id="4_a7jst"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
 size = Vector2(259, 780)

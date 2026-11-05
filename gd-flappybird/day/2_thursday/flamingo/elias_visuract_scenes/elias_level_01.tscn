@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://c2j8qu5jconq7"]
+[gd_scene format=3 uid="uid://b8envytyo8t24"]
 
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_m72qc"]
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="2_2u7jf"]
-[ext_resource type="Resource" uid="uid://c5rtairxskv62" path="res://day/2_thursday/flamingo/elias_visuract_scenes/visuract_graphs/elias_level_01_Spawner.tres" id="3_ce717"]
-[ext_resource type="PackedScene" uid="uid://5fmndurrt354" path="res://day/2_thursday/flamingo/elias_visuract_scenes/elias_ground.tscn" id="4_l6nun"]
-[ext_resource type="PackedScene" uid="uid://dx32w7ipjcrub" path="res://day/2_thursday/flamingo/elias_visuract_scenes/elias_player.tscn" id="5_su33n"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_2u7jf"]
+[ext_resource type="Resource" uid="uid://ch4o8qocp3maw" path="res://day/2_thursday/flamingo/elias_visuract_scenes/visuract_graphs/elias_level_01_Spawner.tres" id="3_ce717"]
+[ext_resource type="PackedScene" uid="uid://g78i2oy3jo5k" path="res://day/2_thursday/flamingo/elias_visuract_scenes/elias_ground.tscn" id="4_l6nun"]
+[ext_resource type="PackedScene" uid="uid://be6148reujn8d" path="res://day/2_thursday/flamingo/elias_visuract_scenes/elias_player.tscn" id="5_su33n"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_eani5"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_kpui5"]
 

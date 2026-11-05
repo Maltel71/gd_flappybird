@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://dmjuayxrkxfe"]
+[gd_scene format=3 uid="uid://decpxtt56k8cv"]
 
-[ext_resource type="Script" uid="uid://c0j664rsv23t0" path="res://addons/visuract/visuract_runtime.gd" id="1_mb04i"]
-[ext_resource type="Resource" uid="uid://ddcckjg2fo84w" path="res://day/2_thursday/eagle/theo_visuract_scenes/visuract_graphs/theo_game_over_menu_Theo_GameOver_Menu.tres" id="2_rvggd"]
-[ext_resource type="Resource" uid="uid://cr7lcfj1j1kxm" path="res://day/2_thursday/eagle/theo_visuract_scenes/visuract_graphs/theo_game_over_menu_Restart.tres" id="3_lhiir"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_mb04i"]
+[ext_resource type="Resource" uid="uid://vasq0rqwf6i0" path="res://day/2_thursday/eagle/theo_visuract_scenes/visuract_graphs/theo_game_over_menu_Theo_GameOver_Menu.tres" id="2_rvggd"]
+[ext_resource type="Resource" uid="uid://dx7bpamkh5cou" path="res://day/2_thursday/eagle/theo_visuract_scenes/visuract_graphs/theo_game_over_menu_Restart.tres" id="3_lhiir"]
 
 [node name="Theo_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
