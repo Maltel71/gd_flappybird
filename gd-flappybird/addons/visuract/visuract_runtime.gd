@@ -137,6 +137,10 @@ func _connect_touch_signals() -> void:
 
 
 func _on_touch_signal(other: Node, id: String, only_named: String) -> void:
+	## Parts of our own scene instance never count as a touch, or a score zone
+	## would fire on the obstacle it is attached to the moment it spawns.
+	if other == self or other == owner or (owner != null and other.owner == owner):
+		return
 	if only_named != "" and other.name != only_named and not other.is_in_group(only_named):
 		return
 	_last_body = other

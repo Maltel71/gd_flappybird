@@ -8,7 +8,7 @@ nodes = [{
 "id": "VN20",
 "params": {
 "kind": "Anything",
-"only_named": ""
+"only_named": "Malte_Player"
 },
 "position": Vector2(920, 800),
 "type": "On Body or Area Entered"
