@@ -118,22 +118,6 @@ nodes = [{
 "position": Vector2(520, 1300),
 "type": "On Timer Timeout"
 }, {
-"id": "VN155",
-"params": {
-"scene": [{
-"offset_x": 0.0,
-"offset_y": 0.0,
-"random_x": 0.0,
-"random_y": 200.0,
-"scene": "uid://c0enni5rf4yln",
-"spawn_point": "",
-"weight": 1.0,
-"where": "On me"
-}]
-},
-"position": Vector2(1240, 1300),
-"type": "Spawn Scene"
-}, {
 "id": "VN154",
 "params": {
 "scope": "Whole game",
@@ -196,6 +180,22 @@ nodes = [{
 },
 "position": Vector2(900, 1700),
 "type": "Visibility"
+}, {
+"id": "VN155",
+"params": {
+"scene": [{
+"offset_x": 0.0,
+"offset_y": 0.0,
+"random_x": 0.0,
+"random_y": 0.0,
+"scene": "uid://bbg5gaphb1aqj",
+"spawn_point": "",
+"weight": 1.0,
+"where": "On me"
+}]
+},
+"position": Vector2(1240, 1300),
+"type": "Spawn Scene"
 }]
 connections = [{
 "from": "VN132",
@@ -246,4 +246,4 @@ connections = [{
 "from": "VN315",
 "to": "VN316"
 }]
-scene_uid = "uid://bxhsnelskqiwg"
+scene_uid = "uid://bj6iutesd6h40"
