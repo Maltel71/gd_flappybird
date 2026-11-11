@@ -2,11 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://g6lkurqdytxq" path="res://day/1_wednesday/anthelope/idris/sprites/idris_bg_01.png" id="1_ifxqi"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_qo85l"]
-[ext_resource type="Resource" uid="uid://b13hjopleobux" path="res://day/1_wednesday/anthelope/idris/visuract_graphs/idris_level_01_Spawner.tres" id="3_k1r30"]
-[ext_resource type="PackedScene" uid="uid://1l20w5wl36sm" path="res://day/1_wednesday/anthelope/idris/idris_ground.tscn" id="4_ms3ft"]
-[ext_resource type="PackedScene" uid="uid://b65m7d3imtw7" path="res://day/1_wednesday/anthelope/idris/idris_player.tscn" id="5_jd0yv"]
+[ext_resource type="Resource" uid="uid://dt7p0ioxvkolm" path="res://day/1_wednesday/anthelope/idris/visuract_graphs/idris_level_01_Spawner_2.tres" id="3_ifxqi"]
+[ext_resource type="PackedScene" uid="uid://1l20w5wl36sm" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/idris_ground.tscn" id="4_ms3ft"]
+[ext_resource type="PackedScene" uid="uid://b65m7d3imtw7" path="res://day/1_wednesday/anthelope/idris_visuract_scenes/idris_player.tscn" id="5_jd0yv"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_w0kor"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_lbirw"]
+[ext_resource type="AudioStream" uid="uid://be66u2d5d2nbq" path="res://day/1_wednesday/anthelope/idris/IDRIS_SONG01.wav" id="8_8qhy2"]
 
 [node name="Idris_Level_01" type="Node2D" unique_id=1636437843]
 
@@ -21,7 +22,7 @@ metadata/_edit_lock_ = true
 [node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
 position = Vector2(2119, 459)
 script = ExtResource("2_qo85l")
-graph = ExtResource("3_k1r30")
+graph = ExtResource("3_ifxqi")
 
 [node name="Idris_Ground" parent="." unique_id=291150015 instance=ExtResource("4_ms3ft")]
 
@@ -40,3 +41,6 @@ text = "0"
 [node name="IdrisStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
 position = Vector2(1096, 477)
 texture = ExtResource("7_lbirw")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1489299499]
+stream = ExtResource("8_8qhy2")
