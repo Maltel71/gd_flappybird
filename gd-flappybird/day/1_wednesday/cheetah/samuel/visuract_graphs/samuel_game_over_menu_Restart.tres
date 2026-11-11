@@ -7,21 +7,25 @@ script = ExtResource("1_2ujkx")
 nodes = [{
 "id": "VN200",
 "params": {
-"change_colors": false,
+"change_colors": true,
 "click_grow": -10.0,
 "click_tilt": 0.0,
 "click_wiggle": true,
+"hover_color": Color(0.029785156, 0.19569778, 0.953125, 1),
 "hover_grow": 8.0,
 "hover_tilt": 3.0,
-"hover_wiggle": false,
-"run_blocks": "When released"
+"hover_wiggle": true,
+"normal_color": Color(0.9296875, 0.37697625, 0.010894775, 1),
+"pressed_color": Color(0.8203125, 0.13778687, 0.15378356, 1),
+"run_blocks": "When released",
+"selected_color": Color(0.23583233, 0.97265625, 0.056991577, 1)
 },
 "position": Vector2(1040, 1220),
 "type": "Juicy Button"
 }, {
 "id": "VN201",
 "params": {
-"scene": "uid://bxhsnelskqiwg"
+"scene": "uid://beb1oj7woh6v0"
 },
 "position": Vector2(1460, 1220),
 "type": "Change Scene"
@@ -30,4 +34,4 @@ connections = [{
 "from": "VN200",
 "to": "VN201"
 }]
-scene_uid = "uid://dbrbgcpuyugke"
+scene_uid = "uid://ypwm8kbmgfd7"
