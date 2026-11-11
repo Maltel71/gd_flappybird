@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b65m7d3imtw7"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_5ccjg"]
+[ext_resource type="Resource" uid="uid://rpsd626rlkg8" path="res://day/1_wednesday/anthelope/idris/visuract_graphs/idris_player_Idris_Player.tres" id="2_d1u28"]
+[ext_resource type="Texture2D" uid="uid://bmtxhl7bwsi0j" path="res://day/1_wednesday/anthelope/idris/sprites/idris_spelare_01.png" id="3_sdk72"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Idris_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_5ccjg")
+graph = ExtResource("2_d1u28")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+position = Vector2(1.9999847, -11.0000305)
+scale = Vector2(0.30835378, 0.3083538)
+texture = ExtResource("3_sdk72")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")
