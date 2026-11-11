@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cecms6mynlye0"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_wwuwf"]
+[ext_resource type="Resource" uid="uid://bjdmtfd67vlyy" path="res://day/1_wednesday/anthelope/jun/visuract_graphs/jun_player_Jun_Player.tres" id="2_am5ae"]
+[ext_resource type="Texture2D" uid="uid://3htry67yusc5" path="res://day/1_wednesday/anthelope/jun/sprites/Jun_PLAYER1.png" id="3_q6isy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Jun_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_wwuwf")
+graph = ExtResource("2_am5ae")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+position = Vector2(-29, -14)
+scale = Vector2(0.41253266, 0.41253263)
+texture = ExtResource("3_q6isy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")

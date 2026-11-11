@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://1nar50asjrjt"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_x1r1n"]
+[ext_resource type="Resource" uid="uid://d2v63v65yas0y" path="res://day/1_wednesday/anthelope/jiyus/visuract_graphs/jiyu_obstacle.tres" id="2_h7xd8"]
+[ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_eas2m"]
+[ext_resource type="Resource" uid="uid://d3vcr1kb3tn8l" path="res://day/1_wednesday/anthelope/jiyus/visuract_graphs/jiyu_scorezone.tres" id="4_2mh8c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
+size = Vector2(259, 780)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0s0vq"]
+size = Vector2(36, 409)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vwf7g"]
+size = Vector2(229, 756)
+
+[node name="Jiyu_Obstacle" type="Area2D" unique_id=1233493269]
+script = ExtResource("1_x1r1n")
+graph = ExtResource("2_h7xd8")
+
+[node name="Top" type="Sprite2D" parent="." unique_id=1511844230]
+position = Vector2(0, -710)
+texture = ExtResource("3_eas2m")
+
+[node name="Bottom" type="Sprite2D" parent="." unique_id=298269132]
+position = Vector2(0, 467)
+texture = ExtResource("3_eas2m")
+
+[node name="Top_Collider" type="CollisionShape2D" parent="." unique_id=1941221746]
+position = Vector2(-6.5, -711)
+shape = SubResource("RectangleShape2D_mlerw")
+
+[node name="Bottom_Collider" type="CollisionShape2D" parent="." unique_id=726029601]
+position = Vector2(-6.5, 465)
+shape = SubResource("RectangleShape2D_mlerw")
+
+[node name="ScoreZone" type="Area2D" parent="." unique_id=1030676976]
+script = ExtResource("1_x1r1n")
+graph = ExtResource("4_2mh8c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreZone" unique_id=939799433]
+position = Vector2(63, -127.5)
+shape = SubResource("RectangleShape2D_0s0vq")
+debug_color = Color(0.7223907, 0.4787647, 0, 0.41960785)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1049106621]
+
+[node name="Top" type="CollisionShape2D" parent="StaticBody2D" unique_id=58241554]
+position = Vector2(-10.5, -715)
+shape = SubResource("RectangleShape2D_vwf7g")
+debug_color = Color(0.9828394, 0, 0.36279765, 0.41960785)
+
+[node name="Bottom" type="CollisionShape2D" parent="StaticBody2D" unique_id=777526969]
+position = Vector2(-3, 465)
+shape = SubResource("RectangleShape2D_vwf7g")
+debug_color = Color(0.9828394, 0, 0.36279765, 0.41960785)
