@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://pmqn8k8tq2tv"]
+
+[ext_resource type="Texture2D" uid="uid://slfcyxd5vk0s" path="res://day/1_wednesday/anthelope/ella/sprites/ella_bg.png" id="1_t8yer"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_sshkx"]
+[ext_resource type="Resource" uid="uid://ghvubc51h3iw" path="res://day/1_wednesday/anthelope/ella/visuract_graphs/ella_level_01_Spawner.tres" id="3_2ld41"]
+[ext_resource type="PackedScene" uid="uid://d1e5q1jkloliw" path="res://day/1_wednesday/anthelope/ella/ella_ground.tscn" id="4_txrmc"]
+[ext_resource type="PackedScene" uid="uid://s8konkw4srfr" path="res://day/1_wednesday/anthelope/ella/ella_player.tscn" id="5_y0l6d"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_1088k"]
+[ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_47yqh"]
+
+[node name="Ella_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="EllaMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 535)
+scale = Vector2(1, 1.0055555)
+texture = ExtResource("1_t8yer")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
+position = Vector2(960, 540)
+metadata/_edit_lock_ = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
+position = Vector2(2119, 459)
+script = ExtResource("2_sshkx")
+graph = ExtResource("3_2ld41")
+
+[node name="Ella_Ground" parent="." unique_id=291150015 instance=ExtResource("4_txrmc")]
+
+[node name="Ella_Player" parent="." unique_id=1006372336 instance=ExtResource("5_y0l6d")]
+position = Vector2(483, 531)
+
+[node name="Score_Label" type="Label" parent="." unique_id=1687435472]
+z_index = 30
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
+theme = ExtResource("6_1088k")
+text = "0"
+
+[node name="EllaStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
+position = Vector2(1096, 477)
+texture = ExtResource("7_47yqh")
