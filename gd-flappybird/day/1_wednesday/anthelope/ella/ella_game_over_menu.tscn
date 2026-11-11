@@ -28,7 +28,7 @@ offset_left = 924.0
 offset_top = 370.0
 offset_right = 964.0
 offset_bottom = 393.0
-text = "9000"
+text = "idrk u suck"
 
 [node name="Restart" type="Button" parent="." unique_id=1422222847]
 layout_mode = 0
