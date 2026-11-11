@@ -51,11 +51,6 @@ func _ready():
 		settings_button.mouse_entered.connect(_on_button_hover)
 		quit_button.mouse_entered.connect(_on_button_hover)
 	
-	# Start menu music
-	if menu_music:
-		MusicManager.play_menu_music(menu_music)
-		MusicManager.music_player.volume_db = menu_music_volume
-
 # --- Hover / focus animation -------------------------------------------------
 
 func _setup_button_animation(button: Control) -> void:

@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dbrbgcpuyugke"]
 
-[ext_resource type="Script" uid="uid://br7s5alt18rod" path="res://addons/visuract/visuract_runtime.gd" id="1_qv0es"]
-[ext_resource type="Resource" uid="uid://bkvvpmtnk0kda" path="res://visuract/graphs/Malte_GameOver_Menu.tres" id="2_einol"]
-[ext_resource type="Resource" uid="uid://c753dvd43lcfm" path="res://visuract/graphs/Restart.tres" id="3_einol"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_qv0es"]
+[ext_resource type="Resource" uid="uid://dmpdbm66sbnkw" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_game_over_menu_Malte_GameOver_Menu.tres" id="2_einol"]
+[ext_resource type="Resource" uid="uid://dtsll6ijjdean" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_game_over_menu_Restart.tres" id="3_4snk5"]
 
 [node name="Malte_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
@@ -38,4 +38,4 @@ offset_right = 951.0
 offset_bottom = 480.0
 text = "Restart"
 script = ExtResource("1_qv0es")
-graph = ExtResource("3_einol")
+graph = ExtResource("3_4snk5")

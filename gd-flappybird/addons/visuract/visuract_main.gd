@@ -10,7 +10,12 @@ const ColorRamp := preload("res://addons/visuract/color_ramp.gd")
 const SceneLibrary := preload("res://addons/visuract/scene_library.gd")
 const Lang := preload("res://addons/visuract/visuract_lang.gd")
 const DialogueEditor := preload("res://addons/visuract/dialogue_editor.gd")
+## Fallback for scenes that have never been saved.
 const GRAPH_DIR := "res://visuract/graphs"
+## Graphs live in this folder beside the scene that owns them.
+const GRAPH_FOLDER := "visuract_graphs"
+## Set false once the graph-loss bug is understood.
+const DEBUG := false
 const LIBRARY_WIDTH := 260
 const HIGHLIGHT := Color(0.75, 0.45, 1.0)
 const REMOVE_TINT := Color("a05c5c")
@@ -189,8 +194,8 @@ func _on_selection_changed() -> void:
 	_target = node
 	var existing = node.get("graph") if node.get_script() == RUNTIME else null
 	if existing is VisuractGraph:
-		_graph_res = existing
-		_graph_path = existing.resource_path
+		_graph_res = _own_graph(node, existing)
+		_graph_path = _graph_res.resource_path
 		_load_into_canvas()
 		_set_status(Lang.t("Showing: %s  (%d blocks)") % [node.name, _graph_res.nodes.size()])
 		if _is_instance(node) and _source_graph(node) != existing:
@@ -1228,9 +1233,15 @@ func _make_field(spec, is_spec: bool, value, widgets: Dictionary, key) -> Contro
 				pass
 			else:
 				choices = [NONE_OPTION] + choices
+		## A value the project no longer offers is kept as its own entry, so
+		## opening a graph never quietly swaps it for the first choice.
+		var picked := choices.find(value)
+		if picked == -1 and String(value) != "":
+			choices = choices + [String(value)]
+			picked = choices.size() - 1
 		for i in choices.size():
 			picker.add_item(Lang.t(String(choices[i])), i)
-		picker.selected = maxi(0, choices.find(value))
+		picker.selected = maxi(0, picked)
 		## Labels can be translated, so the English choices are kept alongside.
 		picker.set_meta("options", choices)
 		picker.item_selected.connect(func(_i): _autosave())
@@ -1509,10 +1520,8 @@ func _variable_name_options() -> Array:
 		if child is GraphNode and _type_of(child) == "Remember":
 			_collect_signal_name(_read_params(child).get("variable_name", ""), out)
 
-	for file in DirAccess.get_files_at(GRAPH_DIR):
-		if not file.ends_with(".tres"):
-			continue
-		var resource = ResourceLoader.load(GRAPH_DIR.path_join(file))
+	for file in _saved_graphs():
+		var resource = ResourceLoader.load(file)
 		if not (resource is VisuractGraph):
 			continue
 		for n in resource.nodes:
@@ -1533,10 +1542,8 @@ func _signal_name_options() -> Array:
 		if child is GraphNode and _type_of(child) == "Send Signal":
 			_collect_signal_name(_read_params(child).get("signal_name", ""), out)
 
-	for file in DirAccess.get_files_at(GRAPH_DIR):
-		if not file.ends_with(".tres"):
-			continue
-		var resource = ResourceLoader.load(GRAPH_DIR.path_join(file))
+	for file in _saved_graphs():
+		var resource = ResourceLoader.load(file)
 		if not (resource is VisuractGraph):
 			continue
 		for n in resource.nodes:
@@ -1546,6 +1553,17 @@ func _signal_name_options() -> Array:
 	out.sort()
 	if out.is_empty():
 		out.append(NO_SIGNALS)
+	return out
+
+
+## Graph files worth reading: this scene's own folder, plus the old shared one.
+func _saved_graphs() -> Array:
+	var out := []
+	for dir in [_graph_dir(), GRAPH_DIR]:
+		for file in DirAccess.get_files_at(dir):
+			var path: String = dir.path_join(file)
+			if file.ends_with(".tres") and not out.has(path):
+				out.append(path)
 	return out
 
 
@@ -1810,7 +1828,7 @@ func _on_attach_pressed() -> void:
 	if _target.get_script() != RUNTIME:
 		_target.set_script(RUNTIME)
 
-	DirAccess.make_dir_recursive_absolute(GRAPH_DIR)
+	DirAccess.make_dir_recursive_absolute(_graph_dir())
 	var existing = _target.get("graph")
 	if existing is VisuractGraph:
 		## Re-attaching a node that already has one keeps its graph.
@@ -1819,6 +1837,7 @@ func _on_attach_pressed() -> void:
 	else:
 		_graph_path = _unique_graph_path(_target.name)
 		_graph_res = VisuractGraph.new()
+		_graph_res.scene_uid = _scene_uid()
 		_graph_res.take_over_path(_graph_path)
 		ResourceSaver.save(_graph_res, _graph_path)
 
@@ -1832,6 +1851,104 @@ func _on_attach_pressed() -> void:
 
 func _is_instance(node: Node) -> bool:
 	return node.scene_file_path != "" and node != EditorInterface.get_edited_scene_root()
+
+
+func _scene_uid() -> String:
+	var root := EditorInterface.get_edited_scene_root()
+	if root == null or root.scene_file_path == "":
+		return ""
+	return ResourceUID.id_to_text(ResourceLoader.get_resource_uid(root.scene_file_path))
+
+
+## Runs when a scene is opened, so a duplicated scene unlinks its graphs at once.
+func _log(message: String) -> void:
+	if DEBUG:
+		print("[Visuract] " + message)
+
+
+## Deferred, because scene_changed fires before the editor finishes switching.
+func own_scene_graphs(root: Node) -> void:
+	if root == null or root.scene_file_path == "":
+		return
+	_own_scene_graphs.call_deferred(root)
+
+
+func _own_scene_graphs(root: Node) -> void:
+	if EditorInterface.get_edited_scene_root() != root:
+		_log("scene_changed: tab moved on before the fork, skipped %s" % root.scene_file_path)
+		return
+	_log("scene opened: %s  (graphs go to %s)" % [root.scene_file_path, _graph_dir()])
+	for node in [root] + root.find_children("*", "", true, false):
+		if node.get_script() == RUNTIME and node.get("graph") is VisuractGraph:
+			_own_graph(node, node.get("graph"))
+
+
+## A graph still owned by another scene (e.g. after duplicating the .tscn)
+## is copied, so editing one scene never changes the other.
+func _own_graph(node: Node, graph: VisuractGraph) -> VisuractGraph:
+	var root := EditorInterface.get_edited_scene_root()
+	var uid := _scene_uid()
+	if uid == "" or _is_instance(node) or (node != root and node.owner != root):
+		return graph
+
+	var dir := _graph_dir()
+	var here := graph.resource_path.get_base_dir() == dir
+	_log("check %s -> %s  blocks=%d  scene_uid=%s  this_scene=%s  in_folder=%s" % [node.name, graph.resource_path, graph.nodes.size(), graph.scene_uid, uid, here])
+	if graph.scene_uid == uid and here:
+		return graph
+
+	## Another scene still points at it, so that one keeps the original.
+	var owned: VisuractGraph = graph if graph.scene_uid == "" or graph.scene_uid == uid else graph.duplicate(true)
+	owned.scene_uid = uid
+	owned.nodes = _localize_files(owned.nodes, root.scene_file_path.get_base_dir())
+	## A graph already sitting in this folder came with the copied scene -
+	## reuse its file instead of leaving it behind unused.
+	var path: String = graph.resource_path if here else _unique_graph_path("%s_%s" % [root.scene_file_path.get_file().get_basename(), node.name])
+	owned.take_over_path(path)
+	var error := ResourceSaver.save(owned, path)
+	_log("fork %s -> %s  blocks=%d  copied=%s  save=%d" % [node.name, path, owned.nodes.size(), owned != graph, error])
+	node.set("graph", owned)
+	_save_scene_soon()
+	return owned
+
+
+## Beside the scene that owns it, so duplicating a folder duplicates its
+## graphs too and nothing outside that folder is ever written.
+func _graph_dir() -> String:
+	var root := EditorInterface.get_edited_scene_root()
+	if root == null or root.scene_file_path == "":
+		return GRAPH_DIR
+	return root.scene_file_path.get_base_dir().path_join(GRAPH_FOLDER)
+
+
+## Points file params at the same-named file in this scene's folder when one
+## exists (a duplicated folder uses its own scenes), and stores them as UIDs.
+func _localize_files(value: Variant, dir: String) -> Variant:
+	if value is Array:
+		return value.map(func(v): return _localize_files(v, dir))
+	if value is Dictionary:
+		var out := {}
+		for key in value:
+			out[key] = _localize_files(value[key], dir)
+		return out
+	if not (value is String and value.begins_with("res://") and ResourceLoader.exists(value)):
+		return value
+	var local := dir.path_join(value.get_file())
+	if not ResourceLoader.exists(local):
+		local = _renamed_match(dir, value.get_file())
+	var path: String = local if local != "" else value
+	return ResourceUID.id_to_text(ResourceLoader.get_resource_uid(path))
+
+
+## "malte_player.tscn" matches a renamed "aaritro_player.tscn" (same part after
+## the first "_"), if exactly one file in the folder fits.
+func _renamed_match(dir: String, file: String) -> String:
+	var cut := file.find("_")
+	if cut == -1:
+		return ""
+	var tail := file.substr(cut)
+	var hits := Array(DirAccess.get_files_at(dir)).filter(func(f): return f.ends_with(tail))
+	return dir.path_join(hits[0]) if hits.size() == 1 else ""
 
 
 ## The graph the instanced scene's own root uses.
@@ -1855,7 +1972,9 @@ func _confirm_detach() -> void:
 
 ## A fresh node never inherits an old graph that happens to share its name.
 func _unique_graph_path(node_name: String) -> String:
-	var base := "%s/%s" % [GRAPH_DIR, node_name]
+	var dir := _graph_dir()
+	DirAccess.make_dir_recursive_absolute(dir)
+	var base := dir.path_join(node_name)
 	if not ResourceLoader.exists(base + ".tres"):
 		return base + ".tres"
 	var suffix := 2
@@ -1880,16 +1999,28 @@ func _detach() -> void:
 func _save_scene_soon() -> void:
 	var root := EditorInterface.get_edited_scene_root()
 	if root != null and root.scene_file_path != "":
-		_do_save_scene.call_deferred()
+		_do_save_scene(root)
 
 
-func _do_save_scene() -> void:
-	EditorInterface.save_scene()
+## Awaited, not deferred - save_scene() during a message-queue flush upsets
+## the editor's progress dialog.
+func _do_save_scene(root: Node) -> void:
+	await get_tree().process_frame
+	if EditorInterface.get_edited_scene_root() == root:
+		EditorInterface.save_scene()
 
 
 func _on_save_pressed() -> void:
 	if _graph_res == null:
 		_set_status(Lang.t("Attach to a node first."))
+		return
+
+	## An empty canvas over a graph that still has blocks means loading failed,
+	## not that the user deleted everything. Never write that out.
+	var on_canvas := _graph.get_children().filter(func(c): return c is GraphNode)
+	_log("save %s  canvas=%d  stored=%d" % [_graph_path, on_canvas.size(), _graph_res.nodes.size()])
+	if on_canvas.is_empty() and not _graph_res.nodes.is_empty():
+		_set_status(Lang.t("Canvas is empty - kept the %d saved blocks in %s") % [_graph_res.nodes.size(), _graph_path])
 		return
 
 	_graph_res.nodes.clear()
@@ -1926,8 +2057,10 @@ func _load_into_canvas(frame := true) -> void:
 	_graph_path = path
 
 	_loading = true
+	_log("load %s  blocks=%d" % [_graph_path, _graph_res.nodes.size()])
 	for n in _graph_res.nodes:
-		_make_graph_node(n.type, n.position, n.id, n.get("params", {}))
+		if _make_graph_node(n.type, n.position, n.id, n.get("params", {})) == null:
+			_log("  block '%s' (type '%s') failed to build" % [n.get("id", "?"), n.get("type", "?")])
 	for c in _graph_res.connections:
 		_graph.connect_node(c.from, 0, c.to, 0)
 	_refresh_conditional_params()

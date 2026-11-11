@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://d0qvo6ud43nuc"]
+
+[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_5pbku"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_ow3lp"]
+[ext_resource type="Resource" uid="uid://dudqfrnocwulp" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/visuract_graphs/eduard_level_01_Spawner.tres" id="3_rq0ke"]
+[ext_resource type="PackedScene" uid="uid://cayochqep83hv" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/eduard_ground.tscn" id="4_lswgi"]
+[ext_resource type="PackedScene" uid="uid://c0sjnfpqls3n8" path="res://day/3_friday/kangaroo/eduard_visuract_scenes/eduard_player.tscn" id="5_n0k5t"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_tm38h"]
+[ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_fq0b3"]
+
+[node name="Eduard_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="EduardMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 464)
+texture = ExtResource("1_5pbku")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
+position = Vector2(960, 540)
+metadata/_edit_lock_ = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
+position = Vector2(2119, 459)
+script = ExtResource("2_ow3lp")
+graph = ExtResource("3_rq0ke")
+
+[node name="Eduard_Ground" parent="." unique_id=291150015 instance=ExtResource("4_lswgi")]
+
+[node name="Eduard_Player" parent="." unique_id=1006372336 instance=ExtResource("5_n0k5t")]
+position = Vector2(483, 531)
+
+[node name="Score_Label" type="Label" parent="." unique_id=1687435472]
+z_index = 30
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
+theme = ExtResource("6_tm38h")
+text = "0"
+
+[node name="EduardStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
+position = Vector2(1096, 477)
+texture = ExtResource("7_fq0b3")

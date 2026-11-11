@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bcba7k0c5g34x"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_81crf"]
+[ext_resource type="Resource" uid="uid://ckw1rxk7uxbbj" path="res://day/1_wednesday/anthelope/aaron_visuract_scenes/visuract_graphs/aaron_player_Aaron_Player.tres" id="2_5vg6r"]
+[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_a6q72"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Aaron_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_81crf")
+graph = ExtResource("2_5vg6r")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+texture = ExtResource("3_a6q72")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")

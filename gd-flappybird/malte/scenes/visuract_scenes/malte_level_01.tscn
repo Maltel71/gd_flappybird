@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_gs8kn"]
 [ext_resource type="PackedScene" uid="uid://665qbgfaadjr" path="res://malte/scenes/visuract_scenes/malte_ground.tscn" id="1_s3vi4"]
 [ext_resource type="PackedScene" uid="uid://b4v5xl3nw1t5y" path="res://malte/scenes/visuract_scenes/malte_player.tscn" id="2_5p8xj"]
-[ext_resource type="Resource" uid="uid://d3f8qaw8cf687" path="res://visuract/graphs/Spawner.tres" id="2_qdhcp"]
+[ext_resource type="Resource" uid="uid://ckgwwgstnhwg0" path="res://malte/scenes/visuract_scenes/visuract_graphs/malte_level_01_Spawner.tres" id="3_gs8kn"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="5_qdhcp"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_0grcd"]
 
@@ -21,7 +21,7 @@ metadata/_edit_lock_ = true
 [node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
 position = Vector2(2119, 459)
 script = ExtResource("1_8bybk")
-graph = ExtResource("2_qdhcp")
+graph = ExtResource("3_gs8kn")
 
 [node name="Malte_Ground" parent="." unique_id=291150015 instance=ExtResource("1_s3vi4")]
 

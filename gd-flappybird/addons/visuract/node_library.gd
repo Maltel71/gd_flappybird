@@ -49,6 +49,8 @@ const GRAVITY_ACTIONS := ["Turn on", "Turn off", "Toggle"]
 
 const POINT_MODES := ["Face direction", "Lean"]
 
+const POINT_AT_TARGETS := ["Mouse cursor", "A node"]
+
 const BUTTON_MODES := ["When pressed", "While held", "When released"]
 
 ## A short, friendly whitelist instead of every property Godot reports.
@@ -89,6 +91,7 @@ const NODES := {
 		{"name": "Quit Game", "desc": "Closes the game.", "code": "get_tree().quit()"},
 		{"name": "Visibility", "requires_class": "CanvasItem", "desc": "Shows, hides or toggles a node.", "code": "visible = true", "params": {"target": {"type": "node"}, "action": {"type": "choice", "options": VISIBILITY_ACTIONS, "default": "Hide"}}},
 		{"name": "Point Where Moving", "requires_class": "CharacterBody2D,RigidBody2D", "desc": "Turns the art with how you move. Lean: nose up while rising, down while falling (Flappy Bird). Face Direction: always points the way you're going (arrows, falling bullets). Draw the art facing right, and put this after On Every Frame. Turn Speed 100 is instant.", "code": "rotation = velocity.angle()", "params": {"mode": {"type": "choice", "options": POINT_MODES, "default": "Face direction"}, "up_angle": {"type": "number", "default": -30.0, "min": -90.0, "max": 0.0, "step": 5.0, "requires_param": {"mode": "Lean"}}, "down_angle": {"type": "number", "default": 90.0, "min": 0.0, "max": 180.0, "step": 5.0, "requires_param": {"mode": "Lean"}}, "turn_speed": {"type": "slider", "default": 50.0, "min": 1.0, "max": 100.0}}},
+		{"name": "Point At", "requires_class": "Node2D", "desc": "Turns a node to face the mouse cursor, or another node. Put it after On Every Frame. Draw the art facing right, or use Offset (-90 if it faces up). Turn Speed 100 snaps instantly, lower drags behind like a heavy turret.", "code": "rotation = (spot - global_position).angle()", "params": {"target": {"type": "node"}, "point_at": {"type": "choice", "options": POINT_AT_TARGETS, "default": "Mouse cursor"}, "at_node": {"type": "node", "requires_param": {"point_at": "A node"}}, "turn_speed": {"type": "slider", "default": 50.0, "min": 1.0, "max": 100.0}, "offset": {"type": "number", "default": 0.0, "min": -180.0, "max": 180.0, "step": 5.0}}},
 		{"name": "Rotate", "requires_class": "Node2D", "desc": "Spin a node around. Negative speed spins the other way.", "code": "rotation += speed * delta", "params": {"target": {"type": "node"}, "speed": {"type": "number", "default": 90.0, "min": -3600.0, "max": 3600.0, "step": 10.0}}},
 		{"name": "Print", "desc": "Write a message to the output.", "code": "print(text)", "params": {"text": "Hello!", "show_what_touched_me": {"type": "bool", "default": false, "requires_upstream": TOUCH_EVENTS}, "show_my_name": false}},
 		{"name": "Dialogue", "desc": "Shows text on a Label. Each time it runs it plays the next section, then cycles the default responses.", "code": "label.text = line", "params": {"label": {"type": "node", "class": "Label"}, "dialogue": {"type": "dialogue"}}},

@@ -2,8 +2,10 @@
 extends EditorPlugin
 
 const MainPanel := preload("res://addons/visuract/visuract_main.gd")
+const RenameMenu := preload("res://addons/visuract/visuract_rename.gd")
 
 var _main_panel: MainPanel
+var _rename_menu: RenameMenu
 
 
 func _enter_tree() -> void:
@@ -13,9 +15,15 @@ func _enter_tree() -> void:
 	_main_panel.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	EditorInterface.get_editor_main_screen().add_child(_main_panel)
 	_make_visible(false)
+	scene_changed.connect(_main_panel.own_scene_graphs)
+
+	_rename_menu = RenameMenu.new()
+	add_context_menu_plugin(EditorContextMenuPlugin.CONTEXT_SLOT_FILESYSTEM, _rename_menu)
 
 
 func _exit_tree() -> void:
+	if _rename_menu:
+		remove_context_menu_plugin(_rename_menu)
 	if _main_panel:
 		_main_panel.queue_free()
 

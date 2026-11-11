@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bj6p78ol6t6x6"]
+
+[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_3klte"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_ubu7a"]
+[ext_resource type="Resource" uid="uid://cui82rytwryux" path="res://day/3_friday/jaguar/ario_visuract_scenes/visuract_graphs/ario_level_01_Spawner.tres" id="3_rk6ng"]
+[ext_resource type="PackedScene" uid="uid://dvekcbfufun2e" path="res://day/3_friday/jaguar/ario_visuract_scenes/ario_ground.tscn" id="4_eea82"]
+[ext_resource type="PackedScene" uid="uid://d1aie8vo731kp" path="res://day/3_friday/jaguar/ario_visuract_scenes/ario_player.tscn" id="5_cptib"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_erxi0"]
+[ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_n1ljb"]
+
+[node name="Ario_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="ArioMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 464)
+texture = ExtResource("1_3klte")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
+position = Vector2(960, 540)
+metadata/_edit_lock_ = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
+position = Vector2(2119, 459)
+script = ExtResource("2_ubu7a")
+graph = ExtResource("3_rk6ng")
+
+[node name="Ario_Ground" parent="." unique_id=291150015 instance=ExtResource("4_eea82")]
+
+[node name="Ario_Player" parent="." unique_id=1006372336 instance=ExtResource("5_cptib")]
+position = Vector2(483, 531)
+
+[node name="Score_Label" type="Label" parent="." unique_id=1687435472]
+z_index = 30
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
+theme = ExtResource("6_erxi0")
+text = "0"
+
+[node name="ArioStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
+position = Vector2(1096, 477)
+texture = ExtResource("7_n1ljb")
