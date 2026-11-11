@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b8nbrkl8do50a" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_03.png" id="5_3guwy"]
 [ext_resource type="Texture2D" uid="uid://ct42m2wvmgdjm" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_04.png" id="6_165h6"]
 [ext_resource type="Texture2D" uid="uid://brvmlmgw6isoc" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_idle.png" id="7_3guwy"]
+[ext_resource type="Resource" uid="uid://crxc2bqc85x6g" path="res://day/1_wednesday/cheetah/samuel/visuract_graphs/AnimatedSprite2D.tres" id="8_3guwy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_klnxv"]
 animations = [{
@@ -43,7 +44,10 @@ graph = ExtResource("2_f3ewu")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=757562791]
 sprite_frames = SubResource("SpriteFrames_klnxv")
 animation = &"Ship_flying"
-frame_progress = 0.032254532
+frame = 3
+frame_progress = 0.85127586
+script = ExtResource("1_vcif8")
+graph = ExtResource("8_3guwy")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=52596110]
 position = Vector2(1.1785736, 2.9687493)

@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://crxc2bqc85x6g"]
+
+[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_w8luv"]
+
+[resource]
+script = ExtResource("1_w8luv")
+nodes = [{
+"id": "VN132",
+"params": {
+"action": "Play",
+"animation": "AnimatedSprite2D / Ship_flying",
+"wait_to_finish": false
+},
+"position": Vector2(874.7383, -265.82147),
+"type": "Animation"
+}, {
+"id": "VN133",
+"params": {
+"action": "Stop",
+"animation": "AnimatedSprite2D / Ship_idle"
+},
+"position": Vector2(874.7383, -65.82147),
+"type": "Animation"
+}, {
+"id": "VN134",
+"params": {
+"button": "Space",
+"mode": "When released"
+},
+"position": Vector2(274.73828, 134.17853),
+"type": "On Button Pressed"
+}, {
+"id": "VN135",
+"params": {
+"action": "Play",
+"animation": "AnimatedSprite2D / Ship_idle",
+"wait_to_finish": false
+},
+"position": Vector2(874.7383, 134.17853),
+"type": "Animation"
+}, {
+"id": "VN136",
+"params": {
+"action": "Stop",
+"animation": "AnimatedSprite2D / Ship_flying"
+},
+"position": Vector2(874.7383, 334.17853),
+"type": "Animation"
+}, {
+"id": "VN137",
+"params": {
+"button": "Space",
+"mode": "While held"
+},
+"position": Vector2(254.73828, -285.82147),
+"type": "On Button Pressed"
+}, {
+"id": "VN162",
+"params": {
+"action": "Play",
+"animation": "AnimatedSprite2D / Ship_flying",
+"wait_to_finish": false
+},
+"position": Vector2(1800, -240),
+"type": "Animation"
+}, {
+"id": "VN167",
+"params": {
+"button": "Space",
+"mode": "While held"
+},
+"position": Vector2(1520, -340),
+"type": "On Button Pressed"
+}, {
+"id": "VN163",
+"params": {
+"action": "Stop",
+"animation": "AnimatedSprite2D / Ship_idle"
+},
+"position": Vector2(1720, -140),
+"type": "Animation"
+}, {
+"id": "VN165",
+"params": {
+"action": "Play",
+"animation": "AnimatedSprite2D / Ship_idle",
+"wait_to_finish": false
+},
+"position": Vector2(1820, -120),
+"type": "Animation"
+}, {
+"id": "VN166",
+"params": {
+"action": "Stop",
+"animation": "AnimatedSprite2D / Ship_flying"
+},
+"position": Vector2(1580, -140),
+"type": "Animation"
+}, {
+"id": "VN164",
+"params": {
+"button": "Space",
+"mode": "When released"
+},
+"position": Vector2(1840, -120),
+"type": "On Button Pressed"
+}]
+connections = [{
+"from": "VN137",
+"to": "VN132"
+}, {
+"from": "VN137",
+"to": "VN133"
+}, {
+"from": "VN134",
+"to": "VN135"
+}, {
+"from": "VN134",
+"to": "VN136"
+}, {
+"from": "VN167",
+"to": "VN162"
+}, {
+"from": "VN167",
+"to": "VN163"
+}, {
+"from": "VN164",
+"to": "VN165"
+}, {
+"from": "VN164",
+"to": "VN166"
+}]
+scene_uid = "uid://dc5kbxk0ctx0w"

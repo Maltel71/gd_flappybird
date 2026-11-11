@@ -43,64 +43,64 @@ nodes = [{
 "position": Vector2(860, 420),
 "type": "Gravity"
 }, {
-"id": "VN10",
-"params": {
-"action": "Play",
-"animation": "AnimatedSprite2D / Ship_flying",
-"wait_to_finish": false
-},
-"position": Vector2(880, 620),
-"type": "Animation"
-}, {
-"id": "VN11",
-"params": {
-"action": "Stop",
-"animation": "AnimatedSprite2D / Ship_idle"
-},
-"position": Vector2(880, 820),
-"type": "Animation"
-}, {
-"id": "VN7",
-"params": {
-"button": "Space",
-"mode": "When released"
-},
-"position": Vector2(280, 1020),
-"type": "On Button Pressed"
-}, {
-"id": "VN12",
-"params": {
-"action": "Play",
-"animation": "AnimatedSprite2D / Ship_idle",
-"wait_to_finish": false
-},
-"position": Vector2(880, 1020),
-"type": "Animation"
-}, {
-"id": "VN13",
-"params": {
-"action": "Pause",
-"animation": "AnimatedSprite2D / Ship_flying"
-},
-"position": Vector2(880, 1220),
-"type": "Animation"
-}, {
-"id": "VN6",
-"params": {
-"button": "Space",
-"mode": "While held"
-},
-"position": Vector2(260, 600),
-"type": "On Button Pressed"
-}, {
 "id": "VN71",
 "params": {
 "action": "Play",
 "animation": "AnimatedSprite2D / Ship_idle",
 "wait_to_finish": false
 },
-"position": Vector2(880, -500),
+"position": Vector2(860, -380),
 "type": "Animation"
+}, {
+"id": "VN174",
+"params": {
+"action": "Play",
+"animation": "AnimatedSprite2D / Ship_flying",
+"wait_to_finish": false
+},
+"position": Vector2(860, 600),
+"type": "Animation"
+}, {
+"id": "VN175",
+"params": {
+"action": "Stop",
+"animation": "AnimatedSprite2D / Ship_idle"
+},
+"position": Vector2(860, 800),
+"type": "Animation"
+}, {
+"id": "VN176",
+"params": {
+"button": "Space",
+"mode": "When released"
+},
+"position": Vector2(260, 1000),
+"type": "On Button Pressed"
+}, {
+"id": "VN177",
+"params": {
+"action": "Play",
+"animation": "AnimatedSprite2D / Ship_idle",
+"wait_to_finish": false
+},
+"position": Vector2(860, 1000),
+"type": "Animation"
+}, {
+"id": "VN178",
+"params": {
+"action": "Stop",
+"animation": "AnimatedSprite2D / Ship_flying"
+},
+"position": Vector2(860, 1200),
+"type": "Animation"
+}, {
+"id": "VN179",
+"params": {
+"button": "Space",
+"mode": "While held"
+},
+"position": Vector2(240, 580),
+"type": "On Button Pressed"
 }]
 connections = [{
 "from": "VN2",
@@ -109,22 +109,22 @@ connections = [{
 "from": "VN4",
 "to": "VN5"
 }, {
-"from": "VN6",
-"to": "VN9"
-}, {
-"from": "VN6",
-"to": "VN10"
-}, {
-"from": "VN6",
-"to": "VN11"
-}, {
-"from": "VN7",
-"to": "VN12"
-}, {
-"from": "VN7",
-"to": "VN13"
-}, {
 "from": "VN2",
 "to": "VN71"
+}, {
+"from": "VN179",
+"to": "VN174"
+}, {
+"from": "VN179",
+"to": "VN175"
+}, {
+"from": "VN176",
+"to": "VN177"
+}, {
+"from": "VN176",
+"to": "VN178"
+}, {
+"from": "VN179",
+"to": "VN9"
 }]
 scene_uid = "uid://dc5kbxk0ctx0w"
