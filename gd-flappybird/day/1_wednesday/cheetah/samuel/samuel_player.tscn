@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bju0pcvogcoiv"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_vcif8"]
+[ext_resource type="Resource" uid="uid://2yt44t0hf3cw" path="res://day/1_wednesday/cheetah/samuel/visuract_graphs/samuel_player_Samuel_Player.tres" id="2_c6yl2"]
+[ext_resource type="Texture2D" uid="uid://dk4xbdctxfqyx" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_01.png" id="3_ftb3v"]
+[ext_resource type="Texture2D" uid="uid://c34uuj33x4dfi" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_02.png" id="4_f3ewu"]
+[ext_resource type="Texture2D" uid="uid://b8nbrkl8do50a" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_03.png" id="5_3guwy"]
+[ext_resource type="Texture2D" uid="uid://ct42m2wvmgdjm" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_04.png" id="6_165h6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_klnxv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ftb3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f3ewu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3guwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_165h6")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Samuel_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_vcif8")
+graph = ExtResource("2_c6yl2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=734387920]
+sprite_frames = SubResource("SpriteFrames_klnxv")
+autoplay = "default"
+frame_progress = 0.94584924
