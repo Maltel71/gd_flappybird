@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_l1g3o"]
 [ext_resource type="Resource" uid="uid://bu6l1i2jct1bd" path="res://day/2_thursday/flamingo/ellis/visuract_graphs/ellis_player_Ellis_Player.tres" id="2_lwrku"]
-[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_asjb5"]
+[ext_resource type="Texture2D" uid="uid://8x46o2p84jup" path="res://day/2_thursday/flamingo/ellis/sprites/ellis_spelare.png" id="3_74otc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
 radius = 46.043457
@@ -12,7 +12,9 @@ script = ExtResource("1_l1g3o")
 graph = ExtResource("2_lwrku")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
-texture = ExtResource("3_asjb5")
+position = Vector2(-16.999996, -13.999996)
+scale = Vector2(1.4590644, 1.4590644)
+texture = ExtResource("3_74otc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
 position = Vector2(-6, -5)

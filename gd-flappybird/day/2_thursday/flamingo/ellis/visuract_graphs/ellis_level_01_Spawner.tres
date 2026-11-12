@@ -56,13 +56,6 @@ nodes = [{
 "position": Vector2(1240, 460),
 "type": "Wait"
 }, {
-"id": "VN139",
-"params": {
-"scene": "uid://dbrbgcpuyugke"
-},
-"position": Vector2(1600, 460),
-"type": "Change Scene"
-}, {
 "id": "VN136",
 "params": {
 "listen_for": "dead"
@@ -125,7 +118,7 @@ nodes = [{
 "offset_y": 0.0,
 "random_x": 0.0,
 "random_y": 200.0,
-"scene": "uid://c0enni5rf4yln",
+"scene": "uid://v57tul60yuxv",
 "spawn_point": "",
 "weight": 1.0,
 "where": "On me"
@@ -196,6 +189,13 @@ nodes = [{
 },
 "position": Vector2(900, 1700),
 "type": "Visibility"
+}, {
+"id": "VN139",
+"params": {
+"scene": "uid://dgar5hldgeqqd"
+},
+"position": Vector2(1600, 460),
+"type": "Change Scene"
 }]
 connections = [{
 "from": "VN132",
@@ -246,4 +246,4 @@ connections = [{
 "from": "VN315",
 "to": "VN316"
 }]
-scene_uid = "uid://bxhsnelskqiwg"
+scene_uid = "uid://cgg2lvx6w43ho"

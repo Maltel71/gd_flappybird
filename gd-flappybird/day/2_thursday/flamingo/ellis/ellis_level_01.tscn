@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cgg2lvx6w43ho"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_m4lv6"]
+[ext_resource type="Texture2D" uid="uid://7hl1f35lc1qc" path="res://day/2_thursday/flamingo/ellis/sprites/ellis_bg.png" id="1_x6vyj"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_makf6"]
 [ext_resource type="Resource" uid="uid://br2wsrf8npcri" path="res://day/2_thursday/flamingo/ellis/visuract_graphs/ellis_level_01_Spawner.tres" id="3_b4pbp"]
 [ext_resource type="PackedScene" uid="uid://d1htcprpa7t8h" path="res://day/2_thursday/flamingo/ellis/ellis_ground.tscn" id="4_4wbp0"]
@@ -11,8 +11,8 @@
 [node name="Ellis_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="EllisMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_m4lv6")
+position = Vector2(959, 532)
+texture = ExtResource("1_x6vyj")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)
