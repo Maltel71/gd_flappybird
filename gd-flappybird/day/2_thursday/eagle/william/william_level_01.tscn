@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bcsm608hfvt4r"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_kmocc"]
+[ext_resource type="Texture2D" uid="uid://3qshdtntyenc" path="res://day/2_thursday/eagle/william/sprites/William_Dion_bg.png" id="1_6sk1f"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_nt7qv"]
 [ext_resource type="Resource" uid="uid://cssksljihjgnf" path="res://day/2_thursday/eagle/william/visuract_graphs/william_level_01_Spawner.tres" id="3_ynrjv"]
 [ext_resource type="PackedScene" uid="uid://b1tg5m18djtdh" path="res://day/2_thursday/eagle/william/william_ground.tscn" id="4_d8eo5"]
@@ -11,8 +11,8 @@
 [node name="William_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="WilliamMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_kmocc")
+position = Vector2(959, 539)
+texture = ExtResource("1_6sk1f")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)

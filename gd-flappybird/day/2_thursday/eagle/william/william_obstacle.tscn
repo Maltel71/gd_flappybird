@@ -2,44 +2,54 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_xn1pc"]
 [ext_resource type="Resource" uid="uid://c2k2pb7ovtvu5" path="res://day/2_thursday/eagle/william/visuract_graphs/william_obstacle.tres" id="2_epuwq"]
-[ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_scf3n"]
+[ext_resource type="Texture2D" uid="uid://bx3ib215npg0b" path="res://day/2_thursday/eagle/william/sprites/william_dion_hinder_03.png" id="3_mrgsw"]
 [ext_resource type="Resource" uid="uid://dwpougbpqsdji" path="res://day/2_thursday/eagle/william/visuract_graphs/william_scorezone.tres" id="4_62jpu"]
+[ext_resource type="Texture2D" uid="uid://vkxbgnv7xyj7" path="res://day/2_thursday/eagle/william/sprites/william_dion_hinder.png" id="4_cjtdw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
-size = Vector2(259, 780)
+size = Vector2(259, 753)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jiirm"]
+size = Vector2(259, 636)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0s0vq"]
-size = Vector2(36, 409)
+size = Vector2(47, 542)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pipdg"]
+size = Vector2(229, 756)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vwf7g"]
-size = Vector2(229, 756)
+size = Vector2(229, 569)
 
 [node name="William_Obstacle" type="Area2D" unique_id=1233493269]
 script = ExtResource("1_xn1pc")
 graph = ExtResource("2_epuwq")
 
 [node name="Top" type="Sprite2D" parent="." unique_id=1511844230]
-position = Vector2(0, -710)
-texture = ExtResource("3_scf3n")
+position = Vector2(-30.999998, -691.30786)
+rotation = -3.1415927
+scale = Vector2(1, 1.5639234)
+texture = ExtResource("3_mrgsw")
 
 [node name="Bottom" type="Sprite2D" parent="." unique_id=298269132]
-position = Vector2(0, 467)
-texture = ExtResource("3_scf3n")
+position = Vector2(12.000002, 545)
+scale = Vector2(1.1386862, 1.929003)
+texture = ExtResource("4_cjtdw")
 
 [node name="Top_Collider" type="CollisionShape2D" parent="." unique_id=1941221746]
-position = Vector2(-6.5, -711)
+position = Vector2(-6.5, -697.5)
 shape = SubResource("RectangleShape2D_mlerw")
 
 [node name="Bottom_Collider" type="CollisionShape2D" parent="." unique_id=726029601]
-position = Vector2(-6.5, 465)
-shape = SubResource("RectangleShape2D_mlerw")
+position = Vector2(-6.5, 537)
+shape = SubResource("RectangleShape2D_jiirm")
 
 [node name="ScoreZone" type="Area2D" parent="." unique_id=1030676976]
 script = ExtResource("1_xn1pc")
 graph = ExtResource("4_62jpu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreZone" unique_id=939799433]
-position = Vector2(63, -127.5)
+position = Vector2(68.5, -61)
 shape = SubResource("RectangleShape2D_0s0vq")
 debug_color = Color(0.7223907, 0.4787647, 0, 0.41960785)
 
@@ -47,10 +57,10 @@ debug_color = Color(0.7223907, 0.4787647, 0, 0.41960785)
 
 [node name="Top" type="CollisionShape2D" parent="StaticBody2D" unique_id=58241554]
 position = Vector2(-10.5, -715)
-shape = SubResource("RectangleShape2D_vwf7g")
+shape = SubResource("RectangleShape2D_pipdg")
 debug_color = Color(0.9828394, 0, 0.36279765, 0.41960785)
 
 [node name="Bottom" type="CollisionShape2D" parent="StaticBody2D" unique_id=777526969]
-position = Vector2(-3, 465)
+position = Vector2(-3, 558.5)
 shape = SubResource("RectangleShape2D_vwf7g")
 debug_color = Color(0.9828394, 0, 0.36279765, 0.41960785)

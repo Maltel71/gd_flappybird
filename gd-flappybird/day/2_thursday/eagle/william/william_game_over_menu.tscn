@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://b1aovtqsgntec"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_j0avw"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="1_mm0tl"]
 [ext_resource type="Resource" uid="uid://dejjt3prqi5mo" path="res://day/2_thursday/eagle/william/visuract_graphs/william_game_over_menu_William_GameOver_Menu.tres" id="2_bemv3"]
 [ext_resource type="Resource" uid="uid://bd3m3yfek7mur" path="res://day/2_thursday/eagle/william/visuract_graphs/william_game_over_menu_Restart.tres" id="3_5qyal"]
+[ext_resource type="Texture2D" uid="uid://3qshdtntyenc" path="res://day/2_thursday/eagle/william/sprites/William_Dion_bg.png" id="4_anb7p"]
 
 [node name="William_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
@@ -11,31 +13,37 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_mm0tl")
 script = ExtResource("1_j0avw")
 graph = ExtResource("2_bemv3")
 
+[node name="WilliamDionBg" type="Sprite2D" parent="." unique_id=608667568]
+modulate = Color(0.8431839, 0.8431839, 0.84318376, 1)
+position = Vector2(957, 540)
+texture = ExtResource("4_anb7p")
+
 [node name="Header" type="Label" parent="." unique_id=1848836727]
 layout_mode = 0
-offset_left = 924.0
-offset_top = 335.0
-offset_right = 1006.0
-offset_bottom = 358.0
+offset_left = 782.0
+offset_top = 229.0
+offset_right = 1107.0
+offset_bottom = 317.0
 text = "game over"
 
 [node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
 layout_mode = 0
-offset_left = 924.0
-offset_top = 370.0
-offset_right = 964.0
-offset_bottom = 393.0
+offset_left = 882.0
+offset_top = 420.0
+offset_right = 1028.0
+offset_bottom = 508.0
 text = "9000"
 
 [node name="Restart" type="Button" parent="." unique_id=1422222847]
 layout_mode = 0
-offset_left = 943.0
-offset_top = 472.0
-offset_right = 951.0
-offset_bottom = 480.0
+offset_left = 863.0
+offset_top = 650.0
+offset_right = 1073.0
+offset_bottom = 733.0
 text = "Restart"
 script = ExtResource("1_j0avw")
 graph = ExtResource("3_5qyal")
