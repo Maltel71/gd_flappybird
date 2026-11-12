@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bb4rtkc6e8mhs"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_5xi0d"]
+[ext_resource type="Texture2D" uid="uid://dmtwivedygsys" path="res://day/2_thursday/flamingo/aarish/sprites/aarish_bakgrund_02.png" id="1_fumeg"]
+[ext_resource type="Texture2D" uid="uid://dai0ymrhkouom" path="res://day/2_thursday/flamingo/aarish/sprites/aarish_bakgrund_01.png" id="2_fumeg"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_r31gt"]
 [ext_resource type="Resource" uid="uid://dwo20ptep4iq2" path="res://day/2_thursday/flamingo/aarish/visuract_graphs/aarish_level_01_Spawner.tres" id="3_on1wf"]
 [ext_resource type="PackedScene" uid="uid://8xqeyalgrgxf" path="res://day/2_thursday/flamingo/aarish/aarish_ground.tscn" id="4_uk34d"]
@@ -11,8 +12,18 @@
 [node name="Aarish_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="AarishMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_5xi0d")
+z_index = -20
+position = Vector2(959, 551.50006)
+scale = Vector2(1, 1.0342592)
+texture = ExtResource("1_fumeg")
+metadata/_edit_lock_ = true
+
+[node name="AarishMenuBg2" type="Sprite2D" parent="." unique_id=2105035760]
+z_index = -20
+position = Vector2(971.75, 804)
+scale = Vector2(1.0132743, 1.1599147)
+texture = ExtResource("2_fumeg")
+metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)
