@@ -19,7 +19,7 @@ tags = {
 [node name="Ella_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="EllaMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 535)
+position = Vector2(959, 543)
 scale = Vector2(1, 1.0055555)
 texture = ExtResource("1_t8yer")
 
