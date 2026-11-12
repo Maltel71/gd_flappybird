@@ -70,10 +70,10 @@ nodes = [{
 }, {
 "id": "VN62",
 "params": {
-"down_angle": 90.0,
+"down_angle": 20.0,
 "mode": "Lean",
 "turn_speed": 50.0,
-"up_angle": -30.0
+"up_angle": -5.0
 },
 "position": Vector2(720, 60),
 "type": "Point Where Moving"
@@ -105,4 +105,4 @@ connections = [{
 "from": "VN0",
 "to": "VN62"
 }]
-scene_uid = "uid://b4v5xl3nw1t5y"
+scene_uid = "uid://djx2f5wnx673n"

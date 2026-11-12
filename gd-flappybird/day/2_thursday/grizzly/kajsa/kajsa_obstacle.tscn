@@ -2,37 +2,38 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_mp2tu"]
 [ext_resource type="Resource" uid="uid://cq1cnm1v8k8oi" path="res://day/2_thursday/grizzly/kajsa/visuract_graphs/kajsa_obstacle.tres" id="2_ojs77"]
-[ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_gmap5"]
+[ext_resource type="Texture2D" uid="uid://dxiwwlku4xnfb" path="res://day/2_thursday/grizzly/kajsa/sprites/kajsa_hinder_pomfrise.png" id="3_bqsot"]
 [ext_resource type="Resource" uid="uid://dy0adsho1f7ac" path="res://day/2_thursday/grizzly/kajsa/visuract_graphs/kajsa_scorezone.tres" id="4_jce6p"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
-size = Vector2(259, 780)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0s0vq"]
 size = Vector2(36, 409)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vwf7g"]
-size = Vector2(229, 756)
 
 [node name="Kajsa_Obstacle" type="Area2D" unique_id=1233493269]
 script = ExtResource("1_mp2tu")
 graph = ExtResource("2_ojs77")
 
 [node name="Top" type="Sprite2D" parent="." unique_id=1511844230]
-position = Vector2(0, -710)
-texture = ExtResource("3_gmap5")
+position = Vector2(-11.999998, -722)
+rotation = 0.023005305
+scale = Vector2(1.3025641, 1.3025643)
+texture = ExtResource("3_bqsot")
 
 [node name="Bottom" type="Sprite2D" parent="." unique_id=298269132]
 position = Vector2(0, 467)
-texture = ExtResource("3_gmap5")
+rotation = 3.1415927
+scale = Vector2(1.32189, 1.3218901)
+texture = ExtResource("3_bqsot")
 
-[node name="Top_Collider" type="CollisionShape2D" parent="." unique_id=1941221746]
-position = Vector2(-6.5, -711)
-shape = SubResource("RectangleShape2D_mlerw")
+[node name="PolygonBottom" type="CollisionPolygon2D" parent="." unique_id=412215736]
+position = Vector2(0.2300415, -105.59447)
+scale = Vector2(1.2300532, 1.2300533)
+polygon = PackedVector2Array(68.10271, 124.05516, -103.434586, 230.5546, -86.36215, 790.69293, 95.74379, 776.0594)
 
-[node name="Bottom_Collider" type="CollisionShape2D" parent="." unique_id=726029601]
-position = Vector2(-6.5, 465)
-shape = SubResource("RectangleShape2D_mlerw")
+[node name="PolygonTop" type="CollisionPolygon2D" parent="." unique_id=1837160524]
+position = Vector2(-25, -260)
+rotation = -3.1180892
+scale = Vector2(0.99999994, 0.99999994)
+polygon = PackedVector2Array(89.89198, 36.897614, -118.90033, 175.8429, -98.82659, 859.56006, 109.06898, 852.67224)
 
 [node name="ScoreZone" type="Area2D" parent="." unique_id=1030676976]
 script = ExtResource("1_mp2tu")
@@ -45,12 +46,10 @@ debug_color = Color(0.7223907, 0.4787647, 0, 0.41960785)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1049106621]
 
-[node name="Top" type="CollisionShape2D" parent="StaticBody2D" unique_id=58241554]
-position = Vector2(-10.5, -715)
-shape = SubResource("RectangleShape2D_vwf7g")
-debug_color = Color(0.9828394, 0, 0.36279765, 0.41960785)
+[node name="PolygonBottom" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=265609189]
+polygon = PackedVector2Array(67, 77, -95, 184, -86, 841, 93, 832)
 
-[node name="Bottom" type="CollisionShape2D" parent="StaticBody2D" unique_id=777526969]
-position = Vector2(-3, 465)
-shape = SubResource("RectangleShape2D_vwf7g")
-debug_color = Color(0.9828394, 0, 0.36279765, 0.41960785)
+[node name="PolygonTop" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=127424727]
+position = Vector2(-25, -260)
+rotation = 3.165096
+polygon = PackedVector2Array(67, 77, -95, 184, -86, 841, 93, 832)

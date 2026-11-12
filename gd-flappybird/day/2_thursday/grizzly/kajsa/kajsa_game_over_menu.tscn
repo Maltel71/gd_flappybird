@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_l52q8"]
 [ext_resource type="Resource" uid="uid://bluktfd7j3qxs" path="res://day/2_thursday/grizzly/kajsa/visuract_graphs/kajsa_game_over_menu_Kajsa_GameOver_Menu.tres" id="2_4rc6w"]
+[ext_resource type="Texture2D" uid="uid://1tl42p0qajhr" path="res://day/2_thursday/grizzly/kajsa/sprites/kajsa_gameover.png" id="3_d0581"]
 [ext_resource type="Resource" uid="uid://dcv2d1dtd6gye" path="res://day/2_thursday/grizzly/kajsa/visuract_graphs/kajsa_game_over_menu_Restart.tres" id="3_nd524"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="4_bt60d"]
 
 [node name="Kajsa_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
@@ -14,28 +16,28 @@ grow_vertical = 2
 script = ExtResource("1_l52q8")
 graph = ExtResource("2_4rc6w")
 
-[node name="Header" type="Label" parent="." unique_id=1848836727]
-layout_mode = 0
-offset_left = 924.0
-offset_top = 335.0
-offset_right = 1006.0
-offset_bottom = 358.0
-text = "game over"
+[node name="KajsaGameover" type="Sprite2D" parent="." unique_id=2025005562]
+position = Vector2(960, 540)
+texture = ExtResource("3_d0581")
 
 [node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
 layout_mode = 0
-offset_left = 924.0
-offset_top = 370.0
-offset_right = 964.0
-offset_bottom = 393.0
+offset_left = 914.99994
+offset_top = 493.99994
+offset_right = 1061.0
+offset_bottom = 581.99994
+rotation = -0.08907675
+theme = ExtResource("4_bt60d")
+theme_override_colors/font_color = Color(0.9843137, 1, 0.38039216, 1)
+theme_override_colors/font_outline_color = Color(0.8980392, 0.44313726, 0.26666668, 1)
 text = "9000"
 
 [node name="Restart" type="Button" parent="." unique_id=1422222847]
 layout_mode = 0
-offset_left = 943.0
-offset_top = 472.0
-offset_right = 951.0
-offset_bottom = 480.0
-text = "Restart"
+offset_left = 757.0
+offset_top = 575.0
+offset_right = 1132.0
+offset_bottom = 684.0
+theme = ExtResource("4_bt60d")
 script = ExtResource("1_l52q8")
 graph = ExtResource("3_nd524")
