@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_5ce8q"]
 [ext_resource type="Resource" uid="uid://c6mycng0b8spo" path="res://day/1_wednesday/anthelope/jun/visuract_graphs/jun_obstacle.tres" id="2_8p1oi"]
-[ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_53dxp"]
+[ext_resource type="Texture2D" uid="uid://2bje3gvv6amy" path="res://day/1_wednesday/anthelope/jun/sprites/Jun_obstacle.png" id="3_yddhk"]
 [ext_resource type="Resource" uid="uid://d23gnb6g5d2gh" path="res://day/1_wednesday/anthelope/jun/visuract_graphs/jun_scorezone.tres" id="4_45oac"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
@@ -18,13 +18,16 @@ size = Vector2(229, 756)
 script = ExtResource("1_5ce8q")
 graph = ExtResource("2_8p1oi")
 
-[node name="Top" type="Sprite2D" parent="." unique_id=1511844230]
-position = Vector2(0, -710)
-texture = ExtResource("3_53dxp")
+[node name="Top2" type="Sprite2D" parent="." unique_id=1828108667]
+position = Vector2(-91, -819)
+rotation = -1.5707964
+texture = ExtResource("3_yddhk")
+flip_v = true
 
-[node name="Bottom" type="Sprite2D" parent="." unique_id=298269132]
-position = Vector2(0, 467)
-texture = ExtResource("3_53dxp")
+[node name="Bottom" type="Sprite2D" parent="." unique_id=2000931833]
+position = Vector2(-92, 570)
+rotation = 1.5707964
+texture = ExtResource("3_yddhk")
 
 [node name="Top_Collider" type="CollisionShape2D" parent="." unique_id=1941221746]
 position = Vector2(-6.5, -711)

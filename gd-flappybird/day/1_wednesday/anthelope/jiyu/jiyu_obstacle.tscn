@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://1nar50asjrjt"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_x1r1n"]
+<<<<<<<< HEAD:gd-flappybird/day/1_wednesday/anthelope/jiyu/jiyu_obstacle.tscn
 [ext_resource type="Resource" uid="uid://d2v63v65yas0y" path="res://day/1_wednesday/anthelope/jiyu/visuract_graphs/jiyu_obstacle.tres" id="2_h7xd8"]
 [ext_resource type="Texture2D" uid="uid://s4sarkxq3fp6" path="res://day/1_wednesday/anthelope/jiyu/sprites/jiyu_obstacle.png" id="3_yo4nw"]
 [ext_resource type="Resource" uid="uid://d3vcr1kb3tn8l" path="res://day/1_wednesday/anthelope/jiyu/visuract_graphs/jiyu_scorezone.tres" id="4_2mh8c"]
+========
+[ext_resource type="Resource" uid="uid://d2v63v65yas0y" path="res://day/1_wednesday/anthelope/jiyus/visuract_graphs/jiyu_obstacle.tres" id="2_h7xd8"]
+[ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_eas2m"]
+[ext_resource type="Resource" uid="uid://d3vcr1kb3tn8l" path="res://day/1_wednesday/anthelope/jiyus/visuract_graphs/jiyu_scorezone.tres" id="4_2mh8c"]
+>>>>>>>> anthelope_jun:gd-flappybird/day/1_wednesday/anthelope/jiyus/jiyu_obstacle.tscn
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
 size = Vector2(259, 780)

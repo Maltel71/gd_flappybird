@@ -2,9 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://hwytmsasg82o" path="res://day/1_wednesday/anthelope/jiyu/sprites/Jiyu_background.png" id="1_k4hep"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_pmmoo"]
+<<<<<<<< HEAD:gd-flappybird/day/1_wednesday/anthelope/jiyu/jiyu_level_01.tscn
 [ext_resource type="Resource" uid="uid://be5vtd1s30boa" path="res://day/1_wednesday/anthelope/jiyu/visuract_graphs/jiyu_level_01_Spawner.tres" id="3_rx0we"]
 [ext_resource type="PackedScene" uid="uid://1rhq38e8nee2" path="res://day/1_wednesday/anthelope/jiyu/jiyu_ground.tscn" id="4_asyfn"]
 [ext_resource type="PackedScene" uid="uid://buu5qjc3ma1gt" path="res://day/1_wednesday/anthelope/jiyu/jiyu_player.tscn" id="5_64tf7"]
+========
+[ext_resource type="Resource" uid="uid://be5vtd1s30boa" path="res://day/1_wednesday/anthelope/jiyus/visuract_graphs/jiyu_level_01_Spawner.tres" id="3_rx0we"]
+[ext_resource type="PackedScene" uid="uid://1rhq38e8nee2" path="res://day/1_wednesday/anthelope/jiyus/jiyu_ground.tscn" id="4_asyfn"]
+[ext_resource type="PackedScene" uid="uid://buu5qjc3ma1gt" path="res://day/1_wednesday/anthelope/jiyus/jiyu_player.tscn" id="5_64tf7"]
+>>>>>>>> anthelope_jun:gd-flappybird/day/1_wednesday/anthelope/jiyus/jiyu_level_01.tscn
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_kw8m7"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_bydcs"]
 

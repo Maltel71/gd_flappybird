@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://buu5qjc3ma1gt"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_04fg0"]
+<<<<<<<< HEAD:gd-flappybird/day/1_wednesday/anthelope/jiyu/jiyu_player.tscn
 [ext_resource type="Resource" uid="uid://b7b1yeh0qbw1x" path="res://day/1_wednesday/anthelope/jiyu/visuract_graphs/jiyu_player_Jiyu_Player.tres" id="2_lst4d"]
 [ext_resource type="Texture2D" uid="uid://bqiydkd6rofqf" path="res://day/1_wednesday/anthelope/jiyu/sprites/Jiyu_player.png" id="3_ruha7"]
+========
+[ext_resource type="Resource" uid="uid://b7b1yeh0qbw1x" path="res://day/1_wednesday/anthelope/jiyus/visuract_graphs/jiyu_player_Jiyu_Player.tres" id="2_lst4d"]
+[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_fcxip"]
+>>>>>>>> anthelope_jun:gd-flappybird/day/1_wednesday/anthelope/jiyus/jiyu_player.tscn
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
 radius = 46.043457
