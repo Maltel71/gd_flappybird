@@ -125,7 +125,7 @@ nodes = [{
 "offset_y": 0.0,
 "random_x": 0.0,
 "random_y": 200.0,
-"scene": "uid://c0enni5rf4yln",
+"scene": "uid://fyxnfxciyy00",
 "spawn_point": "",
 "weight": 1.0,
 "where": "On me"
@@ -246,4 +246,4 @@ connections = [{
 "from": "VN315",
 "to": "VN316"
 }]
-scene_uid = "uid://bxhsnelskqiwg"
+scene_uid = "uid://pmqn8k8tq2tv"
