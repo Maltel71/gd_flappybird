@@ -49,5 +49,5 @@ theme = ExtResource("6_33eqn")
 text = "0"
 
 [node name="AarishStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
-position = Vector2(1096, 477)
+position = Vector2(1190, 511)
 texture = ExtResource("7_mvhyi")
