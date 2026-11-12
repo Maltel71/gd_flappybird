@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b8envytyo8t24"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_m72qc"]
+[ext_resource type="Texture2D" uid="uid://c4x2i333ky0b4" path="res://day/2_thursday/flamingo/elias/sprites/elias_background.png" id="1_hhtm2"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_2u7jf"]
 [ext_resource type="Resource" uid="uid://ch4o8qocp3maw" path="res://day/2_thursday/flamingo/elias/visuract_graphs/elias_level_01_Spawner.tres" id="3_ce717"]
 [ext_resource type="PackedScene" uid="uid://g78i2oy3jo5k" path="res://day/2_thursday/flamingo/elias/elias_ground.tscn" id="4_l6nun"]
@@ -11,8 +11,8 @@
 [node name="Elias_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="EliasMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_m72qc")
+position = Vector2(959, 505)
+texture = ExtResource("1_hhtm2")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)

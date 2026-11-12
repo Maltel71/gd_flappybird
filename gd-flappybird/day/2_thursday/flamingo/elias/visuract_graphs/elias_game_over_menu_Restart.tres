@@ -19,15 +19,15 @@ nodes = [{
 "position": Vector2(1040, 1220),
 "type": "Juicy Button"
 }, {
-"id": "VN201",
+"id": "VN69",
 "params": {
-"scene": "uid://bxhsnelskqiwg"
+"scene": "uid://b8envytyo8t24"
 },
-"position": Vector2(1460, 1220),
+"position": Vector2(1546.1001, 1265.1199),
 "type": "Change Scene"
 }]
 connections = [{
 "from": "VN200",
-"to": "VN201"
+"to": "VN69"
 }]
-scene_uid = "uid://dbrbgcpuyugke"
+scene_uid = "uid://cgjjisn0mwljy"
