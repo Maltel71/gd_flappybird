@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_vhf12"]
 [ext_resource type="Resource" uid="uid://ccvj3dnya4bv5" path="res://day/2_thursday/grizzly/zuz/visuract_graphs/zuz_player_Zuz_Player.tres" id="2_gapey"]
-[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_ew7xu"]
+[ext_resource type="Texture2D" uid="uid://bbh5gp6pqx8b5" path="res://day/2_thursday/grizzly/zuz/sprites/zuzu_the_dumbass_Ted.png" id="3_24ch1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
 radius = 46.043457
@@ -12,8 +12,10 @@ script = ExtResource("1_vhf12")
 graph = ExtResource("2_gapey")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
-texture = ExtResource("3_ew7xu")
+position = Vector2(-2.000002, 26.060703)
+scale = Vector2(0.5623003, 0.5623003)
+texture = ExtResource("3_24ch1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
-position = Vector2(-6, -5)
+position = Vector2(6, 44.060707)
 shape = SubResource("CircleShape2D_mlerw")
