@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bt7djtd1rfkyn"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_xn1pc"]
-[ext_resource type="Resource" uid="uid://c2k2pb7ovtvu5" path="res://day/2_thursday/eagle/william/visuract_graphs/william_obstacle.tres" id="2_epuwq"]
+[ext_resource type="Resource" uid="uid://dydyqgxtqxd1e" path="res://day/2_thursday/eagle/william/visuract_graphs/william_obstacle.tres" id="2_epuwq"]
 [ext_resource type="Texture2D" uid="uid://bx3ib215npg0b" path="res://day/2_thursday/eagle/william/sprites/william_dion_hinder_03.png" id="3_mrgsw"]
 [ext_resource type="Resource" uid="uid://dwpougbpqsdji" path="res://day/2_thursday/eagle/william/visuract_graphs/william_scorezone.tres" id="4_62jpu"]
 [ext_resource type="Texture2D" uid="uid://vkxbgnv7xyj7" path="res://day/2_thursday/eagle/william/sprites/william_dion_hinder.png" id="4_cjtdw"]

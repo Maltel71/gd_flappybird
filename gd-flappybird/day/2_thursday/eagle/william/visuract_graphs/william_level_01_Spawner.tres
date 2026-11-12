@@ -7,7 +7,7 @@ script = ExtResource("1_86nwq")
 nodes = [{
 "id": "VN132",
 "params": {},
-"position": Vector2(527.9264, 231.94885),
+"position": Vector2(520, 240),
 "type": "On Ready"
 }, {
 "id": "VN133",
@@ -17,7 +17,7 @@ nodes = [{
 "value": "0",
 "variable_name": "score"
 },
-"position": Vector2(880, 240),
+"position": Vector2(960, 1000),
 "type": "Remember"
 }, {
 "id": "VN134",
@@ -27,7 +27,7 @@ nodes = [{
 "value": "Off",
 "variable_name": "started"
 },
-"position": Vector2(1240, 240),
+"position": Vector2(1380, 1000),
 "type": "Remember"
 }, {
 "id": "VN135",
@@ -36,7 +36,7 @@ nodes = [{
 "show": "Value",
 "value": "score"
 },
-"position": Vector2(1600, 240),
+"position": Vector2(1820, 1000),
 "type": "Show Text"
 }, {
 "id": "VN137",
@@ -46,26 +46,26 @@ nodes = [{
 "value": "Off",
 "variable_name": "started"
 },
-"position": Vector2(880, 460),
+"position": Vector2(960, 420),
 "type": "Remember"
 }, {
 "id": "VN138",
 "params": {
 "seconds": 0.5
 },
-"position": Vector2(1240, 460),
+"position": Vector2(1380, 1300),
 "type": "Wait"
 }, {
 "id": "VN136",
 "params": {
 "listen_for": "dead"
 },
-"position": Vector2(520, 460),
+"position": Vector2(520, 420),
 "type": "On Signal"
 }, {
 "id": "VN148",
 "params": {},
-"position": Vector2(520, 700),
+"position": Vector2(520, 720),
 "type": "On Ready"
 }, {
 "id": "VN149",
@@ -75,12 +75,12 @@ nodes = [{
 "value": "Off",
 "variable_name": "dead"
 },
-"position": Vector2(880, 700),
+"position": Vector2(960, 720),
 "type": "Remember"
 }, {
 "id": "VN150",
 "params": {},
-"position": Vector2(520, 960),
+"position": Vector2(520, 1500),
 "type": "On Ready"
 }, {
 "id": "VN151",
@@ -90,7 +90,7 @@ nodes = [{
 "value": "150",
 "variable_name": "obst_speed"
 },
-"position": Vector2(880, 960),
+"position": Vector2(960, 1500),
 "type": "Remember"
 }, {
 "id": "VN152",
@@ -100,16 +100,86 @@ nodes = [{
 "value": "100",
 "variable_name": "rand_y"
 },
-"position": Vector2(1240, 960),
+"position": Vector2(1380, 1500),
 "type": "Remember"
 }, {
 "id": "VN153",
 "params": {
 "repeat": true,
-"seconds": 3.0
+"seconds": 0.1
 },
-"position": Vector2(520, 1300),
+"position": Vector2(520, 1800),
 "type": "On Timer Timeout"
+}, {
+"id": "VN154",
+"params": {
+"scope": "Whole game",
+"test": "is On",
+"variable_name": "started"
+},
+"position": Vector2(960, 1800),
+"type": "Only If"
+}, {
+"id": "VN172",
+"params": {
+"scope": "Whole game",
+"test": "is less than",
+"value": "1000",
+"variable_name": "obst_speed"
+},
+"position": Vector2(1820, 2100),
+"type": "Only If"
+}, {
+"id": "VN173",
+"params": {
+"scope": "Whole game",
+"test": "is On",
+"variable_name": "rand_y"
+},
+"position": Vector2(1820, 1800),
+"type": "Only If"
+}, {
+"id": "VN175",
+"params": {
+"mode": "Add",
+"scope": "Whole game",
+"value": "20",
+"variable_name": "rand_y"
+},
+"position": Vector2(2240, 1800),
+"type": "Remember"
+}, {
+"id": "VN174",
+"params": {
+"mode": "Add",
+"scope": "Whole game",
+"value": "200",
+"variable_name": "obst_speed"
+},
+"position": Vector2(2240, 2100),
+"type": "Remember"
+}, {
+"id": "VN315",
+"params": {
+"listen_for": "start"
+},
+"position": Vector2(520, 2080),
+"type": "On Signal"
+}, {
+"id": "VN316",
+"params": {
+"action": "Hide",
+"target": "WilliamStartscreenPanel"
+},
+"position": Vector2(960, 2080),
+"type": "Visibility"
+}, {
+"id": "VN22",
+"params": {
+"scene": "uid://b1aovtqsgntec"
+},
+"position": Vector2(1820, 1300),
+"type": "Change Scene"
 }, {
 "id": "VN155",
 "params": {
@@ -124,78 +194,8 @@ nodes = [{
 "where": "On me"
 }]
 },
-"position": Vector2(1240, 1300),
+"position": Vector2(1380, 1800),
 "type": "Spawn Scene"
-}, {
-"id": "VN154",
-"params": {
-"scope": "Whole game",
-"test": "is On",
-"variable_name": "started"
-},
-"position": Vector2(880, 1300),
-"type": "Only If"
-}, {
-"id": "VN172",
-"params": {
-"scope": "Whole game",
-"test": "is less than",
-"value": "1000",
-"variable_name": "obst_speed"
-},
-"position": Vector2(1600, 1300),
-"type": "Only If"
-}, {
-"id": "VN173",
-"params": {
-"scope": "Whole game",
-"test": "is On",
-"variable_name": "rand_y"
-},
-"position": Vector2(1600, 1540),
-"type": "Only If"
-}, {
-"id": "VN175",
-"params": {
-"mode": "Add",
-"scope": "Whole game",
-"value": "20",
-"variable_name": "rand_y"
-},
-"position": Vector2(1960, 1540),
-"type": "Remember"
-}, {
-"id": "VN174",
-"params": {
-"mode": "Add",
-"scope": "Whole game",
-"value": "10",
-"variable_name": "obst_speed"
-},
-"position": Vector2(1960, 1300),
-"type": "Remember"
-}, {
-"id": "VN315",
-"params": {
-"listen_for": "start"
-},
-"position": Vector2(540, 1700),
-"type": "On Signal"
-}, {
-"id": "VN316",
-"params": {
-"action": "Hide",
-"target": "WilliamStartscreenPanel"
-},
-"position": Vector2(900, 1700),
-"type": "Visibility"
-}, {
-"id": "VN22",
-"params": {
-"scene": "uid://b1aovtqsgntec"
-},
-"position": Vector2(1640, 460),
-"type": "Change Scene"
 }]
 connections = [{
 "from": "VN132",
