@@ -61,6 +61,7 @@ libraries/ = SubResource("AnimationLibrary_cuoyp")
 autoplay = &"RESET"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=505108508]
+visible = false
 position = Vector2(927, 543)
 texture = ExtResource("3_55sa1")
 
@@ -73,12 +74,14 @@ position = Vector2(3840, 0)
 texture = ExtResource("3_55sa1")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1707946921]
+position = Vector2(0, 179)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1913789068]
 position = Vector2(959.5, 1055)
 shape = SubResource("RectangleShape2D_mlerw")
 
 [node name="DeathArea" type="Area2D" parent="." unique_id=357927583]
+position = Vector2(0, 179)
 script = ExtResource("1_6vvq5")
 graph = ExtResource("4_a45ni")
 speed = null

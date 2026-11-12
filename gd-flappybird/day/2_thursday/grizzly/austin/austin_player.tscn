@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_xucb0"]
 [ext_resource type="Resource" uid="uid://cq4rvg775wqsc" path="res://day/2_thursday/grizzly/austin/visuract_graphs/austin_player_Austin_Player.tres" id="2_vexsw"]
-[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_nio2w"]
+[ext_resource type="Texture2D" uid="uid://c5p1ihuegn3tr" path="res://day/2_thursday/grizzly/austin/sprites/rocket sprite austin.png" id="3_mxd0t"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
 radius = 46.043457
@@ -11,9 +11,12 @@ radius = 46.043457
 script = ExtResource("1_xucb0")
 graph = ExtResource("2_vexsw")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
-texture = ExtResource("3_nio2w")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
 position = Vector2(-6, -5)
 shape = SubResource("CircleShape2D_mlerw")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1470625662]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=263435689]
+rotation = 1.5707964
+texture = ExtResource("3_mxd0t")
