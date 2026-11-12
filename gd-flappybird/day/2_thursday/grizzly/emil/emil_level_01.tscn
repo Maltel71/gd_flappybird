@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bhuffkburadwm"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_mrm8w"]
+[ext_resource type="Texture2D" uid="uid://ihs6b7211up0" path="res://day/2_thursday/grizzly/emil/sprites/emil_bg.png" id="1_ni872"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_vlce4"]
 [ext_resource type="Resource" uid="uid://b1ms1a0kimrty" path="res://day/2_thursday/grizzly/emil/visuract_graphs/emil_level_01_Spawner.tres" id="3_qgim0"]
 [ext_resource type="PackedScene" uid="uid://xscx1osvnsct" path="res://day/2_thursday/grizzly/emil/emil_ground.tscn" id="4_3ikwg"]
@@ -11,8 +11,10 @@
 [node name="Emil_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="EmilMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_mrm8w")
+z_index = -30
+position = Vector2(959, 544.5)
+scale = Vector2(1, 1.0194445)
+texture = ExtResource("1_ni872")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)
