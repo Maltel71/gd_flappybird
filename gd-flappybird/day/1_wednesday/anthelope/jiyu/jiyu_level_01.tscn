@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dppi8qyhsnlbp"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_hab1u"]
+[ext_resource type="Texture2D" uid="uid://hwytmsasg82o" path="res://day/1_wednesday/anthelope/jiyu/sprites/Jiyu_background.png" id="1_k4hep"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_pmmoo"]
 [ext_resource type="Resource" uid="uid://be5vtd1s30boa" path="res://day/1_wednesday/anthelope/jiyu/visuract_graphs/jiyu_level_01_Spawner.tres" id="3_rx0we"]
 [ext_resource type="PackedScene" uid="uid://1rhq38e8nee2" path="res://day/1_wednesday/anthelope/jiyu/jiyu_ground.tscn" id="4_asyfn"]
@@ -11,8 +11,8 @@
 [node name="Jiyu_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="JiyuMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_hab1u")
+position = Vector2(959, 534)
+texture = ExtResource("1_k4hep")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)
@@ -24,6 +24,7 @@ script = ExtResource("2_pmmoo")
 graph = ExtResource("3_rx0we")
 
 [node name="Jiyu_Ground" parent="." unique_id=291150015 instance=ExtResource("4_asyfn")]
+visible = false
 
 [node name="Jiyu_Player" parent="." unique_id=1006372336 instance=ExtResource("5_64tf7")]
 position = Vector2(483, 531)
