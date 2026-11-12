@@ -106,7 +106,7 @@ nodes = [{
 "id": "VN153",
 "params": {
 "repeat": true,
-"seconds": 3.0
+"seconds": 1.0
 },
 "position": Vector2(520, 1300),
 "type": "On Timer Timeout"

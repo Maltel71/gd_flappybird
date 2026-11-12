@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://ylgmhdpg6luu" path="res://day/2_thursday/eagle/theo/theo_player.tscn" id="5_dd5ti"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_y7556"]
 [ext_resource type="Texture2D" uid="uid://te3v0lqexmku" path="res://day/2_thursday/eagle/theo/sprites/theo_button_start.png" id="7_k1jmw"]
+[ext_resource type="AudioStream" uid="uid://cvkpj8hvwbtt8" path="res://day/2_thursday/eagle/theo/theo_låt2.wav" id="8_he2tq"]
 
 [node name="Theo_Level_01" type="Node2D" unique_id=1636437843]
 
@@ -26,7 +27,7 @@ graph = ExtResource("3_bedy4")
 [node name="Theo_Ground" parent="." unique_id=291150015 instance=ExtResource("4_cc1bc")]
 
 [node name="Theo_Player" parent="." unique_id=1006372336 instance=ExtResource("5_dd5ti")]
-position = Vector2(483, 531)
+position = Vector2(122, 861)
 
 [node name="Score_Label" type="Label" parent="." unique_id=1687435472]
 z_index = 30
@@ -50,3 +51,8 @@ rotation = 0.07094446
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
 text = "(Tryck på space knappen)"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=330685173]
+stream = ExtResource("8_he2tq")
+volume_db = -10.0
+autoplay = true
