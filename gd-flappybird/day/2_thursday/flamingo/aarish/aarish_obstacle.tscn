@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_y243l"]
 [ext_resource type="Resource" uid="uid://c17q7uvvj5tkv" path="res://day/2_thursday/flamingo/aarish/visuract_graphs/aarish_obstacle.tres" id="2_flv5d"]
-[ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_rdllt"]
+[ext_resource type="Texture2D" uid="uid://b2t4pdguti6s5" path="res://day/2_thursday/flamingo/aarish/sprites/aarish_hinder_01.png" id="3_hmu68"]
 [ext_resource type="Resource" uid="uid://isubg2nxpcms" path="res://day/2_thursday/flamingo/aarish/visuract_graphs/aarish_scorezone.tres" id="4_cdyrw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
@@ -19,12 +19,16 @@ script = ExtResource("1_y243l")
 graph = ExtResource("2_flv5d")
 
 [node name="Top" type="Sprite2D" parent="." unique_id=1511844230]
-position = Vector2(0, -710)
-texture = ExtResource("3_rdllt")
+z_index = -5
+position = Vector2(-5.500004, -713.5)
+scale = Vector2(1.1054688, 1.2717042)
+texture = ExtResource("3_hmu68")
 
 [node name="Bottom" type="Sprite2D" parent="." unique_id=298269132]
-position = Vector2(0, 467)
-texture = ExtResource("3_rdllt")
+z_index = -5
+position = Vector2(-7.000007, 462.99994)
+scale = Vector2(1.0859375, 1.289389)
+texture = ExtResource("3_hmu68")
 
 [node name="Top_Collider" type="CollisionShape2D" parent="." unique_id=1941221746]
 position = Vector2(-6.5, -711)
