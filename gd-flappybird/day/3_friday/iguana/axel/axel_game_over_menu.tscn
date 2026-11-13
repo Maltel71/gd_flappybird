@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cruvxm5ibb5y2"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_5jpim"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="1_nwqxx"]
+[ext_resource type="Resource" uid="uid://dukrtnq6dgo45" path="res://day/3_friday/iguana/axel/visuract_graphs/axel_game_over_menu_Axel_GameOver_Menu.tres" id="2_7hiru"]
+[ext_resource type="Resource" uid="uid://bdc4kiea8kj5k" path="res://day/3_friday/iguana/axel/visuract_graphs/axel_game_over_menu_Restart.tres" id="3_sw5yl"]
+[ext_resource type="Texture2D" uid="uid://c6iyodt2tqfi7" path="res://day/3_friday/iguana/axel/sprites/axel_game over.png" id="4_um00q"]
+[ext_resource type="Texture2D" uid="uid://cl18bf4semuq2" path="res://day/3_friday/iguana/axel/sprites/axel_button_continue.png" id="5_hemir"]
+
+[node name="Axel_GameOver_Menu" type="Control" unique_id=1318623505]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_nwqxx")
+script = ExtResource("1_5jpim")
+graph = ExtResource("2_7hiru")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=551080083]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("4_um00q")
+
+[node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
+layout_mode = 0
+offset_left = 973.0
+offset_top = 554.0
+offset_right = 1119.0
+offset_bottom = 642.0
+text = "9000"
+
+[node name="AxelButtonContinue" type="Sprite2D" parent="." unique_id=1097523969]
+position = Vector2(866, 796)
+texture = ExtResource("5_hemir")
+
+[node name="Restart" type="Button" parent="AxelButtonContinue" unique_id=1422222847]
+offset_left = -415.0
+offset_top = -113.0
+offset_right = 433.0
+offset_bottom = 138.0
+theme = ExtResource("1_nwqxx")
+script = ExtResource("1_5jpim")
+graph = ExtResource("3_sw5yl")

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://h64wo2bstdcx"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_7v4jw"]
+[ext_resource type="Resource" uid="uid://b1ivc1ly5o7lf" path="res://day/3_friday/iguana/isak/visuract_graphs/isak_player_Isak_Player.tres" id="2_bxtue"]
+[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_dxaut"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Isak_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_7v4jw")
+graph = ExtResource("2_bxtue")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+texture = ExtResource("3_dxaut")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")

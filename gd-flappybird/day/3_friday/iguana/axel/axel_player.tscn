@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://chpn63ut7jhll"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_d4f70"]
+[ext_resource type="Resource" uid="uid://cxbfoo5d6ndho" path="res://day/3_friday/iguana/axel/visuract_graphs/axel_player_Axel_Player.tres" id="2_gclut"]
+[ext_resource type="Texture2D" uid="uid://c5qvd40l6itte" path="res://day/3_friday/iguana/axel/sprites/axel_spelare.png" id="3_0y78q"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Axel_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_d4f70")
+graph = ExtResource("2_gclut")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+position = Vector2(-1, -11.000001)
+scale = Vector2(0.38709676, 0.38709676)
+texture = ExtResource("3_0y78q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")
