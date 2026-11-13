@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_7wo8h"]
 [ext_resource type="Resource" uid="uid://dtqrsi1cbdjdn" path="res://day/2_thursday/grizzly/kajsa/visuract_graphs/kajsa_ground_Kajsa_Ground.tres" id="2_u42ka"]
-[ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_864ic"]
+[ext_resource type="Texture2D" uid="uid://c4rcrpcte564o" path="res://day/2_thursday/grizzly/kajsa/sprites/kajsa_bg.png" id="3_lsqna"]
 [ext_resource type="Resource" uid="uid://ba80y825qnrv6" path="res://day/2_thursday/grizzly/kajsa/visuract_graphs/kajsa_ground_DeathArea.tres" id="4_cng13"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
@@ -62,23 +62,25 @@ autoplay = &"RESET"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=505108508]
 position = Vector2(927, 543)
-texture = ExtResource("3_864ic")
+texture = ExtResource("3_lsqna")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=2092239384]
 position = Vector2(1920, 0)
-texture = ExtResource("3_864ic")
+texture = ExtResource("3_lsqna")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Sprite2D" unique_id=948471714]
 position = Vector2(3840, 0)
-texture = ExtResource("3_864ic")
+texture = ExtResource("3_lsqna")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1707946921]
+position = Vector2(0, 130)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1913789068]
 position = Vector2(959.5, 1055)
 shape = SubResource("RectangleShape2D_mlerw")
 
 [node name="DeathArea" type="Area2D" parent="." unique_id=357927583]
+position = Vector2(0, 130)
 script = ExtResource("1_7wo8h")
 graph = ExtResource("4_cng13")
 speed = null
