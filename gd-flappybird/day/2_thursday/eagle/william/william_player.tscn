@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_ih6in"]
 [ext_resource type="Resource" uid="uid://brvhj4birajsq" path="res://day/2_thursday/eagle/william/visuract_graphs/william_player_William_Player.tres" id="2_q5y5c"]
-[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_knkpo"]
+[ext_resource type="Texture2D" uid="uid://2gsufn2xoyat" path="res://day/2_thursday/eagle/william/sprites/william_dion.png" id="3_lh7uc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
 radius = 46.043457
@@ -12,7 +12,10 @@ script = ExtResource("1_ih6in")
 graph = ExtResource("2_q5y5c")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
-texture = ExtResource("3_knkpo")
+position = Vector2(-24, -3)
+scale = Vector2(1.1180556, 1.1180555)
+texture = ExtResource("3_lh7uc")
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
 position = Vector2(-6, -5)
