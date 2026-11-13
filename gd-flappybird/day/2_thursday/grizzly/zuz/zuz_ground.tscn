@@ -61,6 +61,7 @@ libraries/ = SubResource("AnimationLibrary_cuoyp")
 autoplay = &"RESET"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=505108508]
+visible = false
 position = Vector2(927, 543)
 texture = ExtResource("3_p00u7")
 

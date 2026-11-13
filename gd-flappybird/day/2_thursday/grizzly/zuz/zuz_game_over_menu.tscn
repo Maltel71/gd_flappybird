@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_ip83x"]
 [ext_resource type="Resource" uid="uid://d2uwqh583xxjx" path="res://day/2_thursday/grizzly/zuz/visuract_graphs/zuz_game_over_menu_Zuz_GameOver_Menu.tres" id="2_ms68x"]
+[ext_resource type="Texture2D" uid="uid://b671qmc430jao" path="res://day/2_thursday/grizzly/zuz/sprites/zuzu_Flappy_Ted.png" id="3_cougo"]
 [ext_resource type="Resource" uid="uid://vrfo3yjmwbtn" path="res://day/2_thursday/grizzly/zuz/visuract_graphs/zuz_game_over_menu_Restart.tres" id="3_jal6p"]
+[ext_resource type="AudioStream" uid="uid://caljl4hp1bcg2" path="res://day/2_thursday/grizzly/zuz/sadsongted.wav" id="5_nw5x0"]
 
 [node name="Zuz_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
@@ -14,28 +16,27 @@ grow_vertical = 2
 script = ExtResource("1_ip83x")
 graph = ExtResource("2_ms68x")
 
-[node name="Header" type="Label" parent="." unique_id=1848836727]
-layout_mode = 0
-offset_left = 924.0
-offset_top = 335.0
-offset_right = 1006.0
-offset_bottom = 358.0
-text = "game over"
+[node name="ZuzuFlappyTed" type="Sprite2D" parent="." unique_id=592641429]
+position = Vector2(960, 540)
+texture = ExtResource("3_cougo")
 
 [node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
 layout_mode = 0
-offset_left = 924.0
-offset_top = 370.0
-offset_right = 964.0
-offset_bottom = 393.0
+offset_left = 412.0
+offset_top = 297.0
+offset_right = 452.0
+offset_bottom = 320.0
 text = "9000"
 
 [node name="Restart" type="Button" parent="." unique_id=1422222847]
 layout_mode = 0
-offset_left = 943.0
-offset_top = 472.0
-offset_right = 951.0
-offset_bottom = 480.0
-text = "Restart"
+offset_left = 474.0
+offset_top = 789.0
+offset_right = 886.0
+offset_bottom = 884.0
 script = ExtResource("1_ip83x")
 graph = ExtResource("3_jal6p")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1118223421]
+stream = ExtResource("5_nw5x0")
+autoplay = true

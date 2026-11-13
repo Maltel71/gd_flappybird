@@ -68,20 +68,20 @@ nodes = [{
 "position": Vector2(2100, 660),
 "type": "Send Signal"
 }, {
-"id": "VN62",
-"params": {
-"down_angle": 90.0,
-"mode": "Lean",
-"turn_speed": 50.0,
-"up_angle": -30.0
-},
-"position": Vector2(720, 60),
-"type": "Point Where Moving"
-}, {
 "id": "VN0",
 "params": {},
 "position": Vector2(280, 40),
 "type": "On Every Frame"
+}, {
+"id": "VN62",
+"params": {
+"down_angle": 180.0,
+"mode": "Lean",
+"turn_speed": 68.0,
+"up_angle": -70.0
+},
+"position": Vector2(720, 60),
+"type": "Point Where Moving"
 }]
 connections = [{
 "from": "VN2",

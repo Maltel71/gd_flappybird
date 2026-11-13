@@ -1,18 +1,19 @@
 [gd_scene format=3 uid="uid://dp0qolwale5pf"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_8xidw"]
+[ext_resource type="Texture2D" uid="uid://cqxo50v7j4v36" path="res://day/2_thursday/grizzly/zuz/sprites/zuzu_bg.png" id="1_12r4l"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_jw13f"]
 [ext_resource type="Resource" uid="uid://dd3v6ftd8lx" path="res://day/2_thursday/grizzly/zuz/visuract_graphs/zuz_level_01_Spawner.tres" id="3_qlaer"]
 [ext_resource type="PackedScene" uid="uid://b4oo1xjhkq82l" path="res://day/2_thursday/grizzly/zuz/zuz_ground.tscn" id="4_6o04k"]
 [ext_resource type="PackedScene" uid="uid://fc4d71l4xtf3" path="res://day/2_thursday/grizzly/zuz/zuz_player.tscn" id="5_ajg0s"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_pbrfm"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_tanyn"]
+[ext_resource type="AudioStream" uid="uid://dqge4cnc0yvw" path="res://day/2_thursday/grizzly/zuz/z_song.wav" id="8_2468n"]
 
 [node name="Zuz_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="ZuzMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_8xidw")
+position = Vector2(960, 540)
+texture = ExtResource("1_12r4l")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)
@@ -24,6 +25,7 @@ script = ExtResource("2_jw13f")
 graph = ExtResource("3_qlaer")
 
 [node name="Zuz_Ground" parent="." unique_id=291150015 instance=ExtResource("4_6o04k")]
+position = Vector2(0, 199)
 
 [node name="Zuz_Player" parent="." unique_id=1006372336 instance=ExtResource("5_ajg0s")]
 position = Vector2(483, 531)
@@ -38,5 +40,10 @@ theme = ExtResource("6_pbrfm")
 text = "0"
 
 [node name="ZuzStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
-position = Vector2(1096, 477)
+position = Vector2(943.49994, 535.5)
+scale = Vector2(2.4415438, 1.3239595)
 texture = ExtResource("7_tanyn")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=169917951]
+stream = ExtResource("8_2468n")
+autoplay = true
