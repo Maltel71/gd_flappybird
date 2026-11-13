@@ -66,22 +66,22 @@ nodes = [{
 "position": Vector2(980, 700),
 "type": "Destroy"
 }, {
-"id": "VN13",
+"id": "VN11",
 "params": {
 "direction": "Left",
 "flip_to_face": false,
-"speed": 0.0
+"speed": 800.0
 },
-"position": Vector2(980, 460),
+"position": Vector2(980, 260),
 "type": "Launch"
 }, {
-"id": "VN11",
+"id": "VN13",
 "params": {
 "direction": "Left",
 "flip_to_face": false,
 "speed": 400.0
 },
-"position": Vector2(980, 260),
+"position": Vector2(980, 460),
 "type": "Launch"
 }]
 connections = [{

@@ -26,7 +26,7 @@ graph = ExtResource("3_rjy2f")
 [node name="Isak_Ground" parent="." unique_id=291150015 instance=ExtResource("4_axt45")]
 
 [node name="Isak_Player" parent="." unique_id=1006372336 instance=ExtResource("5_alwu6")]
-position = Vector2(483, 531)
+position = Vector2(505, 545)
 
 [node name="Score_Label" type="Label" parent="." unique_id=1687435472]
 z_index = 30

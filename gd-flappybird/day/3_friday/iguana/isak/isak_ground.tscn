@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_ur82u"]
 [ext_resource type="Resource" uid="uid://fp1v0mlxuxgu" path="res://day/3_friday/iguana/isak/visuract_graphs/isak_ground_Isak_Ground.tres" id="2_ohe5d"]
-[ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_1evo6"]
+[ext_resource type="Texture2D" uid="uid://c3652l34rxtp3" path="res://day/3_friday/iguana/isak/sprites/isak_mark.png" id="3_6pyyw"]
 [ext_resource type="Resource" uid="uid://cv2ykhr7v86y4" path="res://day/3_friday/iguana/isak/visuract_graphs/isak_ground_DeathArea.tres" id="4_t6yag"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
@@ -62,15 +62,15 @@ autoplay = &"RESET"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=505108508]
 position = Vector2(927, 543)
-texture = ExtResource("3_1evo6")
+texture = ExtResource("3_6pyyw")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=2092239384]
 position = Vector2(1920, 0)
-texture = ExtResource("3_1evo6")
+texture = ExtResource("3_6pyyw")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Sprite2D" unique_id=948471714]
 position = Vector2(3840, 0)
-texture = ExtResource("3_1evo6")
+texture = ExtResource("3_6pyyw")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1707946921]
 
