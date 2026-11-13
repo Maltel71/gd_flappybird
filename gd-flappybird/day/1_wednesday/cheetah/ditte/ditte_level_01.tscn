@@ -1,18 +1,19 @@
 [gd_scene format=3 uid="uid://dh7knarg85glq"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_e2x2h"]
+[ext_resource type="Texture2D" uid="uid://2q0622im3ln0" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/sprites/backgrund/bg.png" id="1_b7qq6"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_sh146"]
 [ext_resource type="Resource" uid="uid://byetn73i0jt1d" path="res://day/1_wednesday/cheetah/ditte/visuract_graphs/ditte_level_01_Spawner.tres" id="3_pp60q"]
 [ext_resource type="PackedScene" uid="uid://d3e76iesiikx8" path="res://day/1_wednesday/cheetah/ditte/ditte_ground.tscn" id="4_3vrp4"]
 [ext_resource type="PackedScene" uid="uid://quvj01adw1kd" path="res://day/1_wednesday/cheetah/ditte/ditte_player.tscn" id="5_6floo"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_s7qb4"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_esjod"]
+[ext_resource type="AudioStream" uid="uid://didmby22v5evd" path="res://day/1_wednesday/cheetah/ditte_visuract_scenes/game music.wav" id="8_loqfk"]
 
 [node name="Ditte_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="DitteMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_e2x2h")
+position = Vector2(959, 537)
+texture = ExtResource("1_b7qq6")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)
@@ -40,3 +41,8 @@ text = "0"
 [node name="DitteStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
 position = Vector2(1096, 477)
 texture = ExtResource("7_esjod")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1100930162]
+stream = ExtResource("8_loqfk")
+volume_db = -0.155
+autoplay = true
