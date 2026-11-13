@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_kvti5"]
 [ext_resource type="Resource" uid="uid://dvcoo5l7qi1b3" path="res://day/1_wednesday/cheetah/linnea/visuract_graphs/linnea_obstacle.tres" id="2_xqkft"]
-[ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_cs6qn"]
+[ext_resource type="Texture2D" uid="uid://b4xs0w6het4p8" path="res://day/1_wednesday/cheetah/linnea/sprites/Linnea_obst_01.png" id="3_6ro0h"]
+[ext_resource type="Texture2D" uid="uid://djinjt8atluqa" path="res://day/1_wednesday/cheetah/linnea/sprites/Linnea_obst_02.png" id="4_6ro0h"]
 [ext_resource type="Resource" uid="uid://bxqofvnaj2kt0" path="res://day/1_wednesday/cheetah/linnea/visuract_graphs/linnea_scorezone.tres" id="4_qkp5c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
@@ -20,11 +21,15 @@ graph = ExtResource("2_xqkft")
 
 [node name="Top" type="Sprite2D" parent="." unique_id=1511844230]
 position = Vector2(0, -710)
-texture = ExtResource("3_cs6qn")
+rotation = 3.1415927
+scale = Vector2(1.8534534, 1.8534534)
+texture = ExtResource("3_6ro0h")
 
 [node name="Bottom" type="Sprite2D" parent="." unique_id=298269132]
 position = Vector2(0, 467)
-texture = ExtResource("3_cs6qn")
+rotation = -3.1415927
+scale = Vector2(2.5021324, 2.5021327)
+texture = ExtResource("4_6ro0h")
 
 [node name="Top_Collider" type="CollisionShape2D" parent="." unique_id=1941221746]
 position = Vector2(-6.5, -711)

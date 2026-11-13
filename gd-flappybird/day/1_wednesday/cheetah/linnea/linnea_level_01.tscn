@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cjyrw8odsy7rx"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_7m7b0"]
+[ext_resource type="Texture2D" uid="uid://b55ii3v2lptnq" path="res://day/1_wednesday/cheetah/linnea/sprites/Linnea_env_01.png" id="1_o7sga"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_ud537"]
 [ext_resource type="Resource" uid="uid://cs0nlfjhdcdxg" path="res://day/1_wednesday/cheetah/linnea/visuract_graphs/linnea_level_01_Spawner.tres" id="3_8bygg"]
 [ext_resource type="PackedScene" uid="uid://cabhhtd10rg53" path="res://day/1_wednesday/cheetah/linnea/linnea_ground.tscn" id="4_enroh"]
@@ -11,8 +11,8 @@
 [node name="Linnea_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="LinneaMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_7m7b0")
+position = Vector2(959, 534)
+texture = ExtResource("1_o7sga")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)

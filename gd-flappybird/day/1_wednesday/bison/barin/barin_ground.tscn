@@ -1,9 +1,16 @@
 [gd_scene format=3 uid="uid://b1nvoghsvyndl"]
 
+<<<<<<<< HEAD:gd-flappybird/day/1_wednesday/bison/barin/barin_ground.tscn
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_tybv1"]
 [ext_resource type="Resource" uid="uid://jnokvfd3wx2s" path="res://day/1_wednesday/bison/barin/visuract_graphs/barin_ground_Barin_Ground.tres" id="2_4w5gd"]
 [ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_n82fk"]
 [ext_resource type="Resource" uid="uid://bh1mqu2qvc0t6" path="res://day/1_wednesday/bison/barin/visuract_graphs/barin_ground_DeathArea.tres" id="4_ytjll"]
+========
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_qs4pd"]
+[ext_resource type="Resource" uid="uid://bruclyl1rdngo" path="res://day/1_wednesday/cheetah/samuel/visuract_graphs/samuel_ground_Samuel_Ground.tres" id="2_ibets"]
+[ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_17d1p"]
+[ext_resource type="Resource" uid="uid://bbeiddwnjcbp7" path="res://day/1_wednesday/cheetah/samuel/visuract_graphs/samuel_ground_DeathArea.tres" id="4_1vqwb"]
+>>>>>>>> origin/cheetah_linnea:gd-flappybird/day/1_wednesday/cheetah/samuel/samuel_ground.tscn
 
 [sub_resource type="Animation" id="Animation_d61ah"]
 length = 0.001
