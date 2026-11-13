@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_ejqa0"]
 [ext_resource type="Resource" uid="uid://b0de7k5tllokd" path="res://day/1_wednesday/bison/august/visuract_graphs/august_obstacle.tres" id="2_pwwkl"]
-[ext_resource type="Texture2D" uid="uid://b7q03vtaqu315" path="res://malte/sprites/malte_wall_01.png" id="3_5p1qa"]
+[ext_resource type="Texture2D" uid="uid://csdgn45daij8v" path="res://day/1_wednesday/bison/august/sprites/august_obstacle.png" id="3_p68nf"]
 [ext_resource type="Resource" uid="uid://cxnp11jawgirk" path="res://day/1_wednesday/bison/august/visuract_graphs/august_scorezone.tres" id="4_5rfhy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlerw"]
@@ -19,12 +19,14 @@ script = ExtResource("1_ejqa0")
 graph = ExtResource("2_pwwkl")
 
 [node name="Top" type="Sprite2D" parent="." unique_id=1511844230]
-position = Vector2(0, -710)
-texture = ExtResource("3_5p1qa")
+position = Vector2(-5.0000024, -708)
+scale = Vector2(1.1088434, 1.2301012)
+texture = ExtResource("3_p68nf")
 
 [node name="Bottom" type="Sprite2D" parent="." unique_id=298269132]
-position = Vector2(0, 467)
-texture = ExtResource("3_5p1qa")
+position = Vector2(-7.4999924, 474.00003)
+scale = Vector2(1.0782313, 1.2706221)
+texture = ExtResource("3_p68nf")
 
 [node name="Top_Collider" type="CollisionShape2D" parent="." unique_id=1941221746]
 position = Vector2(-6.5, -711)

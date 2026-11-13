@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://gst5tx1oow1k"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_t5q2g"]
+[ext_resource type="Texture2D" uid="uid://dsrchq00rqrtf" path="res://day/1_wednesday/bison/august/sprites/august_bg.png" id="1_wk107"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_4f8mq"]
 [ext_resource type="Resource" uid="uid://bdjgf1imscsqr" path="res://day/1_wednesday/bison/august/visuract_graphs/august_level_01_Spawner.tres" id="3_o2fnd"]
 [ext_resource type="PackedScene" uid="uid://divxaqbboayp3" path="res://day/1_wednesday/bison/august/august_ground.tscn" id="4_qat3f"]
@@ -12,7 +12,7 @@
 
 [node name="AugustMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
 position = Vector2(959, 464)
-texture = ExtResource("1_t5q2g")
+texture = ExtResource("1_wk107")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)

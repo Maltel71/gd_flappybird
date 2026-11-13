@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_ag8vk"]
 [ext_resource type="Resource" uid="uid://d1rouiqykvx37" path="res://day/1_wednesday/bison/august/visuract_graphs/august_player_August_Player.tres" id="2_nedox"]
-[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_iihtj"]
+[ext_resource type="Texture2D" uid="uid://brq4qowd5jisy" path="res://day/1_wednesday/bison/august/sprites/august_player.png" id="3_rymfy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
 radius = 46.043457
@@ -12,7 +12,8 @@ script = ExtResource("1_ag8vk")
 graph = ExtResource("2_nedox")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
-texture = ExtResource("3_iihtj")
+scale = Vector2(0.65185183, 0.65185183)
+texture = ExtResource("3_rymfy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
 position = Vector2(-6, -5)
