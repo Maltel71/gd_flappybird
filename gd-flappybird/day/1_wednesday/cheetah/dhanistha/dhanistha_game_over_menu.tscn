@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://e2otahq85jy8"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_00wog"]
+<<<<<<<< HEAD:gd-flappybird/day/1_wednesday/cheetah/dhanistha/dhanistha_game_over_menu.tscn
 [ext_resource type="Resource" uid="uid://bhrf54ubij6tr" path="res://day/1_wednesday/cheetah/dhanistha/visuract_graphs/dhanistha_game_over_menu_Dhanistha_GameOver_Menu.tres" id="2_0j5nx"]
 [ext_resource type="Resource" uid="uid://qx71g0siek6c" path="res://day/1_wednesday/cheetah/dhanistha/visuract_graphs/dhanistha_game_over_menu_Restart.tres" id="3_dtyue"]
+========
+[ext_resource type="Resource" uid="uid://bhrf54ubij6tr" path="res://day/1_wednesday/cheetah/dhanisthas/visuract_graphs/dhanistha_game_over_menu_Dhanistha_GameOver_Menu.tres" id="2_0j5nx"]
+[ext_resource type="Resource" uid="uid://qx71g0siek6c" path="res://day/1_wednesday/cheetah/dhanisthas/visuract_graphs/dhanistha_game_over_menu_Restart.tres" id="3_dtyue"]
+>>>>>>>> origin/cheetah_dhanistha:gd-flappybird/day/1_wednesday/cheetah/dhanisthas/dhanistha_game_over_menu.tscn
 
 [node name="Dhanistha_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
