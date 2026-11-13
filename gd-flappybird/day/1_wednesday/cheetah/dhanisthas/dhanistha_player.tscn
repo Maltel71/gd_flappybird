@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://do5nsuy7a34wx"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_haorr"]
+<<<<<<<< HEAD:gd-flappybird/day/1_wednesday/cheetah/dhanistha/dhanistha_player.tscn
+[ext_resource type="Resource" uid="uid://pixe35nkskmp" path="res://day/1_wednesday/cheetah/dhanistha/visuract_graphs/dhanistha_player_Dhanistha_Player.tres" id="2_6n0g3"]
+[ext_resource type="Texture2D" uid="uid://cteae61065f6t" path="res://malte/sprites/malte_bird_01.png" id="3_g0lct"]
+========
+[ext_resource type="Resource" uid="uid://pixe35nkskmp" path="res://day/1_wednesday/cheetah/dhanisthas/visuract_graphs/dhanistha_player_Dhanistha_Player.tres" id="2_6n0g3"]
+[ext_resource type="Texture2D" uid="uid://it3qj8odgn1a" path="res://day/1_wednesday/cheetah/dhanisthas/sprites/dhanistha_player.png" id="3_hnsg0"]
+>>>>>>>> origin/cheetah_dhanistha:gd-flappybird/day/1_wednesday/cheetah/dhanisthas/dhanistha_player.tscn
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Dhanistha_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_haorr")
+graph = ExtResource("2_6n0g3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+position = Vector2(-5.9999995, -4.9999995)
+scale = Vector2(0.8484848, 0.8484849)
+texture = ExtResource("3_hnsg0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")
