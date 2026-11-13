@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dqnyeo4ehpx84"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_8o6iq"]
+[ext_resource type="Texture2D" uid="uid://b752olsy4kl21" path="res://day/3_friday/kangaroo/grant_visuract_scenes/sprites/grant_bakgrund.png" id="1_pcj2l"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_tb0h0"]
 [ext_resource type="Resource" uid="uid://cuwb6rrmmuioi" path="res://day/3_friday/kangaroo/grant_visuract_scenes/visuract_graphs/grant_level_01_Spawner.tres" id="3_maxij"]
 [ext_resource type="PackedScene" uid="uid://2rawdmasrnmi" path="res://day/3_friday/kangaroo/grant_visuract_scenes/grant_ground.tscn" id="4_027fq"]
@@ -11,8 +11,8 @@
 [node name="Grant_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="GrantMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_8o6iq")
+position = Vector2(959, 539)
+texture = ExtResource("1_pcj2l")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)

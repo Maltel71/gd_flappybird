@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="VisuractGraph" format=3 uid="uid://cuwb6rrmmuioi"]
 
-[ext_resource type="Script" uid="uid://che0y4bsuseqf" path="res://addons/visuract/visuract_graph.gd" id="1_sgtuq"]
+[ext_resource type="Script" uid="uid://djffehnfvvvq8" path="res://addons/visuract/visuract_graph.gd" id="1_sgtuq"]
 
 [resource]
 script = ExtResource("1_sgtuq")
@@ -58,7 +58,7 @@ nodes = [{
 }, {
 "id": "VN139",
 "params": {
-"scene": "uid://dbrbgcpuyugke"
+"scene": "uid://ev5rl7vhor3i"
 },
 "position": Vector2(1600, 460),
 "type": "Change Scene"
@@ -125,7 +125,7 @@ nodes = [{
 "offset_y": 0.0,
 "random_x": 0.0,
 "random_y": 200.0,
-"scene": "uid://c0enni5rf4yln",
+"scene": "uid://tjvsgfbaqu85",
 "spawn_point": "",
 "weight": 1.0,
 "where": "On me"
@@ -246,4 +246,4 @@ connections = [{
 "from": "VN315",
 "to": "VN316"
 }]
-scene_uid = "uid://bxhsnelskqiwg"
+scene_uid = "uid://dqnyeo4ehpx84"
