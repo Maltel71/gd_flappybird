@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://sfws22kohpbu"]
+
+[ext_resource type="Texture2D" uid="uid://bwlasdr388why" path="res://day/3_friday/jaguar/agnes/sprites/agnes_bg.png" id="1_we54f"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_bmftc"]
+[ext_resource type="Resource" uid="uid://wcoxbnqxukfh" path="res://day/3_friday/jaguar/agnes/visuract_graphs/agnes_level_01_Spawner.tres" id="3_1qilf"]
+[ext_resource type="PackedScene" uid="uid://p8257mdx17ty" path="res://day/3_friday/jaguar/agnes/agnes_ground.tscn" id="4_hahy2"]
+[ext_resource type="PackedScene" uid="uid://c5rgggsra6ux6" path="res://day/3_friday/jaguar/agnes/agnes_player.tscn" id="5_nwahk"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_hun05"]
+[ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_b5eps"]
+
+[node name="Agnes_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="AgnesMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 539)
+texture = ExtResource("1_we54f")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
+position = Vector2(960, 540)
+metadata/_edit_lock_ = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
+position = Vector2(2119, 459)
+script = ExtResource("2_bmftc")
+graph = ExtResource("3_1qilf")
+
+[node name="Agnes_Ground" parent="." unique_id=291150015 instance=ExtResource("4_hahy2")]
+
+[node name="Agnes_Player" parent="." unique_id=1006372336 instance=ExtResource("5_nwahk")]
+position = Vector2(483, 531)
+
+[node name="Score_Label" type="Label" parent="." unique_id=1687435472]
+z_index = 30
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
+theme = ExtResource("6_hun05")
+text = "0"
+
+[node name="AgnesStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
+position = Vector2(1096, 477)
+texture = ExtResource("7_b5eps")

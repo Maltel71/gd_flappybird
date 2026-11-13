@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c5rgggsra6ux6"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_7r70b"]
+[ext_resource type="Resource" uid="uid://dihuw63apvoe6" path="res://day/3_friday/jaguar/agnes/visuract_graphs/agnes_player_Agnes_Player.tres" id="2_eldj5"]
+[ext_resource type="Texture2D" uid="uid://dktbb0r0rn5oq" path="res://malte/sprites/icon.svg" id="3_jewo0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Agnes_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_7r70b")
+graph = ExtResource("2_eldj5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+texture = ExtResource("3_jewo0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")
