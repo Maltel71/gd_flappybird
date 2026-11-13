@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://t2jiordnfdty"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_e66xp"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="1_pr0ho"]
+[ext_resource type="Resource" uid="uid://xg813poxiorp" path="res://day/3_friday/iguana/arvid/visuract_graphs/arvid_game_over_menu_Arvid_GameOver_Menu.tres" id="2_iw5gp"]
+[ext_resource type="Resource" uid="uid://3t6wr08w71ue" path="res://day/3_friday/iguana/arvid/visuract_graphs/arvid_game_over_menu_Restart.tres" id="3_jnm5p"]
+[ext_resource type="Texture2D" uid="uid://c2cwgwf3phhbj" path="res://day/3_friday/iguana/arvid/sprites/Arvid_bg.png" id="4_lnojq"]
+
+[node name="Arvid_GameOver_Menu" type="Control" unique_id=1318623505]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_pr0ho")
+script = ExtResource("1_e66xp")
+graph = ExtResource("2_iw5gp")
+
+[node name="ArvidBg" type="Sprite2D" parent="." unique_id=1538500378]
+position = Vector2(960, 541)
+texture = ExtResource("4_lnojq")
+
+[node name="Header" type="Label" parent="." unique_id=1848836727]
+layout_mode = 0
+offset_left = 747.0
+offset_top = 297.0
+offset_right = 1072.0
+offset_bottom = 385.0
+text = "game over"
+
+[node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 401.0
+offset_right = 992.0
+offset_bottom = 489.0
+text = "9000"
+
+[node name="Restart" type="Button" parent="." unique_id=1422222847]
+layout_mode = 0
+offset_left = 816.0
+offset_top = 512.0
+offset_right = 1026.0
+offset_bottom = 595.0
+text = "Restart"
+script = ExtResource("1_e66xp")
+graph = ExtResource("3_jnm5p")

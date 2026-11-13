@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://dwtxmeg4a6aur"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_ywyt1"]
+[ext_resource type="Texture2D" uid="uid://c2cwgwf3phhbj" path="res://day/3_friday/iguana/arvid/sprites/Arvid_bg.png" id="1_ip1vi"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_15hb4"]
-[ext_resource type="Resource" uid="uid://bgfjiq3m60yvi" path="res://day/3_friday/iguana/arvid_visuract_scenes/visuract_graphs/arvid_level_01_Spawner.tres" id="3_u87mm"]
-[ext_resource type="PackedScene" uid="uid://onx6g3dt34v" path="res://day/3_friday/iguana/arvid_visuract_scenes/arvid_ground.tscn" id="4_5bckx"]
-[ext_resource type="PackedScene" uid="uid://cmxbeew6cpqxg" path="res://day/3_friday/iguana/arvid_visuract_scenes/arvid_player.tscn" id="5_8ea8g"]
+[ext_resource type="Resource" uid="uid://bgfjiq3m60yvi" path="res://day/3_friday/iguana/arvid/visuract_graphs/arvid_level_01_Spawner.tres" id="3_u87mm"]
+[ext_resource type="PackedScene" uid="uid://onx6g3dt34v" path="res://day/3_friday/iguana/arvid/arvid_ground.tscn" id="4_5bckx"]
+[ext_resource type="PackedScene" uid="uid://cmxbeew6cpqxg" path="res://day/3_friday/iguana/arvid/arvid_player.tscn" id="5_8ea8g"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_iy6yv"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_fx0kn"]
 
 [node name="Arvid_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="ArvidMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_ywyt1")
+position = Vector2(959, 539)
+texture = ExtResource("1_ip1vi")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)

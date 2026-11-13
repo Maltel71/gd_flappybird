@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cruvxm5ibb5y2"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_5jpim"]
-[ext_resource type="Resource" uid="uid://dukrtnq6dgo45" path="res://day/3_friday/iguana/axel_visuract_scenes/visuract_graphs/axel_game_over_menu_Axel_GameOver_Menu.tres" id="2_7hiru"]
-[ext_resource type="Resource" uid="uid://bdc4kiea8kj5k" path="res://day/3_friday/iguana/axel_visuract_scenes/visuract_graphs/axel_game_over_menu_Restart.tres" id="3_sw5yl"]
+[ext_resource type="Resource" uid="uid://dukrtnq6dgo45" path="res://day/3_friday/iguana/axel/visuract_graphs/axel_game_over_menu_Axel_GameOver_Menu.tres" id="2_7hiru"]
+[ext_resource type="Resource" uid="uid://bdc4kiea8kj5k" path="res://day/3_friday/iguana/axel/visuract_graphs/axel_game_over_menu_Restart.tres" id="3_sw5yl"]
 
 [node name="Axel_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
