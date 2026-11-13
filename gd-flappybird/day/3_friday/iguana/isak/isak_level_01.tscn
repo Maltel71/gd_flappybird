@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bjswrpnsu71pq"]
+
+[ext_resource type="Texture2D" uid="uid://c3tb3c4vvl80h" path="res://day/3_friday/iguana/isak/sprites/isak_bg.png" id="1_3ov2y"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_altld"]
+[ext_resource type="Resource" uid="uid://dnu3petakhvkc" path="res://day/3_friday/iguana/isak/visuract_graphs/isak_level_01_Spawner.tres" id="3_rjy2f"]
+[ext_resource type="PackedScene" uid="uid://cgs3iw2brx03m" path="res://day/3_friday/iguana/isak/isak_ground.tscn" id="4_axt45"]
+[ext_resource type="PackedScene" uid="uid://h64wo2bstdcx" path="res://day/3_friday/iguana/isak/isak_player.tscn" id="5_alwu6"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_8djk8"]
+[ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_26crc"]
+
+[node name="Isak_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="IsakMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 464)
+texture = ExtResource("1_3ov2y")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
+position = Vector2(960, 540)
+metadata/_edit_lock_ = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
+position = Vector2(2119, 459)
+script = ExtResource("2_altld")
+graph = ExtResource("3_rjy2f")
+
+[node name="Isak_Ground" parent="." unique_id=291150015 instance=ExtResource("4_axt45")]
+
+[node name="Isak_Player" parent="." unique_id=1006372336 instance=ExtResource("5_alwu6")]
+position = Vector2(483, 531)
+
+[node name="Score_Label" type="Label" parent="." unique_id=1687435472]
+z_index = 30
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
+theme = ExtResource("6_8djk8")
+text = "0"
+
+[node name="IsakStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
+position = Vector2(1096, 477)
+texture = ExtResource("7_26crc")

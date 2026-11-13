@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dbc8snx67vx73"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_cule3"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="1_fo2dh"]
+[ext_resource type="Resource" uid="uid://drrlp6684wjt1" path="res://day/3_friday/iguana/isak/visuract_graphs/isak_game_over_menu_Isak_GameOver_Menu.tres" id="2_6kr3n"]
+[ext_resource type="Resource" uid="uid://cmame174pg60b" path="res://day/3_friday/iguana/isak/visuract_graphs/isak_game_over_menu_Restart.tres" id="3_og8y6"]
+[ext_resource type="Texture2D" uid="uid://2ckkxf1bp0q4" path="res://day/3_friday/iguana/isak/sprites/isak_button_leve.png" id="4_s4xjt"]
+
+[node name="Isak_GameOver_Menu" type="Control" unique_id=1318623505]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_fo2dh")
+script = ExtResource("1_cule3")
+graph = ExtResource("2_6kr3n")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=136679666]
+layout_mode = 0
+offset_right = 1922.0
+offset_bottom = 1080.0
+texture = ExtResource("4_s4xjt")
+
+[node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
+modulate = Color(0.89411765, 0, 0, 1)
+layout_mode = 0
+offset_left = 856.0
+offset_top = 254.0
+offset_right = 1002.0
+offset_bottom = 342.0
+text = "9000"
+
+[node name="Restart" type="Button" parent="." unique_id=1422222847]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 899.0
+offset_right = 1034.0
+offset_bottom = 1062.0
+script = ExtResource("1_cule3")
+graph = ExtResource("3_og8y6")
