@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dfwwne587c6q4"]
+
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="1_4ywhg"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_j0avw"]
+[ext_resource type="Resource" uid="uid://d3h2dxn2cv0so" path="res://day/3_friday/jaguar/william/visuract_graphs/william_game_over_menu_William_GameOver_Menu.tres" id="2_bemv3"]
+[ext_resource type="Resource" uid="uid://bxoqt2us6xcs5" path="res://day/3_friday/jaguar/william/visuract_graphs/william_game_over_menu_Restart.tres" id="3_5qyal"]
+[ext_resource type="Texture2D" uid="uid://b5whh0snnd60x" path="res://day/3_friday/jaguar/william/sprites/william_Bakgrund.png" id="4_3yatg"]
+
+[node name="William_GameOver_Menu" type="Control" unique_id=1318623505]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_4ywhg")
+script = ExtResource("1_j0avw")
+graph = ExtResource("2_bemv3")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=948644570]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("4_3yatg")
+
+[node name="Header" type="Label" parent="." unique_id=1848836727]
+layout_mode = 0
+offset_left = 754.0
+offset_top = 269.0
+offset_right = 1079.0
+offset_bottom = 357.0
+text = "game over"
+
+[node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
+layout_mode = 0
+offset_left = 853.0
+offset_top = 387.0
+offset_right = 999.0
+offset_bottom = 475.0
+text = "9000"
+
+[node name="Restart" type="Button" parent="." unique_id=1422222847]
+layout_mode = 0
+offset_left = 830.0
+offset_top = 503.0
+offset_right = 1040.0
+offset_bottom = 586.0
+text = "Restart"
+script = ExtResource("1_j0avw")
+graph = ExtResource("3_5qyal")
