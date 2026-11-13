@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_gc0ij"]
 [ext_resource type="Resource" uid="uid://b2e85q70w1mm" path="res://day/2_thursday/flamingo/ellis/visuract_graphs/ellis_ground_Ellis_Ground.tres" id="2_mki5k"]
-[ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_tu32s"]
+[ext_resource type="Texture2D" uid="uid://cl5ft4rrj882r" path="res://day/2_thursday/flamingo/ellis/sprites/ellis_ground.png" id="3_3f8r4"]
 [ext_resource type="Resource" uid="uid://dy2py5obi1usq" path="res://day/2_thursday/flamingo/ellis/visuract_graphs/ellis_ground_DeathArea.tres" id="4_61w5l"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
@@ -62,15 +62,15 @@ autoplay = &"RESET"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=505108508]
 position = Vector2(927, 543)
-texture = ExtResource("3_tu32s")
+texture = ExtResource("3_3f8r4")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=2092239384]
 position = Vector2(1920, 0)
-texture = ExtResource("3_tu32s")
+texture = ExtResource("3_3f8r4")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Sprite2D" unique_id=948471714]
 position = Vector2(3840, 0)
-texture = ExtResource("3_tu32s")
+texture = ExtResource("3_3f8r4")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1707946921]
 
