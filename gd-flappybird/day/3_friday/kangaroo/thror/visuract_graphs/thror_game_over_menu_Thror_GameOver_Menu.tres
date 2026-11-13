@@ -5,11 +5,6 @@
 [resource]
 script = ExtResource("1_5gaxa")
 nodes = [{
-"id": "VN176",
-"params": {},
-"position": Vector2(1187.6688, 1233.4016),
-"type": "On Ready"
-}, {
 "id": "VN177",
 "params": {
 "label": "Highscore_Label",
@@ -18,6 +13,11 @@ nodes = [{
 },
 "position": Vector2(1540, 1220),
 "type": "Show Text"
+}, {
+"id": "VN176",
+"params": {},
+"position": Vector2(1160, 1220),
+"type": "On Ready"
 }]
 connections = [{
 "from": "VN176",

@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bd3cww2667mfl"]
 
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="1_p83x3"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_qucjm"]
 [ext_resource type="Resource" uid="uid://dtl1kddaytmoq" path="res://day/3_friday/kangaroo/thror/visuract_graphs/thror_game_over_menu_Thror_GameOver_Menu.tres" id="2_bqh06"]
 [ext_resource type="Resource" uid="uid://ctjasi65wsvkx" path="res://day/3_friday/kangaroo/thror/visuract_graphs/thror_game_over_menu_Restart.tres" id="3_flpk7"]
+[ext_resource type="Texture2D" uid="uid://hthg21rgfpkj" path="res://day/3_friday/kangaroo/thror/sprites/thor_bakgrund.png" id="4_2rwft"]
 
 [node name="Thror_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
@@ -11,31 +13,38 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_p83x3")
 script = ExtResource("1_qucjm")
 graph = ExtResource("2_bqh06")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1110215456]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("4_2rwft")
+
 [node name="Header" type="Label" parent="." unique_id=1848836727]
 layout_mode = 0
-offset_left = 924.0
-offset_top = 335.0
-offset_right = 1006.0
-offset_bottom = 358.0
+offset_left = 830.0
+offset_top = 262.0
+offset_right = 1155.0
+offset_bottom = 350.0
 text = "game over"
 
 [node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
 layout_mode = 0
-offset_left = 924.0
-offset_top = 370.0
-offset_right = 964.0
-offset_bottom = 393.0
+offset_left = 919.0
+offset_top = 398.0
+offset_right = 1065.0
+offset_bottom = 486.0
 text = "9000"
 
 [node name="Restart" type="Button" parent="." unique_id=1422222847]
 layout_mode = 0
-offset_left = 943.0
-offset_top = 472.0
-offset_right = 951.0
-offset_bottom = 480.0
+offset_left = 886.0
+offset_top = 635.0
+offset_right = 1096.0
+offset_bottom = 718.0
 text = "Restart"
 script = ExtResource("1_qucjm")
 graph = ExtResource("3_flpk7")

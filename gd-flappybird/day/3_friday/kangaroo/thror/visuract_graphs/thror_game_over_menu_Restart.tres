@@ -21,7 +21,7 @@ nodes = [{
 }, {
 "id": "VN201",
 "params": {
-"scene": "uid://bxhsnelskqiwg"
+"scene": "uid://b1xhqbojc87ep"
 },
 "position": Vector2(1460, 1220),
 "type": "Change Scene"
