@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://beb1oj7woh6v0"]
+
+[ext_resource type="Texture2D" uid="uid://dqqo1vdmjs2bt" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_backg_01.png" id="1_4je0h"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_hk1nx"]
+[ext_resource type="Resource" uid="uid://cqjhte2vmxjbd" path="res://day/1_wednesday/cheetah/samuel/visuract_graphs/samuel_level_01_Spawner.tres" id="3_3dfm8"]
+[ext_resource type="PackedScene" uid="uid://bjxoam7nam5pl" path="res://day/1_wednesday/cheetah/samuel/samuel_ground.tscn" id="4_kjgxc"]
+[ext_resource type="PackedScene" uid="uid://dc5kbxk0ctx0w" path="res://day/1_wednesday/cheetah/samuel/samuel_player.tscn" id="5_5j7k4"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_en81n"]
+[ext_resource type="AudioStream" uid="uid://bwbymf3rrftdn" path="res://day/1_wednesday/cheetah/samuel/FrogAudio song.wav" id="7_4je0h"]
+
+[node name="Samuel_Level_01" type="Node2D" unique_id=1636437843]
+
+[node name="SamuelMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
+position = Vector2(959, 545.5)
+scale = Vector2(1, 1.012037)
+texture = ExtResource("1_4je0h")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
+position = Vector2(960, 540)
+metadata/_edit_lock_ = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=2044363238]
+position = Vector2(2119, 459)
+script = ExtResource("2_hk1nx")
+graph = ExtResource("3_3dfm8")
+
+[node name="Samuel_Ground" parent="." unique_id=291150015 instance=ExtResource("4_kjgxc")]
+
+[node name="Samuel_Player" parent="." unique_id=1006372336 instance=ExtResource("5_5j7k4")]
+position = Vector2(483, 531)
+rotation = -0.7853982
+
+[node name="Score_Label" type="Label" parent="." unique_id=1687435472]
+z_index = 30
+offset_left = 47.0
+offset_top = 32.0
+offset_right = 87.0
+offset_bottom = 120.0
+theme = ExtResource("6_en81n")
+text = "0"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1993340809]
+stream = ExtResource("7_4je0h")
+autoplay = true

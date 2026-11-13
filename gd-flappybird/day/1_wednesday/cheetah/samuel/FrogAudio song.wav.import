@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bwbymf3rrftdn"
+path="res://.godot/imported/FrogAudio song.wav-81bd26785c73bde71522c23c836199d2.sample"
+
+[deps]
+
+source_file="res://day/1_wednesday/cheetah/samuel/FrogAudio song.wav"
+dest_files=["res://.godot/imported/FrogAudio song.wav-81bd26785c73bde71522c23c836199d2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

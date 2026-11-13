@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dc5kbxk0ctx0w"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_vcif8"]
+[ext_resource type="Resource" uid="uid://bbknakosbjkuh" path="res://day/1_wednesday/cheetah/samuel/visuract_graphs/samuel_player_Samuel_player_2.tres" id="2_f3ewu"]
+[ext_resource type="Texture2D" uid="uid://dk4xbdctxfqyx" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_01.png" id="3_ftb3v"]
+[ext_resource type="Texture2D" uid="uid://c34uuj33x4dfi" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_02.png" id="4_f3ewu"]
+[ext_resource type="Texture2D" uid="uid://b8nbrkl8do50a" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_03.png" id="5_3guwy"]
+[ext_resource type="Texture2D" uid="uid://ct42m2wvmgdjm" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_04.png" id="6_165h6"]
+[ext_resource type="Texture2D" uid="uid://brvmlmgw6isoc" path="res://day/1_wednesday/cheetah/samuel/sprites/samuel_cha_spr_idle.png" id="7_3guwy"]
+[ext_resource type="Resource" uid="uid://crxc2bqc85x6g" path="res://day/1_wednesday/cheetah/samuel/visuract_graphs/AnimatedSprite2D.tres" id="8_3guwy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_klnxv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ftb3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f3ewu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3guwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_165h6")
+}],
+"loop": 1,
+"name": &"Ship_flying",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_3guwy")
+}],
+"loop": 1,
+"name": &"Ship_idle",
+"speed": 5.0
+}]
+
+[node name="Samuel_player" type="CharacterBody2D" unique_id=20436026]
+script = ExtResource("1_vcif8")
+graph = ExtResource("2_f3ewu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=757562791]
+sprite_frames = SubResource("SpriteFrames_klnxv")
+animation = &"Ship_flying"
+frame = 3
+frame_progress = 0.85127586
+script = ExtResource("1_vcif8")
+graph = ExtResource("8_3guwy")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=52596110]
+position = Vector2(1.1785736, 2.9687493)
+scale = Vector2(1.0357143, 1.078125)
+polygon = PackedVector2Array(14, 14, 49, 1.7575758, 58, -19, 21, -26, -12, -18, -12, 13)
