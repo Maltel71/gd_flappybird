@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://0l0qekh5a1ec"]
+
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="1_g4epb"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_l8d23"]
+[ext_resource type="Resource" uid="uid://471pxtm47usb" path="res://day/3_friday/kangaroo/eduard/visuract_graphs/eduard_game_over_menu_Eduard_GameOver_Menu.tres" id="2_21nfb"]
+[ext_resource type="Resource" uid="uid://ddlardifym0ub" path="res://day/3_friday/kangaroo/eduard/visuract_graphs/eduard_game_over_menu_Restart.tres" id="3_8sn72"]
+[ext_resource type="Texture2D" uid="uid://d2gr07ohif3e2" path="res://day/3_friday/kangaroo/eduard/sprites/eduard_bakgrund.png" id="4_2swye"]
+
+[node name="Eduard_GameOver_Menu" type="Control" unique_id=1318623505]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_g4epb")
+script = ExtResource("1_l8d23")
+graph = ExtResource("2_21nfb")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1146342355]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("4_2swye")
+
+[node name="Header" type="Label" parent="." unique_id=1848836727]
+layout_mode = 0
+offset_left = 805.0
+offset_top = 286.0
+offset_right = 1130.0
+offset_bottom = 374.0
+text = "game over"
+
+[node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
+layout_mode = 0
+offset_left = 898.0
+offset_top = 404.0
+offset_right = 1044.0
+offset_bottom = 492.0
+text = "9000"
+
+[node name="Restart" type="Button" parent="." unique_id=1422222847]
+layout_mode = 0
+offset_left = 870.0
+offset_top = 620.0
+offset_right = 1080.0
+offset_bottom = 703.0
+text = "Restart"
+script = ExtResource("1_l8d23")
+graph = ExtResource("3_8sn72")
