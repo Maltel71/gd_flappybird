@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ccmhwypentlj5"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_jcvjg"]
+[ext_resource type="Texture2D" uid="uid://bvlxn5xxyugho" path="res://day/2_thursday/grizzly/austin/sprites/background.png" id="1_r6b4l"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_cdyro"]
 [ext_resource type="Resource" uid="uid://450cpxqrw76r" path="res://day/2_thursday/grizzly/austin/visuract_graphs/austin_level_01_Spawner.tres" id="3_7kmp3"]
 [ext_resource type="PackedScene" uid="uid://bmsrcr4nsmf1" path="res://day/2_thursday/grizzly/austin/austin_ground.tscn" id="4_xu2es"]
@@ -11,8 +11,8 @@
 [node name="Austin_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="AustinMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_jcvjg")
+position = Vector2(959, 539)
+texture = ExtResource("1_r6b4l")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)
