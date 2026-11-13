@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_akord"]
 [ext_resource type="Resource" uid="uid://n1rawa5vp4e8" path="res://day/2_thursday/eagle/theo/visuract_graphs/theo_ground_Theo_Ground.tres" id="2_14md8"]
-[ext_resource type="Texture2D" uid="uid://bbm4r58mca3cd" path="res://malte/sprites/malte_ground_01.png" id="3_syoo0"]
+[ext_resource type="Texture2D" uid="uid://bxi3oqpu4dw61" path="res://day/2_thursday/eagle/theo/sprites/theo_mark.png" id="3_q6sus"]
 [ext_resource type="Resource" uid="uid://0hp6g5w0q8ir" path="res://day/2_thursday/eagle/theo/visuract_graphs/theo_ground_DeathArea.tres" id="4_1unde"]
 
 [sub_resource type="Animation" id="Animation_d61ah"]
@@ -62,15 +62,15 @@ autoplay = &"RESET"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=505108508]
 position = Vector2(927, 543)
-texture = ExtResource("3_syoo0")
+texture = ExtResource("3_q6sus")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=2092239384]
 position = Vector2(1920, 0)
-texture = ExtResource("3_syoo0")
+texture = ExtResource("3_q6sus")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Sprite2D" unique_id=948471714]
 position = Vector2(3840, 0)
-texture = ExtResource("3_syoo0")
+texture = ExtResource("3_q6sus")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1707946921]
 

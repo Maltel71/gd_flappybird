@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dh7rk8yysgaqg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ujmrm"]
+bg_color = Color(0.29411766, 0.56078434, 0.8784314, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yo3pm"]
+bg_color = Color(0.4, 0.62666667, 0.89666665, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s27id"]
+bg_color = Color(0.4, 0.62666667, 0.89666665, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="Button" type="Button" unique_id=1387221972]
+offset_right = 160.0
+offset_bottom = 56.0
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_ujmrm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yo3pm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s27id")
+text = "Play"

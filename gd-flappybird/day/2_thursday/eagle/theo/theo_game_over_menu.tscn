@@ -2,7 +2,10 @@
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_mb04i"]
 [ext_resource type="Resource" uid="uid://vasq0rqwf6i0" path="res://day/2_thursday/eagle/theo/visuract_graphs/theo_game_over_menu_Theo_GameOver_Menu.tres" id="2_rvggd"]
+[ext_resource type="Texture2D" uid="uid://dj0rcerbh4yq3" path="res://day/2_thursday/eagle/theo/sprites/theo_dimma.png" id="3_fe2a4"]
 [ext_resource type="Resource" uid="uid://dx7bpamkh5cou" path="res://day/2_thursday/eagle/theo/visuract_graphs/theo_game_over_menu_Restart.tres" id="3_lhiir"]
+[ext_resource type="Texture2D" uid="uid://u2x1olrbgr7q" path="res://day/2_thursday/eagle/theo/sprites/theo_button_menu.png" id="5_8bs5g"]
+[ext_resource type="Texture2D" uid="uid://clr6x8x738h4s" path="res://day/2_thursday/eagle/theo/sprites/theo_button_replay.png" id="6_8xru7"]
 
 [node name="Theo_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
@@ -13,6 +16,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_mb04i")
 graph = ExtResource("2_rvggd")
+
+[node name="TheoDimma" type="Sprite2D" parent="." unique_id=1231198670]
+position = Vector2(958, 538)
+texture = ExtResource("3_fe2a4")
 
 [node name="Header" type="Label" parent="." unique_id=1848836727]
 layout_mode = 0
@@ -32,10 +39,17 @@ text = "9000"
 
 [node name="Restart" type="Button" parent="." unique_id=1422222847]
 layout_mode = 0
-offset_left = 943.0
-offset_top = 472.0
-offset_right = 951.0
-offset_bottom = 480.0
-text = "Restart"
+offset_left = 729.0
+offset_top = 440.5
+offset_right = 1193.0
+offset_bottom = 711.5
 script = ExtResource("1_mb04i")
 graph = ExtResource("3_lhiir")
+
+[node name="TheoButtonReplay" type="Sprite2D" parent="." unique_id=24023967]
+position = Vector2(961, 568.5)
+texture = ExtResource("6_8xru7")
+
+[node name="TheoButtonMenu" type="Sprite2D" parent="." unique_id=1801875300]
+position = Vector2(959, 852)
+texture = ExtResource("5_8bs5g")

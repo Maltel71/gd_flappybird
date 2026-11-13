@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://p8hl4ibqwvdg"]
+
+[ext_resource type="Script" uid="uid://xfqjj386r63m" path="res://addons/visuract/health_bar.gd" id="1_m70f1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tw17x"]
+bg_color = Color(0.15, 0.15, 0.15, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oq8w8"]
+bg_color = Color(0.8784314, 0.29411766, 0.29411766, 1)
+
+[node name="HealthBar" type="ProgressBar" unique_id=262874034]
+offset_left = -24.0
+offset_top = -40.0
+offset_right = 24.0
+offset_bottom = -13.0
+theme_override_styles/background = SubResource("StyleBoxFlat_tw17x")
+theme_override_styles/fill = SubResource("StyleBoxFlat_oq8w8")
+value = 100.0
+show_percentage = false
+script = ExtResource("1_m70f1")
