@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bsmldumdfxaws"]
+
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_f4nu2"]
+[ext_resource type="Resource" uid="uid://co36n5httoykb" path="res://day/3_friday/kangaroo/gabriel/visuract_graphs/gabriel_player_Gabriel_Player.tres" id="2_4y1xk"]
+[ext_resource type="Texture2D" uid="uid://bsenvjgtwc0ln" path="res://day/3_friday/kangaroo/gabriel/sprites/gabriel_spelare.png" id="3_0rvx8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mlerw"]
+radius = 46.043457
+
+[node name="Gabriel_Player" type="RigidBody2D" unique_id=1006372336 groups=["player"]]
+script = ExtResource("1_f4nu2")
+graph = ExtResource("2_4y1xk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=263435689]
+position = Vector2(-4.9999995, -9)
+scale = Vector2(0.39370078, 0.39370087)
+texture = ExtResource("3_0rvx8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1705844630]
+position = Vector2(-6, -5)
+shape = SubResource("CircleShape2D_mlerw")

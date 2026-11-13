@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://gxkvmnfbwl55"]
+
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="1_8dht6"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_lmw3b"]
+[ext_resource type="Resource" uid="uid://da5isjiadykse" path="res://day/3_friday/kangaroo/gabriel/visuract_graphs/gabriel_game_over_menu_Gabriel_GameOver_Menu.tres" id="2_h210c"]
+[ext_resource type="Resource" uid="uid://bk5vifod5p62h" path="res://day/3_friday/kangaroo/gabriel/visuract_graphs/gabriel_game_over_menu_Restart.tres" id="3_r61rv"]
+[ext_resource type="Texture2D" uid="uid://3b4vwvxt55ee" path="res://day/3_friday/kangaroo/gabriel/sprites/gabriel_bakgrund.png" id="4_rh4f7"]
+[ext_resource type="Texture2D" uid="uid://bsenvjgtwc0ln" path="res://day/3_friday/kangaroo/gabriel/sprites/gabriel_spelare.png" id="6_scqwh"]
+
+[node name="Gabriel_GameOver_Menu" type="Control" unique_id=1318623505]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_8dht6")
+script = ExtResource("1_lmw3b")
+graph = ExtResource("2_h210c")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1012923321]
+modulate = Color(0.6789437, 0.6789437, 0.6789437, 1)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("4_rh4f7")
+
+[node name="Header" type="Label" parent="." unique_id=1848836727]
+layout_mode = 0
+offset_left = 747.0
+offset_top = 275.0
+offset_right = 1072.0
+offset_bottom = 363.0
+text = "game over"
+
+[node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
+layout_mode = 0
+offset_left = 841.0
+offset_top = 386.0
+offset_right = 987.0
+offset_bottom = 474.0
+text = "9000"
+
+[node name="Restart" type="Button" parent="." unique_id=1422222847]
+layout_mode = 0
+offset_left = 816.0
+offset_top = 501.0
+offset_right = 1026.0
+offset_bottom = 584.0
+text = "Restart"
+script = ExtResource("1_lmw3b")
+graph = ExtResource("3_r61rv")
+
+[node name="GabrielSpelare" type="Sprite2D" parent="." unique_id=1870994260]
+position = Vector2(1173, 429)
+texture = ExtResource("6_scqwh")
