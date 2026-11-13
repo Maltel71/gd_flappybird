@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://c31unyabca3ig"]
+
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="1_6a847"]
+[ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_gyggw"]
+[ext_resource type="Resource" uid="uid://dls7cf1fbktow" path="res://day/3_friday/kangaroo/oscar/visuract_graphs/oscar_game_over_menu_Oscar_GameOver_Menu.tres" id="2_lwaui"]
+[ext_resource type="Resource" uid="uid://dcblajmyhyimk" path="res://day/3_friday/kangaroo/oscar/visuract_graphs/oscar_game_over_menu_Restart.tres" id="3_foobq"]
+[ext_resource type="Texture2D" uid="uid://bfrrm6go4iaor" path="res://day/3_friday/kangaroo/oscar/sprites/oscar_bakgrund.png" id="4_sx5i2"]
+
+[node name="Oscar_GameOver_Menu" type="Control" unique_id=1318623505]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_6a847")
+script = ExtResource("1_gyggw")
+graph = ExtResource("2_lwaui")
+
+[node name="OscarBakgrund" type="Sprite2D" parent="." unique_id=1987736608]
+position = Vector2(961, 538)
+texture = ExtResource("4_sx5i2")
+
+[node name="Header" type="Label" parent="." unique_id=1848836727]
+layout_mode = 0
+offset_left = 794.0
+offset_top = 267.0
+offset_right = 1119.0
+offset_bottom = 355.0
+text = "game over"
+
+[node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
+layout_mode = 0
+offset_left = 903.0
+offset_top = 382.0
+offset_right = 1049.0
+offset_bottom = 470.0
+text = "9000"
+
+[node name="Restart" type="Button" parent="." unique_id=1422222847]
+layout_mode = 0
+offset_left = 868.0
+offset_top = 630.0
+offset_right = 1078.0
+offset_bottom = 713.0
+text = "Restart"
+script = ExtResource("1_gyggw")
+graph = ExtResource("3_foobq")
