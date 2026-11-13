@@ -1,18 +1,19 @@
 [gd_scene format=3 uid="uid://iexfavffptwm"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_6e7ah"]
+[ext_resource type="Texture2D" uid="uid://b6dclh6i13qi4" path="res://day/1_wednesday/bison/bruno/sprites/bruno_bg.png" id="1_htksv"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_geqt4"]
 [ext_resource type="Resource" uid="uid://ddbd61tuc52n" path="res://day/1_wednesday/bison/bruno/visuract_graphs/bruno_level_01_Spawner.tres" id="3_u877b"]
 [ext_resource type="PackedScene" uid="uid://dtrl622vqhdu1" path="res://day/1_wednesday/bison/bruno/bruno_ground.tscn" id="4_r8f8r"]
 [ext_resource type="PackedScene" uid="uid://ckouacsqxhsio" path="res://day/1_wednesday/bison/bruno/bruno_player.tscn" id="5_hsbd6"]
 [ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="6_nsvrx"]
 [ext_resource type="Texture2D" uid="uid://dixy7cklx5dh3" path="res://malte/sprites/malte_startscreen_panel.png" id="7_bhb0r"]
+[ext_resource type="AudioStream" uid="uid://xek4nbxo4ps2" path="res://day/1_wednesday/bison/bruno/bruno.wav" id="8_skxmd"]
 
 [node name="Bruno_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="BrunoMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_6e7ah")
+position = Vector2(959, 534)
+texture = ExtResource("1_htksv")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)
@@ -40,3 +41,8 @@ text = "0"
 [node name="BrunoStartscreenPanel" type="Sprite2D" parent="." unique_id=1866711377]
 position = Vector2(1096, 477)
 texture = ExtResource("7_bhb0r")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1862954555]
+stream = ExtResource("8_skxmd")
+volume_db = -10.0
+autoplay = true
