@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://didmby22v5evd"
-path="res://.godot/imported/game music.wav-d80e6bcecaf32f76fbca3962e9233a02.sample"
+path="res://.godot/imported/game music.wav-52a4dc44fb39618ded49e2b3aa22d36e.sample"
 
 [deps]
 
-source_file="res://day/1_wednesday/cheetah/ditte_visuract_scenes/game music.wav"
-dest_files=["res://.godot/imported/game music.wav-d80e6bcecaf32f76fbca3962e9233a02.sample"]
+source_file="res://day/1_wednesday/cheetah/ditte/game music.wav"
+dest_files=["res://.godot/imported/game music.wav-52a4dc44fb39618ded49e2b3aa22d36e.sample"]
 
 [params]
 

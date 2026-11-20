@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ciy77ph1xt30p"
-path="res://.godot/imported/f4 mittel upp.png-c272bf414f3ebf8430b8fd256376d151.ctex"
+path="res://.godot/imported/f4 mittel upp.png-9cdb2f310d8304678f678e52cb749026.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://day/1_wednesday/cheetah/ditte_visuract_scenes/sprites/flame carecter/f4 mittel upp.png"
-dest_files=["res://.godot/imported/f4 mittel upp.png-c272bf414f3ebf8430b8fd256376d151.ctex"]
+source_file="res://day/1_wednesday/cheetah/ditte/sprites/flame carecter/f4 mittel upp.png"
+dest_files=["res://.godot/imported/f4 mittel upp.png-9cdb2f310d8304678f678e52cb749026.ctex"]
 
 [params]
 

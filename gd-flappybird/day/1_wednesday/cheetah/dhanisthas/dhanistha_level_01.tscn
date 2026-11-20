@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://c2u1xxlfnx3xy"]
+[gd_scene format=3 uid="uid://ktf7w3u6ojrg"]
 
 [ext_resource type="Texture2D" uid="uid://depy5wym02qv8" path="res://day/1_wednesday/cheetah/dhanisthas/sprites/dhanistha_bakgrund.png" id="1_ht05w"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_6ycoi"]

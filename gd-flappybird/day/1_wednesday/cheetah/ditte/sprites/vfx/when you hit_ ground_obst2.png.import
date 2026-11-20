@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt64om8l46qu2"
-path="res://.godot/imported/when you hit_ ground_obst2.png-7d934ff833409bf9c1fc5c3ef83a53d0.ctex"
+path="res://.godot/imported/when you hit_ ground_obst2.png-c5fa26f0032156f03816ede700732b23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://day/1_wednesday/cheetah/ditte_visuract_scenes/sprites/vfx/when you hit_ ground_obst2.png"
-dest_files=["res://.godot/imported/when you hit_ ground_obst2.png-7d934ff833409bf9c1fc5c3ef83a53d0.ctex"]
+source_file="res://day/1_wednesday/cheetah/ditte/sprites/vfx/when you hit_ ground_obst2.png"
+dest_files=["res://.godot/imported/when you hit_ ground_obst2.png-c5fa26f0032156f03816ede700732b23.ctex"]
 
 [params]
 

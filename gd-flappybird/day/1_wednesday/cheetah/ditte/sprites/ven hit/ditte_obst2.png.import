@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v2brhb60ltao"
-path="res://.godot/imported/ditte_obst2.png-44b04f9467a3d82b3284cc772f3fe99d.ctex"
+path="res://.godot/imported/ditte_obst2.png-11081a100837d41e1d39d9db365fba4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://day/1_wednesday/cheetah/ditte_visuract_scenes/sprites/ven hit/ditte_obst2.png"
-dest_files=["res://.godot/imported/ditte_obst2.png-44b04f9467a3d82b3284cc772f3fe99d.ctex"]
+source_file="res://day/1_wednesday/cheetah/ditte/sprites/ven hit/ditte_obst2.png"
+dest_files=["res://.godot/imported/ditte_obst2.png-11081a100837d41e1d39d9db365fba4f.ctex"]
 
 [params]
 
