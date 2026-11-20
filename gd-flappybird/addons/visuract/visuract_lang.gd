@@ -13,7 +13,7 @@ static var language := ENGLISH
 const SV := {
 	# Toolbar and panels
 	"Attach to Selected Node": "Koppla till vald nod",
-	"\u2715  Remove from Selected Node": "\u2715  Ta bort från vald nod",
+	"✕  Remove from Selected Node": "✕  Ta bort från vald nod",
 	"Save Graph": "Spara graf",
 	"Language": "Språk",
 	"English": "Engelska",
@@ -39,7 +39,7 @@ const SV := {
 	"Add Note": "Lägg till lapp",
 	"Add %s": "Lägg till %s",
 	"Note": "Lapp",
-	"Write a note\u2026": "Skriv en lapp\u2026",
+	"Write a note…": "Skriv en lapp…",
 	"Double-click to edit this note. Drag an edge to resize it.": "Dubbelklicka för att skriva på lappen. Dra i en kant för att ändra storlek.",
 
 	# Status messages
@@ -47,7 +47,7 @@ const SV := {
 	"Select a node in the scene.": "Välj en nod i scenen.",
 	"Select a node in the scene first.": "Välj en nod i scenen först.",
 	"Showing: %s  (%d blocks)": "Visar: %s  (%d block)",
-	"%s  \u26a0 overrides %s - revert Graph in the Inspector": "%s  \u26a0 åsidosätter %s - återställ Graph i Inspektorn",
+	"%s  ⚠ overrides %s - revert Graph in the Inspector": "%s  ⚠ åsidosätter %s - återställ Graph i Inspektorn",
 	"%s has no Visuract script yet.": "%s har inget Visuract-skript än.",
 	"Copied %d blocks - select another node and paste.": "Kopierade %d block - välj en annan nod och klistra in.",
 	"Attach Visuract to %s first - then you can add blocks.": "Koppla Visuract till %s först - sedan kan du lägga till block.",
@@ -90,11 +90,11 @@ const SV := {
 	"Chance": "Chans",
 	"Offset": "Förskjutning",
 	"Higher is more likely. 0 never spawns.": "Högre är mer troligt. 0 skapas aldrig.",
-	"Edit Dialogue\u2026": "Redigera dialog\u2026",
+	"Edit Dialogue…": "Redigera dialog…",
 
 	# Dialogue editor
 	"Dialogue": "Dialog",
-	"Style\u2026": "Stil\u2026",
+	"Style…": "Stil…",
 	"Done": "Klar",
 	"Show Preview": "Visa förhandsvisning",
 	"Pick a Label on the Dialogue node first.": "Välj en Label på Dialog-noden först.",

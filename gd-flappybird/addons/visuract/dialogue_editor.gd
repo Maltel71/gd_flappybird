@@ -53,7 +53,7 @@ func _ready() -> void:
 	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	header.add_child(title)
 	_style_button = Button.new()
-	_style_button.text = Lang.t("Style\u2026")
+	_style_button.text = Lang.t("Style…")
 	_style_button.pressed.connect(_open_style)
 	header.add_child(_style_button)
 	var done := Button.new()
@@ -224,7 +224,7 @@ func _add_button(text: String, action: Callable) -> Button:
 
 func _remove_button(owner_list: Array, index: int) -> Button:
 	var button := Button.new()
-	button.text = "\u2715"
+	button.text = "✕"
 	button.flat = true
 	button.tooltip_text = Lang.t("Remove")
 	button.pressed.connect(func():

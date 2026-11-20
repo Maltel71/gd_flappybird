@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cjvx6ae83puv5"]
 
-[ext_resource type="Texture2D" uid="uid://fqg3vmk7ulgv" path="res://malte/sprites/malte_menu_bg.png" id="1_csbc3"]
+[ext_resource type="Texture2D" uid="uid://bpd1clq3sb8un" path="res://day/1_wednesday/anthelope/aaron/sprites/aron_bakgrund_02.png" id="1_s80tw"]
+[ext_resource type="Texture2D" uid="uid://bte4jvwd3b13y" path="res://day/1_wednesday/anthelope/aaron/sprites/aron_bakgrund.png" id="2_k2qex"]
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="2_ph32n"]
 [ext_resource type="Resource" uid="uid://dp1m27wl8r2im" path="res://day/1_wednesday/anthelope/aaron/visuract_graphs/aaron_level_01_Spawner.tres" id="3_eie5m"]
 [ext_resource type="PackedScene" uid="uid://c75w066d2yjk" path="res://day/1_wednesday/anthelope/aaron/aaron_ground.tscn" id="4_k3ot6"]
@@ -11,8 +12,12 @@
 [node name="Aaron_Level_01" type="Node2D" unique_id=1636437843]
 
 [node name="AaronMenuBg" type="Sprite2D" parent="." unique_id=1981495044]
-position = Vector2(959, 464)
-texture = ExtResource("1_csbc3")
+position = Vector2(959, 533)
+texture = ExtResource("1_s80tw")
+
+[node name="AaronMenuBg2" type="Sprite2D" parent="." unique_id=1435802294]
+position = Vector2(959, 533)
+texture = ExtResource("2_k2qex")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=186897859]
 position = Vector2(960, 540)

@@ -117,7 +117,7 @@ func _build_ui() -> void:
 	_style_save_button(false)
 	var font := _save_button.get_theme_font("font")
 	var font_size := _save_button.get_theme_font_size("font_size")
-	_save_button.custom_minimum_size.x = font.get_string_size(Lang.t("\u2715  Remove from Selected Node"), HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x + 20
+	_save_button.custom_minimum_size.x = font.get_string_size(Lang.t("✕  Remove from Selected Node"), HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x + 20
 
 	var body := HBoxContainer.new()
 	body.size_flags_vertical = Control.SIZE_EXPAND_FILL
@@ -199,7 +199,7 @@ func _on_selection_changed() -> void:
 		_load_into_canvas()
 		_set_status(Lang.t("Showing: %s  (%d blocks)") % [node.name, _graph_res.nodes.size()])
 		if _is_instance(node) and _source_graph(node) != existing:
-			_set_status(Lang.t("%s  \u26a0 overrides %s - revert Graph in the Inspector") % [_status, node.scene_file_path.get_file()])
+			_set_status(Lang.t("%s  ⚠ overrides %s - revert Graph in the Inspector") % [_status, node.scene_file_path.get_file()])
 	else:
 		_clear_canvas()
 		_set_status(Lang.t("%s has no Visuract script yet.") % node.name)
@@ -303,7 +303,7 @@ func _on_scene_tree_changed(node: Node) -> void:
 
 func _refresh_attach_button() -> void:
 	var attached: bool = is_instance_valid(_target) and _target.get_script() == RUNTIME
-	_attach_button.text = Lang.t("\u2715  Remove from Selected Node") if attached else Lang.t("Attach to Selected Node")
+	_attach_button.text = Lang.t("✕  Remove from Selected Node") if attached else Lang.t("Attach to Selected Node")
 
 	if not attached:
 		for state in ["normal", "hover", "pressed"]:
@@ -796,7 +796,7 @@ func _populate_library() -> void:
 				card.mouse_default_cursor_shape = Control.CURSOR_FORBIDDEN
 				card.tooltip_text = Lang.t("Needs a %s under %s before this can work.") % [missing, _target.name]
 				_style_card(card, color.darkened(0.45))
-				card.text = Lang.t(entry.name) + "  \u26a0"
+				card.text = Lang.t(entry.name) + "  ⚠"
 			card.pressed.connect(_on_card_pressed.bind(entry.name))
 			_library_list.add_child(card)
 
@@ -862,7 +862,7 @@ func _make_graph_node(type: String, pos: Vector2, id: String = "", values: Dicti
 	var entry := Library.find(type)
 	var gn := GraphNode.new()
 	gn.name = id if id != "" else "VN%d" % _next_id
-	gn.title = Lang.t(type) if not entry.is_empty() else Lang.t(type) + "  \u26a0"
+	gn.title = Lang.t(type) if not entry.is_empty() else Lang.t(type) + "  ⚠"
 	gn.set_meta("type", type)
 	gn.position_offset = pos
 	## Wide enough for every param it could ever show, so ticking a checkbox
@@ -904,7 +904,7 @@ func _make_note(pos: Vector2, id: String = "", values: Dictionary = {}) -> Graph
 
 	var edit := TextEdit.new()
 	edit.text = String(values.get("text", ""))
-	edit.placeholder_text = Lang.t("Write a note\u2026")
+	edit.placeholder_text = Lang.t("Write a note…")
 	edit.scroll_fit_content_height = true
 	edit.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	edit.add_theme_font_size_override("font_size", NOTE_FONT_SIZE)
@@ -1251,7 +1251,7 @@ func _make_field(spec, is_spec: bool, value, widgets: Dictionary, key) -> Contro
 	## The dialogue is too big for the node, so it's edited in a panel.
 	if spec_type == "dialogue":
 		var edit := Button.new()
-		edit.text = Lang.t("Edit Dialogue\u2026")
+		edit.text = Lang.t("Edit Dialogue…")
 		var data: Dictionary = value if value is Dictionary and not value.is_empty() else DialogueEditor.FRESH
 		edit.set_meta("dialogue", data.duplicate(true))
 		edit.pressed.connect(_open_dialogue.bind(edit))
@@ -1345,7 +1345,7 @@ func _add_scene_entry(box: VBoxContainer, data: Dictionary) -> void:
 	slot.value_changed.connect(_autosave)
 
 	var remove := Button.new()
-	remove.text = "\u2715"
+	remove.text = "✕"
 	remove.flat = true
 	remove.pressed.connect(func():
 		box.remove_child(section)

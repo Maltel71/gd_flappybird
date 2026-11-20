@@ -167,7 +167,7 @@ func _make_card(path: String) -> Button:
 		card.text += "\n" + path.get_base_dir().get_file().capitalize()
 	card.tooltip_text = path
 	if _has_visuract(path):
-		card.text = "\u26a1 " + card.text
+		card.text = "⚡ " + card.text
 		card.tooltip_text += "\n" + Lang.t("Comes with a Visuract script.")
 	var thumbnail := _thumbnail_of(path)
 	if thumbnail:

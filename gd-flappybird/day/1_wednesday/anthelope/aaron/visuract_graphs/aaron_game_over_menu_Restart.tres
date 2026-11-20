@@ -21,9 +21,9 @@ nodes = [{
 }, {
 "id": "VN201",
 "params": {
-"scene": "uid://bxhsnelskqiwg"
+"scene": "uid://cjvx6ae83puv5"
 },
-"position": Vector2(1460, 1220),
+"position": Vector2(1560, 1240),
 "type": "Change Scene"
 }]
 connections = [{

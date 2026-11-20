@@ -48,7 +48,10 @@ func _build_picker() -> void:
 	box.add_child(_search)
 	_list = ItemList.new()
 	_list.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	_list.item_selected.connect(_pick)
+	## Clicked, not selected: item_selected never fires for the row that is
+	## already highlighted, so that row could not be picked.
+	_list.item_clicked.connect(func(row, _at, _button): _pick(row))
+	_list.item_activated.connect(_pick)
 	box.add_child(_list)
 
 
@@ -89,6 +92,8 @@ func _matches(haystack: String, words: PackedStringArray) -> bool:
 	return true
 
 
+## Accepted on the search box itself: the popup is its own window, so the
+## button's accept_event() let the keys through and focus left the box.
 func _on_search_input(event: InputEvent) -> void:
 	if not (event is InputEventKey and event.pressed):
 		return
@@ -98,12 +103,12 @@ func _on_search_input(event: InputEvent) -> void:
 			var from := rows[0] if rows.size() > 0 else 0
 			_list.select(clampi(from + (1 if event.keycode == KEY_DOWN else -1), 0, _list.item_count - 1))
 			_list.ensure_current_is_visible()
-			accept_event()
+			_search.accept_event()
 		KEY_ENTER, KEY_KP_ENTER:
 			var rows := _list.get_selected_items()
 			if rows.size() > 0:
 				_pick(rows[0])
-			accept_event()
+			_search.accept_event()
 
 
 func _pick(row: int) -> void:

@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://ni6q2ogj3ry3"]
 
 [ext_resource type="Script" uid="uid://cmf2b8t3lm72d" path="res://addons/visuract/visuract_runtime.gd" id="1_3cbfh"]
+[ext_resource type="Theme" uid="uid://c03fg3buohajv" path="res://malte/malte_theme.tres" id="1_o0tpy"]
 [ext_resource type="Resource" uid="uid://cfkexxbk2peul" path="res://day/1_wednesday/anthelope/aaron/visuract_graphs/aaron_game_over_menu_Aaron_GameOver_Menu.tres" id="2_hlctl"]
 [ext_resource type="Resource" uid="uid://c2yr4fp3qux6a" path="res://day/1_wednesday/anthelope/aaron/visuract_graphs/aaron_game_over_menu_Restart.tres" id="3_ig242"]
+[ext_resource type="Texture2D" uid="uid://bpd1clq3sb8un" path="res://day/1_wednesday/anthelope/aaron/sprites/aron_bakgrund_02.png" id="4_lhx2y"]
 
 [node name="Aaron_GameOver_Menu" type="Control" unique_id=1318623505]
 layout_mode = 3
@@ -11,15 +13,22 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_o0tpy")
 script = ExtResource("1_3cbfh")
 graph = ExtResource("2_hlctl")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=292222610]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("4_lhx2y")
+
 [node name="Header" type="Label" parent="." unique_id=1848836727]
 layout_mode = 0
-offset_left = 924.0
-offset_top = 335.0
-offset_right = 1006.0
-offset_bottom = 358.0
+offset_left = 842.0
+offset_top = 276.0
+offset_right = 1167.0
+offset_bottom = 364.0
 text = "game over"
 
 [node name="Highscore_Label" type="Label" parent="." unique_id=644086953]
@@ -32,10 +41,10 @@ text = "9000"
 
 [node name="Restart" type="Button" parent="." unique_id=1422222847]
 layout_mode = 0
-offset_left = 943.0
-offset_top = 472.0
-offset_right = 951.0
-offset_bottom = 480.0
+offset_left = 914.0
+offset_top = 669.0
+offset_right = 1124.0
+offset_bottom = 752.0
 text = "Restart"
 script = ExtResource("1_3cbfh")
 graph = ExtResource("3_ig242")

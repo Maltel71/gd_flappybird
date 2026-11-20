@@ -6,7 +6,7 @@ extends EditorContextMenuPlugin
 ## scripts. Made for giving each student their own copy of a folder.
 
 ## Stands in for the folder's own path while the swap runs.
-const KEEP := "\uFFFF"
+const KEEP := "￿"
 const GRAPH_FOLDER := "visuract_graphs"
 const TEXT_TYPES := ["tscn", "tres", "gd", "cfg", "json", "tset"]
 
